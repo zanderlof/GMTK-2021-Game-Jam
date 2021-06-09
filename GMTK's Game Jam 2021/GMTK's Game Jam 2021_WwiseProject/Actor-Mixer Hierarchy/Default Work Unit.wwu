@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test" ID="{95D2E9BD-E365-4236-BD38-0EB2851719CA}" ShortID="738146189">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GunShots Rifle" ID="{F1E5D21E-797E-4AA3-8B69-356E6ACE3667}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.62213965754877"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>GunShots Rifle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1063365502"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="GunShots Rifle" ID="{F1E5D21E-797E-4AA3-8B69-356E6ACE3667}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

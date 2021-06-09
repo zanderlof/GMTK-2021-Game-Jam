@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1410106845">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3174872171" Name="Test_Gunshot_Event" ObjectPath="\Events\Default Work Unit\Test_Gunshot_Event" DurationType="OneShot" DurationMin="1.622140" DurationMax="1.622140">
+					<IncludedMemoryFiles>
+						<File Id="1063365502" Language="SFX">
+							<ShortName>GunShots Rifle.wav</ShortName>
+							<Path>SFX\GunShots Rifle_A9877830.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

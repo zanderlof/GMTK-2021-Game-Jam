@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585784205297424628
-    List: []
+    m_lastTime: -8585784191063124439
+    List:
+    - name: Main
+      guid: f4707b47325b8a48862ecf389bf89600
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 86e243cfc9b652438edc8f6bc603b4c4
+      - ElementName: Main
+        ObjectType: 7
+        guid: f4707b47325b8a48862ecf389bf89600
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585784205297632949
-    List: []
+    m_lastTime: -8585784191063223649
+    List:
+    - name: Test_Gunshot_Event
+      guid: 9c7e7054d3862b46a2ae0134cc689a50
+      id: 3174872171
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Test_Gunshot_Event
+        ObjectType: 3
+        guid: 9c7e7054d3862b46a2ae0134cc689a50
+      Path: Events\Default Work Unit\Test_Gunshot_Event
+      maxAttenuation: 0
+      maxDuration: 1.62214
+      minDuration: 1.62214
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

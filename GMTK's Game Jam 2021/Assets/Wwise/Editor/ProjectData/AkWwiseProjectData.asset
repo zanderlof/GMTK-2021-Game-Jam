@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781726001561974
+    m_lastTime: -8585781665073237218
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781726002481581
+    m_lastTime: -8585781665073252098
     List:
     - name: Test_Gunshot_Event
       guid: 9c7e7054d3862b46a2ae0134cc689a50

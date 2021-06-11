@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         BackIsPressed = Input.GetKey(KeyCode.S);
         LeftIsPressed = Input.GetKey(KeyCode.A);
         RightIsPressed = Input.GetKey(KeyCode.D);
-        JumpIsPressed = Input.GetKey(KeyCode.Space);
+        //JumpIsPressed = Input.GetKey(KeyCode.Space);
 
         Movement();
         Aim();
@@ -62,6 +62,6 @@ public class PlayerController : MonoBehaviour
 
     public void Aim()
     {
-        transform.eulerAngles += lookSpeed * new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
+        transform.eulerAngles += lookSpeed * new Vector3(0, Input.GetAxis("Mouse X"), 0);
     }
 }

@@ -16,20 +16,10 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1410106845">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1077138683">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3174872171" Name="Test_Gunshot_Event" ObjectPath="\Events\Default Work Unit\Test_Gunshot_Event" DurationType="OneShot" DurationMin="1.622140" DurationMax="1.622140">
-					<IncludedMemoryFiles>
-						<File Id="1063365502" Language="SFX">
-							<ShortName>GunShots Rifle.wav</ShortName>
-							<Path>SFX\GunShots Rifle_A9877830.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3174872171	Test_Gunshot_Event			\Default Work Unit\Test_Gunshot_Event	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1063365502	Test	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\GunShots Rifle_A9877830.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		311516
-

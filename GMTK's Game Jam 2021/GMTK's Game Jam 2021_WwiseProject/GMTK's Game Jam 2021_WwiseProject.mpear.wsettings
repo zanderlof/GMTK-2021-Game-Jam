@@ -3,8 +3,10 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{F083AFF1-CBD6-46C4-A7F3-5FC678979BF0}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Game And Sound Project Files\Ableton Live\2021\Sound Design\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Game And Sound Project Files\Ableton Live\2021\GMTK GameJam 2021\"/>
 				<Property Name="Event Action List\{54707E9C-86D3-462B-A2AE-0134CC689A50}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6CAAF3A4-2314-4BE4-B63D-636759FF73DB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B21D1FD9-8838-4DE3-A852-BA54F3DCB342}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -25,7 +27,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="9HB7RzJbikiGLs84m/iWAA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="/3bD1FF9sUmXxzyEaNMtdAH+I5P/////J5tH7tD1XE2wBTndCmDyYgH+I5P/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="J5tH7tD1XE2wBTndCmDyYgH+XMz//////3bD1FF9sUmXxzyEaNMtdAH+XMz/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -57,8 +59,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="NDptrnL9C0GCbIXWowjdsg=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="V6heNTMRv0KEitiq+tss5g=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="5wUAPKkE4k6um2cmwsI5Mw=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="V6heNTMRv0KEitiq+tss5kXCr0lzAylFm0m986AzLpA6F3z2+gEDS4cXqqGqllL11RP2qeQpCUuiOHIqgPzUhg=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="6upEtLc4qkCSigIpTNMVkecFADypBOJOrptnJsLCOTM="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="huJDz8m2UkOO3I9rxgO0xA=="/>
@@ -96,6 +98,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{1620594D-DA6F-4CDD-B322-C96C36307A67}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

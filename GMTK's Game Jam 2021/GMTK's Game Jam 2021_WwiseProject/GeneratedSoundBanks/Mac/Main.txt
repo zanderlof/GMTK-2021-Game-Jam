@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2715854868	PowerDown			\Default Work Unit\PowerSource\PowerDown	
+	3950429679	PowerUp			\Default Work Unit\PowerSource\PowerUp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	286418320	GMTK PowerSource VARIATION V1	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource VARIATION V1_BECDF3E4.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\Power Source Random\GMTK PowerSource VARIATION V1		150536
+	633361544	Disconnect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_0EA1C717.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\Disconnect		269524
+	851608084	Connect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_4940F358.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerUp\Connect		630940
+	870135542	Loop	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_8774548C.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerUp\Loop		671236
+

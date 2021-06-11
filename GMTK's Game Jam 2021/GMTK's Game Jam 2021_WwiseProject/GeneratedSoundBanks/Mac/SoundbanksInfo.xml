@@ -16,10 +16,36 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1077138683">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3620403087">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
+					<IncludedMemoryFiles>
+						<File Id="633361544" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_0EA1C717.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="286418320" Language="SFX">
+							<ShortName>GMTK PowerSource VARIATION V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource VARIATION V1_BECDF3E4.wem</Path>
+						</File>
+						<File Id="851608084" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_4940F358.wem</Path>
+						</File>
+						<File Id="870135542" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_8774548C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

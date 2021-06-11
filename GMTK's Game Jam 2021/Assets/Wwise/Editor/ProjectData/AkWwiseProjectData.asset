@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781570099386471
+    m_lastTime: -8585781544995282804
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,8 +94,45 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781570100922368
+    m_lastTime: -8585781547235360159
     List:
+    - name: Footstep
+      guid: 5de034826cc5674a8f9819daa8dae980
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Player
+        ObjectType: 4
+        guid: 8d7abfd28c963d42a930e89e89397db6
+      - ElementName: Footstep
+        ObjectType: 3
+        guid: 5de034826cc5674a8f9819daa8dae980
+      Path: Events\Default Work Unit\Player\Footstep
+      maxAttenuation: 0
+      maxDuration: 0.321094
+      minDuration: 0.213023
+    - name: Player
+      guid: 8d7abfd28c963d42a930e89e89397db6
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Player
+        ObjectType: 4
+        guid: 8d7abfd28c963d42a930e89e89397db6
+      Path: Events\Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PowerDown
       guid: a4f3aa6c1423e44bb63d636759ff73db
       id: 2715854868
@@ -113,7 +150,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4f3aa6c1423e44bb63d636759ff73db
       Path: Events\Default Work Unit\PowerSource\PowerDown
-      maxAttenuation: 0
+      maxAttenuation: 1000
       maxDuration: 1.40344
       minDuration: 1.40344
     - name: PowerSource
@@ -150,7 +187,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d91f1db23888e34da852ba54f3dcb342
       Path: Events\Default Work Unit\PowerSource\PowerUp
-      maxAttenuation: 0
+      maxAttenuation: 1000
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -179,8 +216,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9b5031cafb7e884fb342cdce09d62650
     GuidInternal: 
-    m_lastTime: -8585781726001526940
-    List: []
+    m_lastTime: -8585781549836064201
+    List:
+    - name: Stealth
+      guid: 52d81e09c3b0df499a81a2494f1b733e
+      id: 2909291642
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b5031cafb7e884fb342cdce09d62650
+      - ElementName: Stealth
+        ObjectType: 9
+        guid: 52d81e09c3b0df499a81a2494f1b733e
+      Path: States\Default Work Unit\Stealth
+      values:
+      - name: None
+        guid: 828abcaca4be1c448367915710fb2481
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b5031cafb7e884fb342cdce09d62650
+        - ElementName: Stealth
+          ObjectType: 9
+          guid: 52d81e09c3b0df499a81a2494f1b733e
+        - ElementName: None
+          ObjectType: 8
+          guid: 828abcaca4be1c448367915710fb2481
+      - name: Sneak
+        guid: 61aea075af02274ca9d8b581676d7854
+        id: 2884887403
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b5031cafb7e884fb342cdce09d62650
+        - ElementName: Stealth
+          ObjectType: 9
+          guid: 52d81e09c3b0df499a81a2494f1b733e
+        - ElementName: Sneak
+          ObjectType: 8
+          guid: 61aea075af02274ca9d8b581676d7854
+      - name: Walk
+        guid: 35bc6493a89444498a9d1933371dcbff
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b5031cafb7e884fb342cdce09d62650
+        - ElementName: Stealth
+          ObjectType: 9
+          guid: 52d81e09c3b0df499a81a2494f1b733e
+        - ElementName: Walk
+          ObjectType: 8
+          guid: 35bc6493a89444498a9d1933371dcbff
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -193,8 +296,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8912458e35d9ab4588e2bc836e0a274b
     GuidInternal: 
-    m_lastTime: -8585781726001511756
-    List: []
+    m_lastTime: -8585781550837569901
+    List:
+    - name: Footsteps
+      guid: 7e7cebb924e9cc428ed6b345329a9562
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8912458e35d9ab4588e2bc836e0a274b
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: 7e7cebb924e9cc428ed6b345329a9562
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Concrete
+        guid: 13e17c7004011f46919c7c86ef71121c
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8912458e35d9ab4588e2bc836e0a274b
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 7e7cebb924e9cc428ed6b345329a9562
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: 13e17c7004011f46919c7c86ef71121c
+      - name: Metal
+        guid: f8f9a03a3bd51e4a9f0cd1f51e2944ed
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8912458e35d9ab4588e2bc836e0a274b
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 7e7cebb924e9cc428ed6b345329a9562
+        - ElementName: Metal
+          ObjectType: 10
+          guid: f8f9a03a3bd51e4a9f0cd1f51e2944ed
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

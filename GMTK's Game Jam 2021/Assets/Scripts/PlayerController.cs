@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public MovementController movement;
+    public float lookSpeed;
 
     bool ForwardIsPressed;
     bool BackIsPressed;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         JumpIsPressed = Input.GetKey(KeyCode.Space);
 
         Movement();
+        Aim();
     }
 
     public void Movement()
@@ -56,5 +58,10 @@ public class PlayerController : MonoBehaviour
         {
             movement.Jump();
         }
+    }
+
+    public void Aim()
+    {
+        transform.eulerAngles += lookSpeed * new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
     }
 }

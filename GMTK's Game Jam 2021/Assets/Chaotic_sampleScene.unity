@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 813614293}
+  lookSpeed: 1
 --- !u!114 &813614293
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -114,8 +114,8 @@ MonoBehaviour:
         guid: a4f3aa6c1423e44bb63d636759ff73db
       Path: Events\Default Work Unit\PowerSource\PowerDown
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.40344
+      minDuration: 1.40344
     - name: PowerSource
       guid: eaea44b4b738aa40928a02294cd31591
       id: 136408055

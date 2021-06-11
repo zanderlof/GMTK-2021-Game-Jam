@@ -11,41 +11,114 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1269181928">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3620403087">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3171450434">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" DurationType="OneShot" DurationMin="0.213023" DurationMax="0.321094">
+					<IncludedMemoryFiles>
+						<File Id="120745981" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_1B59AEA7.wem</Path>
+						</File>
+						<File Id="154598439" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_5A602735.wem</Path>
+						</File>
+						<File Id="221413942" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_04E76CEE.wem</Path>
+						</File>
+						<File Id="234352725" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_E56C8329.wem</Path>
+						</File>
+						<File Id="264691709" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_C2543860.wem</Path>
+						</File>
+						<File Id="347570575" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_7C05F0E6.wem</Path>
+						</File>
+						<File Id="619807268" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_9ACC7220.wem</Path>
+						</File>
+						<File Id="625583277" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_7FDF7E00.wem</Path>
+						</File>
+						<File Id="689818044" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_FF1F5F81.wem</Path>
+						</File>
+						<File Id="889141521" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_2F19B5A1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{707CE113-0104-461F-919C-7C86EF71121C}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{707CE113-0104-461F-919C-7C86EF71121C}">
+							<Media>
+								<File Id="154598439"/>
+								<File Id="221413942"/>
+								<File Id="234352725"/>
+								<File Id="264691709"/>
+								<File Id="347570575"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3AA0F9F8-D53B-4A1E-9F0C-D1F51E2944ED}">
+							<Media>
+								<File Id="120745981"/>
+								<File Id="619807268"/>
+								<File Id="625583277"/>
+								<File Id="689818044"/>
+								<File Id="889141521"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
 					<IncludedMemoryFiles>
 						<File Id="633361544" Language="SFX">
 							<ShortName>GMTK PowerSource V1.wav</ShortName>
-							<Path>SFX\GMTK PowerSource V1_0EA1C717.wem</Path>
+							<Path>SFX\GMTK PowerSource V1_C8A7CDA8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" DurationType="Infinite">
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" MaxAttenuation="1000.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="286418320" Language="SFX">
 							<ShortName>GMTK PowerSource VARIATION V1.wav</ShortName>
-							<Path>SFX\GMTK PowerSource VARIATION V1_BECDF3E4.wem</Path>
+							<Path>SFX\GMTK PowerSource VARIATION V1_F8BEABA7.wem</Path>
 						</File>
 						<File Id="851608084" Language="SFX">
 							<ShortName>GMTK PowerSource V1.wav</ShortName>
-							<Path>SFX\GMTK PowerSource V1_4940F358.wem</Path>
+							<Path>SFX\GMTK PowerSource V1_FC355903.wem</Path>
 						</File>
 						<File Id="870135542" Language="SFX">
 							<ShortName>GMTK PowerSource V1.wav</ShortName>
-							<Path>SFX\GMTK PowerSource V1_8774548C.wem</Path>
+							<Path>SFX\GMTK PowerSource V1_58FA1B45.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Footsteps\Concrete"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Footsteps\Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

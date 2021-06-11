@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="PowerSource" ID="{B444EAEA-38B7-40AA-928A-02294CD31591}" ShortID="505643600">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="PowerUp" ID="{B21D1FD9-8838-4DE3-A852-BA54F3DCB342}">
 							<ChildrenList>
@@ -41,6 +45,25 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Disconnect" ID="{85454AF6-6901-4D05-94CB-3B4BC77C7756}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{D2BF7A8D-968C-423D-A930-E89E89397DB6}" ShortID="862521008">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Footstep" ID="{8234E05D-C56C-4A67-8F98-19DAA8DAE980}">
+							<ChildrenList>
+								<Action Name="" ID="{1FD3DA4B-6C4F-4B31-81F7-EB710589F666}" ShortID="1038662002">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{4F0CC7EB-D544-4D12-85FF-0CA43EEF8030}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

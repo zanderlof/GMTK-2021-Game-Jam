@@ -13,9 +13,41 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID POWERDOWN = 2715854868U;
         static const AkUniqueID POWERUP = 3950429679U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace STEALTH
+        {
+            static const AkUniqueID GROUP = 2909291642U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SNEAK = 2884887403U;
+                static const AkUniqueID WALK = 2108779966U;
+            } // namespace STATE
+        } // namespace STEALTH
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID METAL = 2473969246U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

@@ -1,10 +1,39 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Player\Footstep	
 	2715854868	PowerDown			\Default Work Unit\PowerSource\PowerDown	
 	3950429679	PowerUp			\Default Work Unit\PowerSource\PowerUp	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Footsteps			
+	2473969246	Metal	Footsteps			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2909291642	Stealth			\Default Work Unit\Stealth	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Stealth			
+	2108779966	Walk	Stealth			
+	2884887403	Sneak	Stealth			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	1050495409	Sneak	Stealth	\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps		
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	286418320	GMTK PowerSource VARIATION V1	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource VARIATION V1_BECDF3E4.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\Power Source Random\GMTK PowerSource VARIATION V1		150536
-	633361544	Disconnect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_0EA1C717.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\Disconnect		269524
-	851608084	Connect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_4940F358.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerUp\Connect		630940
-	870135542	Loop	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_8774548C.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerUp\Loop		671236
+	120745981	Metal footsteps-1_02	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Metal footsteps-1_1B59AEA7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1_02		52404
+	154598439	Tile Footsteps_01	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Tile Footsteps_5A602735.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Concrete\Tile Footsteps_01		48296
+	221413942	Tile Footsteps	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Tile Footsteps_04E76CEE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Concrete\Tile Footsteps		45892
+	234352725	Tile Footsteps_02	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Tile Footsteps_E56C8329.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Concrete\Tile Footsteps_02		49788
+	264691709	Tile Footsteps_04	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Tile Footsteps_C2543860.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Concrete\Tile Footsteps_04		38188
+	286418320	GMTK PowerSource VARIATION V1	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource VARIATION V1_F8BEABA7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\Power Source Random\GMTK PowerSource VARIATION V1		150536
+	347570575	Tile Footsteps_03	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Tile Footsteps_7C05F0E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Concrete\Tile Footsteps_03		47488
+	619807268	Metal footsteps-1_04	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Metal footsteps-1_9ACC7220.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1_04		61520
+	625583277	Metal footsteps-1_03	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Metal footsteps-1_7FDF7E00.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1_03		56724
+	633361544	Disconnect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_C8A7CDA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\Disconnect		269524
+	689818044	Metal footsteps-1	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Metal footsteps-1_FF1F5F81.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1		55844
+	851608084	Connect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_FC355903.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\PowerUp\Connect		630940
+	870135542	Loop	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\GMTK PowerSource V1_58FA1B45.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\PowerUp\Loop		671236
+	889141521	Metal footsteps-1_01	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Mac\SFX\Metal footsteps-1_2F19B5A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1_01		61716
 

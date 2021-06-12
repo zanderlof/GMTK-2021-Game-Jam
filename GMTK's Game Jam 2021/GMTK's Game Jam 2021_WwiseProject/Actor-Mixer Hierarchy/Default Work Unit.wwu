@@ -257,7 +257,39 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
+											<RTPCList>
+												<RTPC Name="" ID="{0D8ECEDF-D004-4E34-A0EA-D2918D1B7779}" ShortID="918995516">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Sneaking" ID="{52111633-A113-4CB7-BD2B-4DC25F9FCB8C}" WorkUnitID="{8993FC05-D9B9-4BBA-80DC-61D028557457}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{E3799BEE-DF11-4900-BBBD-F4BB072A7816}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.56849</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>49.94091</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
@@ -428,7 +460,39 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
+											<RTPCList>
+												<RTPC Name="" ID="{EFBB08D9-4A5F-4CCC-A98B-355913EB4C4D}" ShortID="406488521">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Sneaking" ID="{52111633-A113-4CB7-BD2B-4DC25F9FCB8C}" WorkUnitID="{8993FC05-D9B9-4BBA-80DC-61D028557457}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{748973B0-0627-4C2E-96C5-C4CA09C57705}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.58</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>49.8896247240618</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 									</PropertyList>

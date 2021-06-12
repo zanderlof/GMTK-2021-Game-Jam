@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 5999230235589318187}
   - component: {fileID: 5999230235589318207}
   m_Layer: 0
-  m_Name: StillEnemy
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,17 +153,16 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolPoints: []
+  RoamSpeed: 3
   isStill: 1
-  viewRadius: 10
-  viewAngle: 45
+  viewRadius: 15
+  senseRadius: 3.5
+  viewAngle: 90
   shootStoppingDist: 10
   fireRate: 5
   minEngageDist: 10
+  shootingMovementSpeed: 5
   state: 0
 --- !u!136 &5999230235589318177
 CapsuleCollider:

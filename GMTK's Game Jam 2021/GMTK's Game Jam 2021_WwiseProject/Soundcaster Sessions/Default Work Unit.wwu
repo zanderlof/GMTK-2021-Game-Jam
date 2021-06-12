@@ -14,12 +14,17 @@
 							<Position X="0" Y="1"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Sneaking" ID="{52111633-A113-4CB7-BD2B-4DC25F9FCB8C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Walk" ID="{9364BC35-94A8-4944-8A9D-1933371DCBFF}"/>
+						<CurrentStateRef Name="Sneak" ID="{75A0AE61-02AF-4C27-A9D8-B581676D7854}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Concrete" ID="{707CE113-0104-461F-919C-7C86EF71121C}"/>
+						<CurrentSwitchRef Name="Metal" ID="{3AA0F9F8-D53B-4A1E-9F0C-D1F51E2944ED}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

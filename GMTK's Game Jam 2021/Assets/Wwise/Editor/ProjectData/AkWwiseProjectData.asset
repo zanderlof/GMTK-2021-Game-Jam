@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4b72d4eb31781c4db99652ef06725f4d
     GuidInternal: 
-    m_lastTime: -8585781088533795015
+    m_lastTime: -8585781166439414498
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585781088536599164
+    m_lastTime: -8585781166442366612
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781088533845034
+    m_lastTime: -8585781166439494294
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781088537049210
+    m_lastTime: -8585781166442945050
     List:
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
@@ -239,8 +239,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585781088537009194
-    List: []
+    m_lastTime: -8585780939976503726
+    List:
+    - name: Sneaking
+      guid: 3316115213a1b74cbd2b4dc25f9fcb8c
+      id: 3418139957
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 05fc9389b9d9ba4b80dc61d028557457
+      - ElementName: Sneaking
+        ObjectType: 13
+        guid: 3316115213a1b74cbd2b4dc25f9fcb8c
+      Path: Game Parameters\Default Work Unit\Sneaking
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -253,7 +267,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9b5031cafb7e884fb342cdce09d62650
     GuidInternal: 
-    m_lastTime: -8585781088533825029
+    m_lastTime: -8585781166439434449
     List:
     - name: Stealth
       guid: 52d81e09c3b0df499a81a2494f1b733e
@@ -333,7 +347,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8912458e35d9ab4588e2bc836e0a274b
     GuidInternal: 
-    m_lastTime: -8585781088533815027
+    m_lastTime: -8585781166439424475
     List:
     - name: Footsteps
       guid: 7e7cebb924e9cc428ed6b345329a9562
@@ -397,7 +411,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 922f59e39495264192878304c51842a7
     GuidInternal: 
-    m_lastTime: -8585781088533805024
+    m_lastTime: -8585781166439414498
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000080000000a0000001400000015000000
   ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000e0000000f00000010000000

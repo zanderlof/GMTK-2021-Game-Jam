@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -368,17 +368,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &405099341 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -2377233643946429423, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-  m_PrefabInstance: {fileID: 1523174873}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e61aa589c8c6cd4caf79f695150b998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &706912050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,14 +427,6 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 1695113920}
-    - target: {fileID: 5092479634260979119, guid: e49ddc5c01460784caef29e1c6527c18, type: 3}
-      propertyPath: powerUp.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: af64f9aa4b032e84490c278980c3614d, type: 2}
-    - target: {fileID: 5092479634260979119, guid: e49ddc5c01460784caef29e1c6527c18, type: 3}
-      propertyPath: powerDown.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49ddc5c01460784caef29e1c6527c18, type: 3}
 --- !u!1001 &1523174873
@@ -456,14 +437,23 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 405099341}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+      propertyPath: bulletSpawn
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+=======
+>>>>>>> parent of 323add9 (Bullets)
+=======
+>>>>>>> parent of 323add9 (Bullets)
       propertyPath: bulletSpeed
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+=======
+>>>>>>> Stashed changes
       propertyPath: powerUp.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: af64f9aa4b032e84490c278980c3614d, type: 2}
@@ -471,10 +461,6 @@ PrefabInstance:
       propertyPath: powerDown.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}
-    - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: fireBullet.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -523,10 +509,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8853628464342859037, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: footsteps.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 4d82e6c0c500d18468d574ebf59e9f3d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
 --- !u!1 &1691020916

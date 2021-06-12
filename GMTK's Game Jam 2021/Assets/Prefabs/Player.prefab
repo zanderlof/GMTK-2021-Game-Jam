@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8853628464342859039}
   - component: {fileID: 8853628464342859038}
   - component: {fileID: 8853628464342859037}
-  - component: {fileID: -2377233643946429423}
+  - component: {fileID: 8853628464342859036}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
---- !u!114 &-2377233643946429423
+--- !u!114 &8853628464342859036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,11 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 8853628464342859037}
-  lookSpeed: 10
-  footsteps:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4d82e6c0c500d18468d574ebf59e9f3d, type: 2}
+  lookSpeed: 1
 --- !u!1 &8853628464697891728
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,10 +235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 8853628464342859036}
   bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
   bulletSpeed: 2
-  fireBullet:
+  powerUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  powerDown:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

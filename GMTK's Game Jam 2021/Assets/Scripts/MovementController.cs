@@ -11,6 +11,8 @@ public class MovementController : MonoBehaviour
     private bool moveLeft;
     private bool moveRight;
     private bool jump;
+    public float speed;
+    public float jumpForce;
 
     public enum LastMove
     {
@@ -43,33 +45,33 @@ public class MovementController : MonoBehaviour
         /*control movement up and down*/
         if (moveForward)
         {
-            direction += Vector3.forward;
+            direction += Vector3.forward * speed * Time.deltaTime;
             moveForward = false;
             
         }
 
         if (moveBack)
         {
-            direction += Vector3.back;
+            direction += Vector3.back * speed * Time.deltaTime;
             moveBack = false;
         }
 
         /*control movement left and right*/
         if (moveRight)
         {
-            direction += Vector3.right;
+            direction += Vector3.right * speed * Time.deltaTime;
             moveRight = false;
         }
 
         if (moveLeft)
         {
-            direction += Vector3.left;
+            direction += Vector3.left * speed * Time.deltaTime;
             moveLeft = false;
         }
 
         if (jump)
         {
-            direction += Vector3.up;
+            direction += Vector3.up * jumpForce * Time.deltaTime;
             jump = false;
         }
 

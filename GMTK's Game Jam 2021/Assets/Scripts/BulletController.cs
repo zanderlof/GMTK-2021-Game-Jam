@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float deathTime = 3f;
 
     // Update is called once per frame
     void Update()
     {
-        
+        deathTime -= Time.deltaTime;
+        if (deathTime <= 0)
+        {
+            Object.Destroy(gameObject);
+        }
     }
 
     public void OnCollisionEnter(Collision collision)

@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PowerGenerator : MonoBehaviour
 {
+    //References
+    EnemyManager manager;
+
+    //misc
+    [SerializeField] bool drawGizmo;
+
     //public variables
     public GunController gun;
     public float powerDistance;
@@ -23,6 +29,7 @@ public class PowerGenerator : MonoBehaviour
     {
         powering = false;
         previous = false;
+        manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     // Update is called once per frame
@@ -35,6 +42,7 @@ public class PowerGenerator : MonoBehaviour
         if (distance <= powerDistance && powerleft > 0)
         {
             gun.powerOn();
+            manager.ISaw();
             powering = true;
             powerleft -= Time.deltaTime;
         }
@@ -65,5 +73,11 @@ public class PowerGenerator : MonoBehaviour
 
     }
 
-
+    private void OnDrawGizmos()
+    {
+        if (drawGizmo)
+        {
+            Gizmos.DrawWireSphere(transform.position, powerDistance);
+        }
+    }
 }

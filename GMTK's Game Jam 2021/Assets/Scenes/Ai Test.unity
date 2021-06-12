@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.75
+      value: -17.34
       objectReference: {fileID: 0}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -762,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.75
+      value: -9.84
       objectReference: {fileID: 0}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1578,8 +1578,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 146284111}
     - target: {fileID: 8108972777563517961, guid: 9f5bd4dd19ad874468fa5e4be5ce5998, type: 3}
+      propertyPath: drawGizmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108972777563517961, guid: 9f5bd4dd19ad874468fa5e4be5ce5998, type: 3}
       propertyPath: powerDistance
-      value: 100
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8575525192249905749, guid: 9f5bd4dd19ad874468fa5e4be5ce5998, type: 3}
       propertyPath: m_RootOrder

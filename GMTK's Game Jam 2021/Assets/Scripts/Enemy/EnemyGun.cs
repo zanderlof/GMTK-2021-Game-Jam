@@ -14,12 +14,12 @@ public class EnemyGun : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-     private void Update()
-     {
-         Quaternion lookdir = Quaternion.LookRotation(player.transform.position - transform.position, Vector3.up);
-         transform.rotation = Quaternion.RotateTowards(transform.rotation, lookdir, Time.deltaTime * 100);
-         transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 0);
-     }
+    // private void Update()
+    // {
+    //     Quaternion lookdir = Quaternion.LookRotation(player.transform.position - transform.position, Vector3.up);
+    //     transform.rotation = Quaternion.RotateTowards(transform.rotation, lookdir, Time.deltaTime * 100);
+    //     transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 0);
+    // }
 
     public void Shoot()
     {

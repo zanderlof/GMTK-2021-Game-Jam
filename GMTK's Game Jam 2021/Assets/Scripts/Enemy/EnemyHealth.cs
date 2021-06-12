@@ -6,10 +6,12 @@ public class EnemyHealth : MonoBehaviour
 {
     public int starthealth;
     private int currentHealth;
+    EnemyManager manager;
 
     void Start()
     {
         currentHealth = starthealth;
+        manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     // Update is called once per frame
@@ -17,15 +19,18 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            manager.IDied(GetComponent<BasicEnemyStateMachine>());
             Destroy(gameObject);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.collider.CompareTag("bullet"))
+        if (other.collider.CompareTag("bullet"))
         {
-            currentHealth -= 10;
+            currentHealth -= other.gameObject.GetComponent<BulletController>().bulletDamage;
+            manager.ISaw();
         }
+
     }
 }

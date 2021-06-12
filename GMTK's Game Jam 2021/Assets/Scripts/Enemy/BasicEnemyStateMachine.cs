@@ -33,6 +33,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     public enemyState state = enemyState.Shoot;
 
     //private vars
+    EnemyManager manager;
     NavMeshAgent enemy;
     private Transform player;
     private float nextTimeToShoot;
@@ -44,6 +45,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     {
         enemy = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     private void Update()
@@ -92,6 +94,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
         if (inView)
         {
             state = enemyState.Shoot;
+            manager.ISaw();
         }
     }
     private void GotoNextPoint()

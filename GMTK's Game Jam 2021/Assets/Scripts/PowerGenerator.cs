@@ -7,6 +7,7 @@ public class PowerGenerator : MonoBehaviour
     //public variables
     public GunController gun;
     public float powerDistance;
+    public float powerleft = 60f;
 
     //sounds
     public AK.Wwise.Event powerUp;
@@ -16,7 +17,6 @@ public class PowerGenerator : MonoBehaviour
     private float distance;
     bool powering;
     bool previous;
-    private float powerleft = 10f;
 
     // Start is called before the first frame update
     void Start()

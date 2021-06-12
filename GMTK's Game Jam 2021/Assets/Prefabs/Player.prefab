@@ -296,10 +296,13 @@ MonoBehaviour:
 <<<<<<< Updated upstream
   bulletSpeed: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   bulletSpawn: 0
 =======
   bulletSpeed: 10
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 323add9 (Bullets)
 =======
 >>>>>>> parent of 323add9 (Bullets)
   fireBullet:

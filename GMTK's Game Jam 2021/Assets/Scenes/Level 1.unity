@@ -438,11 +438,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       propertyPath: bulletSpawn
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+=======
+>>>>>>> parent of 323add9 (Bullets)
 =======
 >>>>>>> parent of 323add9 (Bullets)
       propertyPath: bulletSpeed

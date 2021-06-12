@@ -10,8 +10,6 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] int enemySpawnThreshold;
     [SerializeField] Transform enemySpawnPoint;
 
-    [Space]
-
     private void Update()
     {
         if (enemiesInScene.Count < enemySpawnThreshold && enemiesToSpawn.Count > 0)

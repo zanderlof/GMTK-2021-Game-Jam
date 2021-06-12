@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2429427956762463029}
   - component: {fileID: 2429427956762463028}
   m_Layer: 0
-  m_Name: Spawn Room or End Room
+  m_Name: End Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

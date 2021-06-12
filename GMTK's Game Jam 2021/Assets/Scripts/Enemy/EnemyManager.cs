@@ -11,7 +11,6 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] Transform enemySpawnPoint;
 
     [Space]
-    [SerializeField] bool Alarm = false;
 
     private void Update()
     {

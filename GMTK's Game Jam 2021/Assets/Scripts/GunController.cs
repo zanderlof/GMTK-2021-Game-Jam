@@ -21,7 +21,7 @@ public class GunController : MonoBehaviour
     void Start()
     {
         powered = false;
-        previous = false;
+        // previous = false;
     }
 
 

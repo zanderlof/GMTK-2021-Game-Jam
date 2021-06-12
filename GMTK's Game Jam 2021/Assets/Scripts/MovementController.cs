@@ -12,8 +12,6 @@ public class MovementController : MonoBehaviour
     private bool moveRight;
     private bool jump;
 
-    [SerializeField] float moveSpeed = 5;
-
     public enum LastMove
     {
         Forward = 0,
@@ -76,7 +74,7 @@ public class MovementController : MonoBehaviour
         }
 
         //Translate this transform in direction.
-        transform.Translate(direction * Time.deltaTime * moveSpeed);
+        transform.Translate(direction * Time.deltaTime);
     }
 
     public void MoveForward()

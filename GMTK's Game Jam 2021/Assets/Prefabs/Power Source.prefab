@@ -110,11 +110,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 0}
   powerDistance: 7
-  powerUp:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: af64f9aa4b032e84490c278980c3614d, type: 2}
-  powerDown:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}

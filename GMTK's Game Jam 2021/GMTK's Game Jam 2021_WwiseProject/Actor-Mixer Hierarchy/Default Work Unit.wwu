@@ -744,7 +744,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="PistolShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" ShortID="31889689">
+						<RandomSequenceContainer Name="ARShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" ShortID="31889689">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -887,6 +887,9 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{0D67B571-53D8-4BF2-B01D-07B12336E335}">
@@ -993,6 +996,160 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="ShotGun Sounds GMTK" ID="{145836B4-C8A7-40F9-B9C1-6AE029C9BAAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PistolShots" ID="{D4AFB8B0-4519-4EB8-98FC-6BA88927B933}" ShortID="154032372">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{579A8170-E484-4BDD-A6B7-90CAC772DEC6}">
+												<PropertyList>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AR Sounds GMTK" ID="{2D25845E-DB05-4E52-8007-0FD2B4E7BFD8}" ShortID="175976900">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AR Sounds GMTK" ID="{8838C3E4-63E4-405D-BFFC-2C0F5ACAD7DD}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.107658039842826"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.971963272270117"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AR Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466470151"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AR Sounds GMTK" ID="{8838C3E4-63E4-405D-BFFC-2C0F5ACAD7DD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AR Sounds GMTK_01" ID="{BA711318-E826-4D85-A924-CC16F45C21C4}" ShortID="891033991">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AR Sounds GMTK" ID="{43AA8351-3716-4881-8AA3-208F2FCE116F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.298407231501437"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.76862969920712"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.99349334770117"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AR Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1032488285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AR Sounds GMTK" ID="{43AA8351-3716-4881-8AA3-208F2FCE116F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AR Sounds GMTK_02" ID="{E25D7D2D-D609-4828-9DE7-CF80280B8AAD}" ShortID="860378425">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AR Sounds GMTK" ID="{A7662033-9CA4-4B9C-92AD-1DA7CE2AE127}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.107902669920206"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="11.536146453264"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.2913988484114"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AR Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="509447025"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AR Sounds GMTK" ID="{A7662033-9CA4-4B9C-92AD-1DA7CE2AE127}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AR Sounds GMTK_03" ID="{41315723-F591-4697-800C-B54841A192E7}" ShortID="764237059">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3E787AC3-BC94-4FD7-AECE-0C0775BAAADC}">
+														<PropertyList>
+															<Property Name="Min" Type="Real64" Value="-354"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AR Sounds GMTK" ID="{E4317289-0B76-4D40-B27F-A3E6C9067641}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.198168356143626"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="17.3066704523434"/>
+												<Property Name="TrimEnd" Type="Real64" Value="18.2515751097925"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AR Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1039773414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="AR Sounds GMTK" ID="{E4317289-0B76-4D40-B27F-A3E6C9067641}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

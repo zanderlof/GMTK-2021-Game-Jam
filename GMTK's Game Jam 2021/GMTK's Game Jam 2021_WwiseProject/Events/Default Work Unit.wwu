@@ -82,7 +82,7 @@
 								<Action Name="" ID="{A3EF2FE5-AF4C-4C79-A22D-5A72E2A05D92}" ShortID="839529845">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="PistolShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+											<ObjectRef Name="PistolShots" ID="{D4AFB8B0-4519-4EB8-98FC-6BA88927B933}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -94,6 +94,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="ShotgunShots" ID="{37086473-BB11-4FEF-A143-3E7EBAA1CCA4}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FireAR" ID="{CB88EC63-D49B-4011-BAB1-F0284FBA7518}">
+							<ChildrenList>
+								<Action Name="" ID="{28340E71-31DB-46CB-B2E8-CA38A173DA80}" ShortID="41844719">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ARShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

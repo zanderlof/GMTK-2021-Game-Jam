@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2314667582">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1422979344">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
+				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
 					<IncludedMemoryFiles>
 						<File Id="643898" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
@@ -37,19 +37,39 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.755252" DurationMax="1.224864">
+					<IncludedMemoryFiles>
+						<File Id="466470151" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_553A15C0.wem</Path>
+						</File>
+						<File Id="509447025" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_3327A735.wem</Path>
+						</File>
+						<File Id="1032488285" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_224FA3DD.wem</Path>
+						</File>
+						<File Id="1039773414" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_C86F1C50.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2496290125" Name="FireShotgun" ObjectPath="\Events\Default Work Unit\Weapons\FireShotgun" DurationType="OneShot" DurationMin="1.128861" DurationMax="1.740225">
 					<IncludedMemoryFiles>
 						<File Id="449462211" Language="SFX">
 							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
-							<Path>SFX\ShotGun Sounds GMTK_5DB5F36E.wem</Path>
+							<Path>SFX\ShotGun Sounds GMTK_B1B75750.wem</Path>
 						</File>
 						<File Id="836463758" Language="SFX">
 							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
-							<Path>SFX\ShotGun Sounds GMTK_FAB2D2C4.wem</Path>
+							<Path>SFX\ShotGun Sounds GMTK_6DF3A355.wem</Path>
 						</File>
 						<File Id="842778150" Language="SFX">
 							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
-							<Path>SFX\ShotGun Sounds GMTK_EE181155.wem</Path>
+							<Path>SFX\ShotGun Sounds GMTK_32703936.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

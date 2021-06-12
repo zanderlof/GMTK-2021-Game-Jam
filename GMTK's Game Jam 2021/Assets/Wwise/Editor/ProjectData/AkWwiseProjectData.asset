@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585781166442366612
+    m_lastTime: -8585780898728663109
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 78a174c30cd8ab4bbefe701e841aa5a9
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 343a6dae72fd0b41826c85d6a308ddb2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 78a174c30cd8ab4bbefe701e841aa5a9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781166439494294
+    m_lastTime: -8585780888808121285
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781166442945050
+    m_lastTime: -8585780888808056806
     List:
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
@@ -116,6 +133,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.067931
       minDuration: 0.775096
+    - name: FireShotgun
+      guid: 2de9196f19b01e4ab8d7571ce89d2f77
+      id: 2496290125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: FireShotgun
+        ObjectType: 3
+        guid: 2de9196f19b01e4ab8d7571ce89d2f77
+      Path: Events\Default Work Unit\Weapons\FireShotgun
+      maxAttenuation: 0
+      maxDuration: 1.740225
+      minDuration: 1.128861
     - name: Footstep
       guid: 5de034826cc5674a8f9819daa8dae980
       id: 1866025847
@@ -133,6 +170,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5de034826cc5674a8f9819daa8dae980
       Path: Events\Default Work Unit\Player\Footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: b06121cb992c24458e6b783a61bf1202
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      Path: Events\Default Work Unit\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -210,6 +264,86 @@ MonoBehaviour:
       maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
+    - name: StartLevelMusic
+      guid: a8509098aa02e9469a2c2bd9d28c41b2
+      id: 1628310244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StartLevelMusic
+        ObjectType: 3
+        guid: a8509098aa02e9469a2c2bd9d28c41b2
+      Path: Events\Default Work Unit\Music\StartLevelMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartMenuMusic
+      guid: cf36ff116db5d44590800159dd46ca6d
+      id: 2440264179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StartMenuMusic
+        ObjectType: 3
+        guid: cf36ff116db5d44590800159dd46ca6d
+      Path: Events\Default Work Unit\Music\StartMenuMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopLevelMusic
+      guid: 0709158ca8f5b24598a3251aabdf4da5
+      id: 1307992046
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StopLevelMusic
+        ObjectType: 3
+        guid: 0709158ca8f5b24598a3251aabdf4da5
+      Path: Events\Default Work Unit\Music\StopLevelMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopMenuMusic
+      guid: fc7975d3b160fc49a4d0858cc85c1175
+      id: 1973898857
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StopMenuMusic
+        ObjectType: 3
+        guid: fc7975d3b160fc49a4d0858cc85c1175
+      Path: Events\Default Work Unit\Music\StopMenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Weapons
       guid: 7886572c0c693241a55ad2a39b8faa02
       id: 1467963052

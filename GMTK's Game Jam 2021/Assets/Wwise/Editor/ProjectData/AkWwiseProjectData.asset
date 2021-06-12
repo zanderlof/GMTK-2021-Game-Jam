@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780898728663109
+    m_lastTime: -8585780812419791988
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780820901670281
+    m_lastTime: -8585780802709738858
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -111,8 +111,45 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780829311076841
+    m_lastTime: -8585780802710348368
     List:
+    - name: Enemy
+      guid: 1cdf7bf5cdabec4998d873b8715c182d
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      Path: Events\Default Work Unit\Enemy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnemyFootsteps
+      guid: 0bd3072906323b46a93d113c9a4dc195
+      id: 2051507304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyFootsteps
+        ObjectType: 3
+        guid: 0bd3072906323b46a93d113c9a4dc195
+      Path: Events\Default Work Unit\Enemy\EnemyFootsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FireAR
       guid: 63ec88cb9bd41140bab1f0284fba7518
       id: 408495308
@@ -324,6 +361,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopEnemyFootsteps
+      guid: b671f1fe415a7148a70f3408787a3008
+      id: 1284332368
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: StopEnemyFootsteps
+        ObjectType: 3
+        guid: b671f1fe415a7148a70f3408787a3008
+      Path: Events\Default Work Unit\Enemy\StopEnemyFootsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StopLevelMusic
       guid: 0709158ca8f5b24598a3251aabdf4da5
       id: 1307992046
@@ -393,7 +450,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585780939976503726
+    m_lastTime: -8585780812433834721
     List:
     - name: Sneaking
       guid: 3316115213a1b74cbd2b4dc25f9fcb8c

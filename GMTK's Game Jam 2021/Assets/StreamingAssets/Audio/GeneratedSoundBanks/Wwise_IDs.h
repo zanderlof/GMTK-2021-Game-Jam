@@ -14,9 +14,14 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FIREPISTOL = 3866501340U;
+        static const AkUniqueID FIRESHOTGUN = 2496290125U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID POWERDOWN = 2715854868U;
         static const AkUniqueID POWERUP = 3950429679U;
+        static const AkUniqueID STARTLEVELMUSIC = 1628310244U;
+        static const AkUniqueID STARTMENUMUSIC = 2440264179U;
+        static const AkUniqueID STOPLEVELMUSIC = 1307992046U;
+        static const AkUniqueID STOPMENUMUSIC = 1973898857U;
     } // namespace EVENTS
 
     namespace STATES
@@ -50,6 +55,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SNEAKING = 3418139957U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -59,6 +69,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

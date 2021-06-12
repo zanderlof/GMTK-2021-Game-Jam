@@ -871,6 +871,133 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="ShotgunShots" ID="{37086473-BB11-4FEF-A143-3E7EBAA1CCA4}" ShortID="8153574">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6E4BF3C1-CF09-4006-B350-8672C6359309}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-101"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0D67B571-53D8-4BF2-B01D-07B12336E335}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ShotGun Sounds GMTK" ID="{BCBB1E24-06C3-46DA-917A-5DDBDDA4B1C9}" ShortID="161924962">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShotGun Sounds GMTK" ID="{5D21DD8D-05D4-425C-80AA-E43DFC9BB517}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.580886152883292"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.85749860663724"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.07158256422346"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="836463758"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ShotGun Sounds GMTK" ID="{5D21DD8D-05D4-425C-80AA-E43DFC9BB517}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ShotGun Sounds GMTK_01" ID="{8564FFBD-DEE8-4086-B0A6-BCA00E5CC7BC}" ShortID="974048184">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShotGun Sounds GMTK" ID="{16656288-5288-40F2-BCF5-C3475C180666}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.286293887478849"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.31911786666299"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.62567488895939"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="842778150"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ShotGun Sounds GMTK" ID="{16656288-5288-40F2-BCF5-C3475C180666}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ShotGun Sounds GMTK_02" ID="{02DD9FC4-B77D-4D12-9FF8-F28E1D6AC5BE}" ShortID="97137145">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShotGun Sounds GMTK" ID="{145836B4-C8A7-40F9-B9C1-6AE029C9BAAB}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.609691462774957"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.80929939725262"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.4509047783418"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="449462211"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ShotGun Sounds GMTK" ID="{145836B4-C8A7-40F9-B9C1-6AE029C9BAAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

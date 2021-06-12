@@ -88,6 +88,83 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="FireShotgun" ID="{6F19E92D-B019-4A1E-B8D7-571CE89D2F77}">
+							<ChildrenList>
+								<Action Name="" ID="{58BC4CFD-8FC7-4F52-9148-FC86E03C65FC}" ShortID="716387706">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ShotgunShots" ID="{37086473-BB11-4FEF-A143-3E7EBAA1CCA4}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{CB2161B0-2C99-4524-8E6B-783A61BF1202}" ShortID="550681378">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="25"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="StartMenuMusic" ID="{11FF36CF-B56D-45D4-9080-0159DD46CA6D}">
+							<ChildrenList>
+								<Action Name="" ID="{0EBE2080-E230-4838-83C6-438628688045}" ShortID="516984303">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartMenu" ID="{8BBFBFCD-554D-4D5F-ACC7-1F1F2DC173F2}" WorkUnitID="{7E83D18E-436E-45E8-A6CB-CDB31E17D753}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopMenuMusic" ID="{D37579FC-60B1-49FC-A4D0-858CC85C1175}">
+							<ChildrenList>
+								<Action Name="" ID="{3CB8827A-7DF5-48A1-91DD-54D49A03809D}" ShortID="285829952">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StartMenu" ID="{8BBFBFCD-554D-4D5F-ACC7-1F1F2DC173F2}" WorkUnitID="{7E83D18E-436E-45E8-A6CB-CDB31E17D753}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StartLevelMusic" ID="{989050A8-02AA-46E9-9A2C-2BD9D28C41B2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{584D8BCC-9811-482D-935D-62F27B3BB48B}" ShortID="774072229">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Levels" ID="{C3DCEE09-C8A2-4F72-9D0B-E1AE8D101961}" WorkUnitID="{7E83D18E-436E-45E8-A6CB-CDB31E17D753}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopLevelMusic" ID="{8C150907-F5A8-45B2-98A3-251AABDF4DA5}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{0F0DB51F-52AA-4403-A5BD-3EB9D86FDDE2}" ShortID="645624642">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Levels" ID="{C3DCEE09-C8A2-4F72-9D0B-E1AE8D101961}" WorkUnitID="{7E83D18E-436E-45E8-A6CB-CDB31E17D753}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

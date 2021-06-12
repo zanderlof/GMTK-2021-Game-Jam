@@ -10,13 +10,19 @@ public class PlayerController : MonoBehaviour
     //sounds
     public AK.Wwise.Event footsteps;
 
+    //movement detection
     bool ForwardIsPressed;
     bool BackIsPressed;
     bool LeftIsPressed;
     bool RightIsPressed;
     bool JumpIsPressed;
+    bool CrouchIsPressed;
+    bool SlideIsPressed;
+
+    //states
     bool isMoving;
     bool movementChange;
+    bool sizeChange;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +38,8 @@ public class PlayerController : MonoBehaviour
         LeftIsPressed = Input.GetKey(KeyCode.A);
         RightIsPressed = Input.GetKey(KeyCode.D);
         //JumpIsPressed = Input.GetKey(KeyCode.Space);
+        CrouchIsPressed = Input.GetKey(KeyCode.LeftControl);
+        //SlideIsPressed = Input.GetKey(KeyCode.LeftShift);
 
         Movement();
         // Aim();
@@ -85,6 +93,20 @@ public class PlayerController : MonoBehaviour
             else
             {
                 footsteps.Stop(gameObject);
+            }
+        }
+
+        if (sizeChange != CrouchIsPressed)
+        {
+            sizeChange = CrouchIsPressed;
+
+            if (CrouchIsPressed)
+            {
+                movement.Crouch();
+            }
+            else
+            {
+                movement.Stand();
             }
         }
     }

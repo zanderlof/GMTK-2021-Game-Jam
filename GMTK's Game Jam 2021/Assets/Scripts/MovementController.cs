@@ -106,4 +106,15 @@ public class MovementController : MonoBehaviour
     {
         jump = true;
     }
+
+    public void Crouch()
+    {
+        transform.localScale = new Vector3(1, 0.5f, 1);
+        transform.position += Vector3.down * 0.4f;
+    }
+
+    public void Stand()
+    {
+        transform.localScale = new Vector3(1, 1, 1);
+    }
 }

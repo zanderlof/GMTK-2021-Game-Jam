@@ -266,7 +266,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25870
+  m_Name: pb_Mesh42198
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4312,7 +4312,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   isStill: 1
-  viewRadius: 10
+  viewRadius: 12.5
   viewAngle: 45
   shootStoppingDist: 10
   fireRate: 5
@@ -4746,7 +4746,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   isStill: 1
-  viewRadius: 10
+  viewRadius: 15
   viewAngle: 45
   shootStoppingDist: 10
   fireRate: 5
@@ -4913,6 +4913,10 @@ PrefabInstance:
     - target: {fileID: 8540852521919890773, guid: cd1f47dd007b89b4cae615c1314ee892, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540852523817299482, guid: cd1f47dd007b89b4cae615c1314ee892, type: 3}
+      propertyPath: viewRadius
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1f47dd007b89b4cae615c1314ee892, type: 3}

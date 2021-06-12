@@ -106,6 +106,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(true);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(false);
+                gun.SetType(elemCurrent);
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -114,6 +115,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(true);
                 waterIndicator.SetActive(false);
+                gun.SetType(elemCurrent);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
@@ -122,6 +124,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(true);
+                gun.SetType(elemCurrent);
             }
         }
         else

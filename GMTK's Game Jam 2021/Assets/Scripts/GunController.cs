@@ -16,6 +16,7 @@ public class GunController : MonoBehaviour
     //private variables
     private bool powered;
     private bool previous;
+    private PowerGenerator.Elemental type;
 
     // Start is called before the first frame update
     void Start()
@@ -43,9 +44,10 @@ public class GunController : MonoBehaviour
     public void Shoot()
     {
         fireBullet.Post(gameObject);
-        GameObject holder = Instantiate(bullet, transform.position + (transform.forward * bulletSpawn), transform.localRotation);
-        holder.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
+        GameObject holder = Instantiate(bullet, transform.position + (transform.right * bulletSpawn), transform.localRotation);
+        holder.GetComponent<Rigidbody>().velocity = transform.right * bulletSpeed;
         holder.GetComponent<BulletController>().bulletDamage = damage;
+        holder.GetComponent<BulletController>().SetType(type);
     }
 
     public void powerOn()
@@ -56,5 +58,10 @@ public class GunController : MonoBehaviour
     public void powerOff()
     {
         powered = false;
+    }
+    
+    public void SetType(PowerGenerator.Elemental element)
+    {
+        type = element;
     }
 }

@@ -11,17 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1269181928">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3356874461">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1094390354">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3497978461">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
+				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
 					<IncludedMemoryFiles>
 						<File Id="643898" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
@@ -34,6 +34,42 @@
 						<File Id="518679608" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
 							<Path>SFX\Pistol Shots GMTK_C6A4DE8C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.755252" DurationMax="1.224864">
+					<IncludedMemoryFiles>
+						<File Id="466470151" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_DAD1E115.wem</Path>
+						</File>
+						<File Id="509447025" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_F282A769.wem</Path>
+						</File>
+						<File Id="1032488285" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_45890641.wem</Path>
+						</File>
+						<File Id="1039773414" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_BF1C385D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2496290125" Name="FireShotgun" ObjectPath="\Events\Default Work Unit\Weapons\FireShotgun" DurationType="OneShot" DurationMin="1.128861" DurationMax="1.740225">
+					<IncludedMemoryFiles>
+						<File Id="449462211" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_B1B75750.wem</Path>
+						</File>
+						<File Id="836463758" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_6DF3A355.wem</Path>
+						</File>
+						<File Id="842778150" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_32703936.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -102,6 +138,70 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2054046796" Name="Line1" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line1" DurationType="OneShot" DurationMin="4.610152" DurationMax="4.610152">
+					<IncludedMemoryFiles>
+						<File Id="577769125" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_0FA3B668.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046799" Name="Line2" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line2" DurationType="OneShot" DurationMin="7.482245" DurationMax="7.482245">
+					<IncludedMemoryFiles>
+						<File Id="584110017" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_705B054D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046798" Name="Line3" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line3" DurationType="OneShot" DurationMin="7.662179" DurationMax="7.662179">
+					<IncludedMemoryFiles>
+						<File Id="215009283" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_7B474D98.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046793" Name="Line4" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line4" DurationType="OneShot" DurationMin="11.293247" DurationMax="11.293247">
+					<IncludedMemoryFiles>
+						<File Id="105379253" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_C95AFC14.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046792" Name="Line5" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line5" DurationType="OneShot" DurationMin="11.201444" DurationMax="11.201444">
+					<IncludedMemoryFiles>
+						<File Id="452681865" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_A06CB544.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046794" Name="Line7" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line7" DurationType="OneShot" DurationMin="14.318056" DurationMax="14.318056">
+					<IncludedMemoryFiles>
+						<File Id="326923306" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_33792D95.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046789" Name="Line8" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line8" DurationType="OneShot" DurationMin="13.349008" DurationMax="13.349008">
+					<IncludedMemoryFiles>
+						<File Id="832109984" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_FE1BB31B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046788" Name="Line9" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line9" DurationType="OneShot" DurationMin="4.332036" DurationMax="4.332036">
+					<IncludedMemoryFiles>
+						<File Id="265355656" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_69A68029.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
 					<IncludedMemoryFiles>
 						<File Id="633361544" Language="SFX">
@@ -126,7 +226,28 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1628310244" Name="StartLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StartLevelMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="476251438" Language="SFX">
+							<ShortName>StealthWav.wav</ShortName>
+							<Path>SFX\StealthWav_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2440264179" Name="StartMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StartMenuMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="323811426" Language="SFX">
+							<ShortName>StartMenuWav.wav</ShortName>
+							<Path>SFX\StartMenuWav_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1307992046" Name="StopLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StopLevelMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1973898857" Name="StopMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StopMenuMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3418139957" Name="Sneaking" ObjectPath="\Game Parameters\Default Work Unit\Sneaking"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
 					<Switches>

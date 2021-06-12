@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781458496086836
+    m_lastTime: -8585781379254862078
     List:
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
@@ -136,6 +136,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.321094
       minDuration: 0.213023
+    - name: FootstepStop
+      guid: e672253efe7986488db8d1aa84add7c2
+      id: 2064397943
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Player
+        ObjectType: 4
+        guid: 8d7abfd28c963d42a930e89e89397db6
+      - ElementName: FootstepStop
+        ObjectType: 3
+        guid: e672253efe7986488db8d1aa84add7c2
+      Path: Events\Default Work Unit\Player\FootstepStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player
       guid: 8d7abfd28c963d42a930e89e89397db6
       id: 1069431850

@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Game And Sound Project Files\Ableton Live\2021\GMTK GameJam 2021\"/>
 				<Property Name="Event Action List\{11FF36CF-B56D-45D4-9080-0159DD46CA6D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2907D30B-3206-463B-A93D-113C9A4DC195}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{54707E9C-86D3-462B-A2AE-0134CC689A50}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6CAAF3A4-2314-4BE4-B63D-636759FF73DB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6F19E92D-B019-4A1E-B8D7-571CE89D2F77}\x64_Expand States" Type="string" Value=""/>

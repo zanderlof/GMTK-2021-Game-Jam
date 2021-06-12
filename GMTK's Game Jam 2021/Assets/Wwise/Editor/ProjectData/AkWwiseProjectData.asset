@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780898728663109
+    m_lastTime: -8585780812419791988
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780888808121285
+    m_lastTime: -8585780812371494133
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -111,8 +111,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780888808056806
+    m_lastTime: -8585780812433864722
     List:
+    - name: FireAR
+      guid: 63ec88cb9bd41140bab1f0284fba7518
+      id: 408495308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: FireAR
+        ObjectType: 3
+        guid: 63ec88cb9bd41140bab1f0284fba7518
+      Path: Events\Default Work Unit\Weapons\FireAR
+      maxAttenuation: 0
+      maxDuration: 1.067931
+      minDuration: 0.775096
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
       id: 3866501340
@@ -131,8 +151,8 @@ MonoBehaviour:
         guid: 617e449767592148a2c8b4e857d4b977
       Path: Events\Default Work Unit\Weapons\FirePistol
       maxAttenuation: 0
-      maxDuration: 1.067931
-      minDuration: 0.775096
+      maxDuration: 1.224864
+      minDuration: 0.755252
     - name: FireShotgun
       guid: 2de9196f19b01e4ab8d7571ce89d2f77
       id: 2496290125
@@ -373,7 +393,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585780939976503726
+    m_lastTime: -8585780812433834721
     List:
     - name: Sneaking
       guid: 3316115213a1b74cbd2b4dc25f9fcb8c

@@ -115,7 +115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   playerSpeed: 5
-  speed: 250
   jumpForce: 25
 --- !u!114 &8853628464342859036
 MonoBehaviour:

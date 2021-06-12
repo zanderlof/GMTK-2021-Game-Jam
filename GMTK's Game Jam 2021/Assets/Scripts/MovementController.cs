@@ -12,7 +12,6 @@ public class MovementController : MonoBehaviour
     private bool moveLeft;
     private bool moveRight;
     private bool jump;
-    public float speed;
     public float jumpForce;
     private Rigidbody rb;
 
@@ -47,38 +46,39 @@ public class MovementController : MonoBehaviour
         /*control movement up and down*/
         if (moveForward)
         {
-            direction += Vector3.forward * speed * Time.deltaTime;
+            direction += transform.forward;
             moveForward = false;
 
         }
 
         if (moveBack)
         {
-            direction += Vector3.back * speed * Time.deltaTime;
+            direction += -transform.forward;
             moveBack = false;
         }
 
         /*control movement left and right*/
         if (moveRight)
         {
-            direction += Vector3.right * speed * Time.deltaTime;
+            direction += transform.right;
             moveRight = false;
         }
 
         if (moveLeft)
         {
-            direction += Vector3.left * speed * Time.deltaTime;
+            direction += -transform.right;
             moveLeft = false;
         }
 
         if (jump)
         {
-            direction += Vector3.up * jumpForce * Time.deltaTime;
+            direction += transform.up;
             jump = false;
         }
 
         //Translate this transform in direction.
-        transform.Translate(direction * Time.deltaTime * playerSpeed);
+        // transform.Translate(direction * Time.deltaTime * playerSpeed);
+        rb.MovePosition(rb.position + direction * Time.deltaTime * playerSpeed);
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 

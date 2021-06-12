@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
     public bool canMove;
+    public float playerSpeed;
 
     private bool moveForward;
     private bool moveBack;
@@ -13,6 +14,7 @@ public class MovementController : MonoBehaviour
     private bool jump;
     public float speed;
     public float jumpForce;
+    private Rigidbody rb;
 
     public enum LastMove
     {
@@ -25,7 +27,7 @@ public class MovementController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -47,7 +49,7 @@ public class MovementController : MonoBehaviour
         {
             direction += Vector3.forward * speed * Time.deltaTime;
             moveForward = false;
-            
+
         }
 
         if (moveBack)
@@ -76,7 +78,8 @@ public class MovementController : MonoBehaviour
         }
 
         //Translate this transform in direction.
-        transform.Translate(direction * Time.deltaTime);
+        transform.Translate(direction * Time.deltaTime * playerSpeed);
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 
     public void MoveForward()

@@ -16,6 +16,7 @@ public class PowerGenerator : MonoBehaviour
     private float distance;
     bool powering;
     bool previous;
+    private float powerleft = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class PowerGenerator : MonoBehaviour
         {
             gun.powerOn();
             powering = true;
+            powerleft -= Time.deltaTime;
         }
         else if(distance > powerDistance && powering)
         {
@@ -54,6 +56,11 @@ public class PowerGenerator : MonoBehaviour
             {
                 powerDown.Post(gameObject);
             }
+        }
+
+        if (powerleft <= 0)
+        {
+            gun.powerOff();
         }
     }
 

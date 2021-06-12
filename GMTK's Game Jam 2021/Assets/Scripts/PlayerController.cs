@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
         //JumpIsPressed = Input.GetKey(KeyCode.Space);
 
         Movement();
-        Aim();
+        // Aim();
+        //Replace in favour of controlling cam directly
     }
 
     public void Movement()
@@ -88,8 +89,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Aim()
-    {
-        transform.eulerAngles += lookSpeed * new Vector3(0, Input.GetAxis("Mouse X"), 0);
-    }
+    // public void Aim()
+    // {
+    //     transform.eulerAngles += lookSpeed * new Vector3(0, Input.GetAxis("Mouse X"), 0);
+    // }
 }

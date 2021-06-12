@@ -15,7 +15,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="1000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="16"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -32,7 +32,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1000</XPos>
+											<XPos>16</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -59,13 +59,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>501.7182</XPos>
+											<XPos>5.56312</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1000</XPos>
+											<XPos>16</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -89,19 +89,31 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>73.31043</XPos>
+											<XPos>1.17296688</XPos>
 											<YPos>100</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>184.42153</XPos>
-											<YPos>7.46742</YPos>
+											<XPos>2.50115</XPos>
+											<YPos>63.02299</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>14.71265</XPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1000</XPos>
+											<XPos>15.999</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>16</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

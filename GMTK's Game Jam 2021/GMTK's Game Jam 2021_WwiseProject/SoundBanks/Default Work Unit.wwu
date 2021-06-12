@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{477B70F4-5B32-488A-862E-CF389BF89600}">
 					<ObjectInclusionList>
+						<ObjectRef Name="FirePistol" ID="{97447E61-5967-4821-A2C8-B4E857D4B977}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8234E05D-C56C-4A67-8F98-19DAA8DAE980}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PowerDown" ID="{6CAAF3A4-2314-4BE4-B63D-636759FF73DB}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PowerUp" ID="{B21D1FD9-8838-4DE3-A852-BA54F3DCB342}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>

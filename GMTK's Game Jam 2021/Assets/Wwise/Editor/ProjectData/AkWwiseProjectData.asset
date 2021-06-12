@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781509946921670
+    m_lastTime: -8585781387942614026
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -170,7 +170,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4f3aa6c1423e44bb63d636759ff73db
       Path: Events\Default Work Unit\PowerSource\PowerDown
-      maxAttenuation: 1000
+      maxAttenuation: 16
       maxDuration: 1.40344
       minDuration: 1.40344
     - name: PowerSource
@@ -207,7 +207,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d91f1db23888e34da852ba54f3dcb342
       Path: Events\Default Work Unit\PowerSource\PowerUp
-      maxAttenuation: 1000
+      maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
     - name: Weapons

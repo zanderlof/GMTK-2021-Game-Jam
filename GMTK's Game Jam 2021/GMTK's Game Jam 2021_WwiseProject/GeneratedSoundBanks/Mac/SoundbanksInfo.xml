@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1557572610">
+		<SoundBank Id="3161908922" Language="SFX" Hash="789616296">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,15 +25,15 @@
 					<IncludedMemoryFiles>
 						<File Id="643898" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
-							<Path>SFX\Pistol Shots GMTK_B19E9581.wem</Path>
+							<Path>SFX\Pistol Shots GMTK_24E5BBAF.wem</Path>
 						</File>
 						<File Id="153030953" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
-							<Path>SFX\Pistol Shots GMTK_0A5CA308.wem</Path>
+							<Path>SFX\Pistol Shots GMTK_32D9FB1C.wem</Path>
 						</File>
 						<File Id="518679608" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
-							<Path>SFX\Pistol Shots GMTK_35C61AAC.wem</Path>
+							<Path>SFX\Pistol Shots GMTK_C6A4DE8C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -102,7 +102,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" MaxAttenuation="1000.000000" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
 					<IncludedMemoryFiles>
 						<File Id="633361544" Language="SFX">
 							<ShortName>GMTK PowerSource V1.wav</ShortName>
@@ -110,7 +110,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" MaxAttenuation="1000.000000" DurationType="Infinite">
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" MaxAttenuation="16.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="286418320" Language="SFX">
 							<ShortName>GMTK PowerSource VARIATION V1.wav</ShortName>

@@ -7,16 +7,11 @@ public class PlayerController : MonoBehaviour
     public MovementController movement;
     public float lookSpeed;
 
-    //sounds
-    public AK.Wwise.Event footsteps;
-
     bool ForwardIsPressed;
     bool BackIsPressed;
     bool LeftIsPressed;
     bool RightIsPressed;
     bool JumpIsPressed;
-    bool isMoving;
-    bool movementChange;
 
     // Start is called before the first frame update
     void Start()
@@ -58,33 +53,10 @@ public class PlayerController : MonoBehaviour
             movement.MoveLeft();
         }
 
-        if (LeftIsPressed || RightIsPressed || ForwardIsPressed || BackIsPressed)
-        {
-            isMoving = true;
-        }
-        else
-        {
-            isMoving = false;
-        }
-
         /*control movement Jumping*/
         if (JumpIsPressed)
         {
             movement.Jump();
-        }
-
-        if (movementChange != isMoving)
-        {
-            movementChange = isMoving;
-
-            if (isMoving)
-            {
-                footsteps.Post(gameObject);
-            }
-            else
-            {
-                footsteps.Stop(gameObject);
-            }
         }
     }
 

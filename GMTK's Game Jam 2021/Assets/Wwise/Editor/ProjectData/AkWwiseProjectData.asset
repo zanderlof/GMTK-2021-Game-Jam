@@ -66,7 +66,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585781378175811593
+=======
+    m_lastTime: -8585781387942614026
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,7 +98,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
+<<<<<<< HEAD
     m_lastTime: -8585781378176900159
+=======
+    m_lastTime: -8585781379254862078
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
     List:
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977

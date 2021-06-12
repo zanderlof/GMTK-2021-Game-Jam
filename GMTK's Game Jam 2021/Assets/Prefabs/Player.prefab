@@ -13,7 +13,11 @@ GameObject:
   - component: {fileID: 8853628464342859039}
   - component: {fileID: 8853628464342859038}
   - component: {fileID: 8853628464342859037}
+<<<<<<< HEAD
   - component: {fileID: -2377233643946429423}
+=======
+  - component: {fileID: 8853628464342859036}
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -112,7 +116,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
+<<<<<<< HEAD
 --- !u!114 &-2377233643946429423
+=======
+--- !u!114 &8853628464342859036
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,11 +133,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 8853628464342859037}
+<<<<<<< HEAD
   lookSpeed: 10
   footsteps:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4d82e6c0c500d18468d574ebf59e9f3d, type: 2}
+=======
+  lookSpeed: 1
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
 --- !u!1 &8853628464697891728
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +254,15 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
   bulletSpeed: 2
+<<<<<<< HEAD
   fireBullet:
+=======
+  powerUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  powerDown:
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

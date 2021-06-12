@@ -14,6 +14,17 @@ public class MovementController : MonoBehaviour
     private bool moveRight;
     private bool jump;
 
+<<<<<<< HEAD
+=======
+    public enum LastMove
+    {
+        Forward = 0,
+        Right,
+        Back,
+        Left
+    }
+
+>>>>>>> parent of 5f01a98 (Add basic Aitest scene and some changes)
     // Start is called before the first frame update
     void Start()
     {

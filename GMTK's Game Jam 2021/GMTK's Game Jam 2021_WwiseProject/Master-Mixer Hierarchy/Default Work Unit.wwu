@@ -22,6 +22,9 @@
 							</PropertyList>
 							<ObjectLists/>
 						</Bus>
+						<Bus Name="Dialouge" ID="{76D92C57-6238-4D6E-96B7-8725AD0AA3C7}">
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

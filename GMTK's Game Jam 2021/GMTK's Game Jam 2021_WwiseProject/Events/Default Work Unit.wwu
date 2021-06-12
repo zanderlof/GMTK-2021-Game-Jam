@@ -211,6 +211,124 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Dialouge" ID="{6F63307E-8466-42F3-845E-E07FD45934C3}" ShortID="718305912">
+					<ChildrenList>
+						<Folder Name="Level1" ID="{6CC13BFB-155F-4DB8-8FA9-83EBC44FA88C}" ShortID="912581415">
+							<ChildrenList>
+								<Event Name="Line1" ID="{7E6CC4EB-D23B-4F80-BB7A-2C39CE698613}">
+									<ChildrenList>
+										<Action Name="" ID="{D2E32A6D-E4DE-4AA4-B868-B6DBC300EBAF}" ShortID="479920123">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge" ID="{125363DF-7BAB-47D5-AB69-84B7896B2F27}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line2" ID="{4EDEC4D8-0F99-4E21-8CDE-4F77D8D96205}">
+									<ChildrenList>
+										<Action Name="" ID="{76449988-0272-48C9-94BA-F787F0DA933B}" ShortID="1051172840">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_01" ID="{1F174F2C-1149-4403-A1AF-CD2427616B15}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line3" ID="{68724553-9BCE-4B4D-B6F6-EDA0F020F9BC}">
+									<ChildrenList>
+										<Action Name="" ID="{836959FA-FADF-4203-8AE1-D3DDC31150BD}" ShortID="360414557">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_03" ID="{8B7FBE13-4874-44C1-A006-1AC662975995}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line4" ID="{2647E425-D912-41AC-BA10-38BD6A4EB0A2}">
+									<ChildrenList>
+										<Action Name="" ID="{268DEBBC-6B28-4398-9C4B-D2FC3E8210C0}" ShortID="335356913">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_02" ID="{E3B1BE4D-AC6B-43BE-AA28-77F59061E4AD}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line5" ID="{FC27DE9E-1DFF-4B45-A5B4-C9834498B010}">
+									<ChildrenList>
+										<Action Name="" ID="{F17E932B-A6A7-4AFC-B3FD-E2075D1F6375}" ShortID="248628384">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_04" ID="{FC6A3E9F-BC4B-4B08-8061-6F6B987E46C8}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line7" ID="{935143DD-901F-4A98-B813-771C128F7C5C}">
+									<ChildrenList>
+										<Action Name="" ID="{82DA0049-2633-41C5-956C-7984925B9E7E}" ShortID="129859750">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_05" ID="{859FFCF0-9DF6-4800-A05E-5617D8E07BF9}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line8" ID="{10D5B48C-CBC6-450B-BEA3-BDD021BA30C0}">
+									<ChildrenList>
+										<Action Name="" ID="{FED01C39-0698-4B3E-B1F5-63E64254EA4F}" ShortID="632283414">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_06" ID="{DDD32A83-65FE-43DA-979D-3AE14BB8A27C}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line9" ID="{F02AB433-D470-4AF5-AC7C-A8C7DBA100A7}">
+									<ChildrenList>
+										<Action Name="" ID="{B4E5355A-CDED-475D-AF09-246D258AA48C}" ShortID="224923352">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge_07" ID="{7D697BC9-69E1-400C-AB81-B5EFA238A098}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line6" ID="{991C3739-2400-43D7-90BA-174FBC31A406}">
+									<ChildrenList>
+										<Action Name="" ID="{0991547D-3D82-4011-995E-554B988A4708}" ShortID="648005234">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge Line 6" ID="{1642F054-DF4C-4F20-9EF7-5DD495A84B98}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Line10" ID="{B76A9ACF-33C2-467C-A5DD-EECB99D1DEB2}">
+									<ChildrenList>
+										<Action Name="" ID="{7B1B7EF7-3750-4D67-9704-71126CE90581}" ShortID="350692317">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level 1 Dialouge Line 10" ID="{2B4FC685-CB40-4D43-BEAD-B31940026CB6}" WorkUnitID="{123DFB89-27FE-4865-A183-479321D4E628}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

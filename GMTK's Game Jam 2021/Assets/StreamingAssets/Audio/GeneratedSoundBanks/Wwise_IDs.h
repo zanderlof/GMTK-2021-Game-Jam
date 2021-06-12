@@ -22,9 +22,9 @@ namespace AK
         static const AkUniqueID LINE3 = 2054046798U;
         static const AkUniqueID LINE4 = 2054046793U;
         static const AkUniqueID LINE5 = 2054046792U;
-        static const AkUniqueID LINE6 = 2054046795U;
         static const AkUniqueID LINE7 = 2054046794U;
         static const AkUniqueID LINE8 = 2054046789U;
+        static const AkUniqueID LINE9 = 2054046788U;
         static const AkUniqueID POWERDOWN = 2715854868U;
         static const AkUniqueID POWERUP = 3950429679U;
         static const AkUniqueID STARTLEVELMUSIC = 1628310244U;
@@ -77,6 +77,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID DIALOUGE = 3362655095U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES

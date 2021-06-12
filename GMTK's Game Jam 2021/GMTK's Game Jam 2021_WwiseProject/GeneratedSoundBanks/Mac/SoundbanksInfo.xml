@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2525664389">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1853232203">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3707664905">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3497978461">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -154,19 +154,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2054046798" Name="Line3" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line3" DurationType="OneShot" DurationMin="11.157806" DurationMax="11.157806">
-					<IncludedMemoryFiles>
-						<File Id="105379253" Language="SFX">
-							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_935F59B1.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2054046793" Name="Line4" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line4" DurationType="OneShot" DurationMin="7.662179" DurationMax="7.662179">
+				<Event Id="2054046798" Name="Line3" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line3" DurationType="OneShot" DurationMin="7.662179" DurationMax="7.662179">
 					<IncludedMemoryFiles>
 						<File Id="215009283" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
 							<Path>SFX\Level 1 Dialouge_7B474D98.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046793" Name="Line4" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line4" DurationType="OneShot" DurationMin="11.293247" DurationMax="11.293247">
+					<IncludedMemoryFiles>
+						<File Id="105379253" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_C95AFC14.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -178,7 +178,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2054046795" Name="Line6" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line6" DurationType="OneShot" DurationMin="14.318056" DurationMax="14.318056">
+				<Event Id="2054046794" Name="Line7" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line7" DurationType="OneShot" DurationMin="14.318056" DurationMax="14.318056">
 					<IncludedMemoryFiles>
 						<File Id="326923306" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
@@ -186,7 +186,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2054046794" Name="Line7" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line7" DurationType="OneShot" DurationMin="13.349008" DurationMax="13.349008">
+				<Event Id="2054046789" Name="Line8" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line8" DurationType="OneShot" DurationMin="13.349008" DurationMax="13.349008">
 					<IncludedMemoryFiles>
 						<File Id="832109984" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
@@ -194,7 +194,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2054046789" Name="Line8" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line8" DurationType="OneShot" DurationMin="4.332036" DurationMax="4.332036">
+				<Event Id="2054046788" Name="Line9" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line9" DurationType="OneShot" DurationMin="4.332036" DurationMax="4.332036">
 					<IncludedMemoryFiles>
 						<File Id="265355656" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>

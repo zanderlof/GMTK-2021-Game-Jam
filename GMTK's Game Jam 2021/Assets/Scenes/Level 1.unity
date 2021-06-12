@@ -437,6 +437,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+<<<<<<< Updated upstream
       propertyPath: bulletSpawn
       value: 0.6
       objectReference: {fileID: 0}
@@ -445,6 +446,8 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+=======
+>>>>>>> Stashed changes
       propertyPath: powerUp.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: af64f9aa4b032e84490c278980c3614d, type: 2}
@@ -452,10 +455,6 @@ PrefabInstance:
       propertyPath: powerDown.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}
-    - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: fireBullet.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_RootOrder
       value: 3

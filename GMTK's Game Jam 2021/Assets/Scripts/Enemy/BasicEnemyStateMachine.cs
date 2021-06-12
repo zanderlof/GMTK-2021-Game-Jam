@@ -15,6 +15,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
 
     [Header("Roaming")]
     [SerializeField] Transform[] patrolPoints;
+    [SerializeField] float RoamSpeed = 3;
     [SerializeField] bool isStill;
     [SerializeField] float viewRadius;
     [SerializeField] float senseRadius;
@@ -24,6 +25,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     [SerializeField] float shootStoppingDist = 10;
     [SerializeField] float fireRate = 2;
     [SerializeField] float minEngageDist = 10;
+    [SerializeField] float shootingMovementSpeed = 5;
     public enum enemyState
     {
         Roam,
@@ -59,13 +61,15 @@ public class BasicEnemyStateMachine : MonoBehaviour
                 //agent Changes
                 enemy.updateRotation = false;
                 enemy.stoppingDistance = shootStoppingDist;
+                enemy.speed = shootingMovementSpeed;
                 //agent changes
                 break;
             case enemyState.Roam:
                 Roam();
                 //agent Changes
-                enemy.updateRotation = true;
+                enemy.updateRotation = LineOfSighCheck ? false : true;
                 enemy.stoppingDistance = 0;
+                enemy.speed = RoamSpeed;
                 //agent changes
                 break;
         }

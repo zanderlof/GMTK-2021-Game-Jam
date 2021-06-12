@@ -9,15 +9,11 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        deathTime -= Time.deltaTime;
-        if (deathTime <= 0)
-        {
-            Object.Destroy(gameObject);
-        }
+        Destroy(gameObject, deathTime);
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        Object.Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

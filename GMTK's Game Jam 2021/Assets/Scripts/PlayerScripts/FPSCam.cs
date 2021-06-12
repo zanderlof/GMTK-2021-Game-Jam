@@ -10,11 +10,31 @@ public class FPSCam : MonoBehaviour
     float camXRot;
     Transform playerBody;
 
+    //editor variables
+    [SerializeField] bool lockCursor = true;
+
     private void Start()
     {
         playerBody = transform.parent;
     }
+
+    void Awake()
+    {
+        if (lockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
     private void Update()
+    {
+        if (lockCursor && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+    }
+
+    private void FixedUpdate()
     {
         //Get Mouse Pos
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;

@@ -23,8 +23,7 @@ public class GunController : MonoBehaviour
         previous = false;
     }
 
-    //editor variables
-    [SerializeField] bool lockCursor = true;
+
 
     // Update is called once per frame
     void Update()
@@ -37,20 +36,8 @@ public class GunController : MonoBehaviour
         {
             Shoot();
         }
-
-        if (lockCursor && Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
-        }
     }
 
-    void Awake()
-    {
-        if (lockCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-    }
 
     public void Shoot()
     {

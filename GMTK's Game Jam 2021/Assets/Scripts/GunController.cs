@@ -44,8 +44,8 @@ public class GunController : MonoBehaviour
     public void Shoot()
     {
         fireBullet.Post(gameObject);
-        GameObject holder = Instantiate(bullet, transform.position + (transform.forward * bulletSpawn), transform.localRotation);
-        holder.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
+        GameObject holder = Instantiate(bullet, transform.position + (transform.right * bulletSpawn), transform.localRotation);
+        holder.GetComponent<Rigidbody>().velocity = transform.right * bulletSpeed;
         holder.GetComponent<BulletController>().bulletDamage = damage;
         holder.GetComponent<BulletController>().SetType(type);
     }

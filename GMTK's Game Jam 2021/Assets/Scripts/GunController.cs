@@ -8,10 +8,12 @@ public class GunController : MonoBehaviour
     public GameObject bullet;
     public float bulletSpeed;
 
+    private bool powered;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        powered = false;
     }
 
     // Update is called once per frame
@@ -21,7 +23,7 @@ public class GunController : MonoBehaviour
         transform.eulerAngles += player.lookSpeed * new Vector3(-Input.GetAxis("Mouse Y"), 0, 0);
 
         //attacking
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && powered)
         {
             Shoot();
         }
@@ -31,5 +33,15 @@ public class GunController : MonoBehaviour
     {
         GameObject holder = Instantiate(bullet, transform.position, transform.localRotation);
         holder.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
+    }
+
+    public void powerOn()
+    {
+        powered = true;
+    }
+
+    public void powerOff()
+    {
+        powered = false;
     }
 }

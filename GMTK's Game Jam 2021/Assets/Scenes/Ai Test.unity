@@ -4605,7 +4605,6 @@ MonoBehaviour:
   - {fileID: 5999230235589318178, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
   enemySpawnThreshold: 3
   enemySpawnPoint: {fileID: 157353423}
-  Alarm: 0
 --- !u!33 &400464602177217667
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5535,7 +5534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327947938363255181}
   m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 4.365, y: 1.296499, z: -21.629}
+  m_LocalPosition: {x: 2.44, y: 1.296499, z: -21.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2327947938108459068}
@@ -6369,6 +6368,7 @@ MonoBehaviour:
   gun: {fileID: 146284111}
   powerDistance: 7
   powerleft: 60
+  noEnemyAlert: 0
   elemCurrent: 0
   interactDistance: 2
   powerUp:

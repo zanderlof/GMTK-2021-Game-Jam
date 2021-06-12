@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Power Source
       objectReference: {fileID: 0}
+    - target: {fileID: 5092479634260979119, guid: e49ddc5c01460784caef29e1c6527c18, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 1695113920}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49ddc5c01460784caef29e1c6527c18, type: 3}
 --- !u!1001 &1523174873
@@ -477,6 +481,18 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+      propertyPath: powerUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: af64f9aa4b032e84490c278980c3614d, type: 2}
+    - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+      propertyPath: powerDown.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}
+    - target: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+      propertyPath: fireBullet.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
     - target: {fileID: 8853628464342859025, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -580,5 +596,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1695113920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 208534807367269188, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+  m_PrefabInstance: {fileID: 1523174873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

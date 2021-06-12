@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+    //public variables
     public PlayerController player;
     public GameObject bullet;
     public float bulletSpeed;
 
+    //sounds
+    public AK.Wwise.Event powerUp;
+    public AK.Wwise.Event powerDown;
+    public AK.Wwise.Event fireBullet;
+
+    //private variables
     private bool powered;
+    private bool previous;
 
     // Start is called before the first frame update
     void Start()
     {
         powered = false;
+        previous = false;
     }
 
     // Update is called once per frame
@@ -27,10 +36,27 @@ public class GunController : MonoBehaviour
         {
             Shoot();
         }
+
+        if (powered != previous)
+        {
+            previous = powered;
+
+            if(powered)
+            {
+                powerUp.Post(gameObject);
+                //AkSoundEngine.PostEvent("PowerUp", gameObject);
+            }
+            else
+            {
+                powerDown.Post(gameObject);
+                //AkSoundEngine.PostEvent("PowerDown", gameObject);
+            }
+        }
     }
 
     public void Shoot()
     {
+        fireBullet.Post(gameObject);
         GameObject holder = Instantiate(bullet, transform.position, transform.localRotation);
         holder.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
     }

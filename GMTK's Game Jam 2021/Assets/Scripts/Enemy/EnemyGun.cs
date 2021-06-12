@@ -24,6 +24,6 @@ public class EnemyGun : MonoBehaviour
     public void Shoot()
     {
         GameObject shotBullet = Instantiate(bullet, shootPos.position, shootPos.rotation);
-        shotBullet.GetComponent<Rigidbody>().AddForce(shootPos.forward * 100);
+        shotBullet.GetComponent<Rigidbody>().AddForce(shootPos.forward * 1000);
     }
 }

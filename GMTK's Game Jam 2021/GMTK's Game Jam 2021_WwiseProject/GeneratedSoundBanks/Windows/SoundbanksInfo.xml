@@ -16,11 +16,27 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1605301701">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1557572610">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
+					<IncludedMemoryFiles>
+						<File Id="643898" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_B19E9581.wem</Path>
+						</File>
+						<File Id="153030953" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_0A5CA308.wem</Path>
+						</File>
+						<File Id="518679608" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_35C61AAC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" DurationType="OneShot" DurationMin="0.213023" DurationMax="0.321094">
 					<IncludedMemoryFiles>
 						<File Id="120745981" Language="SFX">

@@ -71,6 +71,25 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Weapons" ID="{2C578678-690C-4132-A55A-D2A39B8FAA02}" ShortID="216208702">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="FirePistol" ID="{97447E61-5967-4821-A2C8-B4E857D4B977}">
+							<ChildrenList>
+								<Action Name="" ID="{A3EF2FE5-AF4C-4C79-A22D-5A72E2A05D92}" ShortID="839529845">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PistolShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

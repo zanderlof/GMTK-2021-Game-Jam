@@ -664,6 +664,141 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Weapons" ID="{F1D210FA-6587-4F7F-BF7F-5C855F1A10B3}" ShortID="11912636">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="PistolShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" ShortID="31889689">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{438FE92F-A10A-43DD-BA22-2588294505D1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="152"/>
+													<Property Name="Min" Type="Real64" Value="-101"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4F13710F-A8C3-420E-A492-AEA6C2CB2759}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Pistol Shots GMTK" ID="{D1B06592-65FC-44FC-8350-9DA35A9B396F}" ShortID="926843505">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.268642917726887"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.21560920271416"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="518679608"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pistol Shots GMTK_01" ID="{436AE0B9-5CED-492C-84F1-EFD3E09478EF}" ShortID="654984929">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.94766115351993"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.79388634435963"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643898"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pistol Shots GMTK_02" ID="{A0779128-85EE-419B-B6FC-DE586F1F4E07}" ShortID="66310978">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.61324724342663"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.62065818490247"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="153030953"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -111,10 +111,12 @@ public class MovementController : MonoBehaviour
     {
         transform.localScale = new Vector3(1, 0.5f, 1);
         transform.position += Vector3.down * 0.4f;
+        transform.GetChild(0).GetChild(0).localScale += Vector3.up * 0.1f;
     }
 
     public void Stand()
     {
         transform.localScale = new Vector3(1, 1, 1);
+        transform.GetChild(0).GetChild(0).localScale -= Vector3.up * 0.1f;
     }
 }

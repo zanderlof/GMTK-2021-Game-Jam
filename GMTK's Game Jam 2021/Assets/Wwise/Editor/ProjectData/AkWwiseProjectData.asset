@@ -239,8 +239,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585781166442875248
-    List: []
+    m_lastTime: -8585780946934303071
+    List:
+    - name: Sneaking
+      guid: 3316115213a1b74cbd2b4dc25f9fcb8c
+      id: 3418139957
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 05fc9389b9d9ba4b80dc61d028557457
+      - ElementName: Sneaking
+        ObjectType: 13
+        guid: 3316115213a1b74cbd2b4dc25f9fcb8c
+      Path: Game Parameters\Default Work Unit\Sneaking
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

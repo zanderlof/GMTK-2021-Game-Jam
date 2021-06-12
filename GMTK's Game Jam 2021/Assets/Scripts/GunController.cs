@@ -21,13 +21,20 @@ public class GunController : MonoBehaviour
     {
         powered = false;
         previous = false;
+                if(lockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
+
+    [SerializeField] bool lockCursor;
 
     // Update is called once per frame
     void Update()
     {
         //aim gun up and down
         transform.eulerAngles += player.lookSpeed * new Vector3(-Input.GetAxis("Mouse Y"), 0, 0);
+        if(Input.GetKeyDown(KeyCode.Escape)){Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;}
 
         //attacking
         if (Input.GetKeyDown(KeyCode.Mouse0) && powered)

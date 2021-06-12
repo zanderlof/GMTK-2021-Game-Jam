@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1422979344">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2826789083">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -41,19 +41,19 @@
 					<IncludedMemoryFiles>
 						<File Id="466470151" Language="SFX">
 							<ShortName>AR Sounds GMTK.wav</ShortName>
-							<Path>SFX\AR Sounds GMTK_553A15C0.wem</Path>
+							<Path>SFX\AR Sounds GMTK_DAD1E115.wem</Path>
 						</File>
 						<File Id="509447025" Language="SFX">
 							<ShortName>AR Sounds GMTK.wav</ShortName>
-							<Path>SFX\AR Sounds GMTK_3327A735.wem</Path>
+							<Path>SFX\AR Sounds GMTK_F282A769.wem</Path>
 						</File>
 						<File Id="1032488285" Language="SFX">
 							<ShortName>AR Sounds GMTK.wav</ShortName>
-							<Path>SFX\AR Sounds GMTK_224FA3DD.wem</Path>
+							<Path>SFX\AR Sounds GMTK_45890641.wem</Path>
 						</File>
 						<File Id="1039773414" Language="SFX">
 							<ShortName>AR Sounds GMTK.wav</ShortName>
-							<Path>SFX\AR Sounds GMTK_C86F1C50.wem</Path>
+							<Path>SFX\AR Sounds GMTK_BF1C385D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

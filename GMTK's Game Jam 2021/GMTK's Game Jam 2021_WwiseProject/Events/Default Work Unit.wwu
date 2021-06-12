@@ -178,6 +178,39 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Enemy" ID="{F57BDF1C-ABCD-49EC-98D8-73B8715C182D}" ShortID="55496440">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="EnemyFootsteps" ID="{2907D30B-3206-463B-A93D-113C9A4DC195}">
+							<ChildrenList>
+								<Action Name="" ID="{8F6F80AD-9DAC-4946-BFAF-C2CEE934408F}" ShortID="834567065">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyFootsteps" ID="{C7A91899-CDE7-4C32-9C0F-466CC2741DED}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopEnemyFootsteps" ID="{FEF171B6-5A41-4871-A70F-3408787A3008}">
+							<ChildrenList>
+								<Action Name="" ID="{3907E2D5-2B58-4213-95E1-A43E6077D2B2}" ShortID="973250159">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyFootsteps" ID="{C7A91899-CDE7-4C32-9C0F-466CC2741DED}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

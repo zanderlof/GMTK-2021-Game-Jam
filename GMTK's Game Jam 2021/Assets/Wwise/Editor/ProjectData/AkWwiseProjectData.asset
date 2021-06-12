@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780812419791988
+    m_lastTime: -8585780750560222312
     List:
+    - name: Dialouge
+      guid: 572cd97638626e4d96b78725ad0aa3c7
+      id: 3362655095
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 343a6dae72fd0b41826c85d6a308ddb2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialouge
+        ObjectType: 2
+        guid: 572cd97638626e4d96b78725ad0aa3c7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialouge
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -83,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780802709738858
+    m_lastTime: -8585780750555559954
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -111,8 +128,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780802710348368
+    m_lastTime: -8585780750577047747
     List:
+    - name: Dialouge
+      guid: 7e30636f6684f342845ee07fd45934c3
+      id: 3362655095
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      Path: Events\Default Work Unit\Dialouge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy
       guid: 1cdf7bf5cdabec4998d873b8715c182d
       id: 2299321487
@@ -230,6 +264,256 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Level1
+      guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      id: 2678230382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      Path: Events\Default Work Unit\Dialouge\Level1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line1
+      guid: ebc46c7e3bd2804fbb7a2c39ce698613
+      id: 2054046796
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line1
+        ObjectType: 3
+        guid: ebc46c7e3bd2804fbb7a2c39ce698613
+      Path: Events\Default Work Unit\Dialouge\Level1\Line1
+      maxAttenuation: 0
+      maxDuration: 4.610152
+      minDuration: 4.610152
+    - name: Line10
+      guid: cf9a6ab7c2337c46a5ddeecb99d1deb2
+      id: 127239060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line10
+        ObjectType: 3
+        guid: cf9a6ab7c2337c46a5ddeecb99d1deb2
+      Path: Events\Default Work Unit\Dialouge\Level1\Line10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line2
+      guid: d8c4de4e990f214e8cde4f77d8d96205
+      id: 2054046799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line2
+        ObjectType: 3
+        guid: d8c4de4e990f214e8cde4f77d8d96205
+      Path: Events\Default Work Unit\Dialouge\Level1\Line2
+      maxAttenuation: 0
+      maxDuration: 7.482245
+      minDuration: 7.482245
+    - name: Line3
+      guid: 53457268ce9b4d4bb6f6eda0f020f9bc
+      id: 2054046798
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line3
+        ObjectType: 3
+        guid: 53457268ce9b4d4bb6f6eda0f020f9bc
+      Path: Events\Default Work Unit\Dialouge\Level1\Line3
+      maxAttenuation: 0
+      maxDuration: 7.662179
+      minDuration: 7.662179
+    - name: Line4
+      guid: 25e4472612d9ac41ba1038bd6a4eb0a2
+      id: 2054046793
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line4
+        ObjectType: 3
+        guid: 25e4472612d9ac41ba1038bd6a4eb0a2
+      Path: Events\Default Work Unit\Dialouge\Level1\Line4
+      maxAttenuation: 0
+      maxDuration: 11.293247
+      minDuration: 11.293247
+    - name: Line5
+      guid: 9ede27fcff1d454ba5b4c9834498b010
+      id: 2054046792
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line5
+        ObjectType: 3
+        guid: 9ede27fcff1d454ba5b4c9834498b010
+      Path: Events\Default Work Unit\Dialouge\Level1\Line5
+      maxAttenuation: 0
+      maxDuration: 11.201444
+      minDuration: 11.201444
+    - name: Line6
+      guid: 39371c990024d74390ba174fbc31a406
+      id: 2054046795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line6
+        ObjectType: 3
+        guid: 39371c990024d74390ba174fbc31a406
+      Path: Events\Default Work Unit\Dialouge\Level1\Line6
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line7
+      guid: dd4351931f90984ab813771c128f7c5c
+      id: 2054046794
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line7
+        ObjectType: 3
+        guid: dd4351931f90984ab813771c128f7c5c
+      Path: Events\Default Work Unit\Dialouge\Level1\Line7
+      maxAttenuation: 0
+      maxDuration: 14.318056
+      minDuration: 14.318056
+    - name: Line8
+      guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
+      id: 2054046789
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line8
+        ObjectType: 3
+        guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
+      Path: Events\Default Work Unit\Dialouge\Level1\Line8
+      maxAttenuation: 0
+      maxDuration: 13.349008
+      minDuration: 13.349008
+    - name: Line9
+      guid: 33b42af070d4f54aac7ca8c7dba100a7
+      id: 2054046788
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line9
+        ObjectType: 3
+        guid: 33b42af070d4f54aac7ca8c7dba100a7
+      Path: Events\Default Work Unit\Dialouge\Level1\Line9
+      maxAttenuation: 0
+      maxDuration: 4.332036
+      minDuration: 4.332036
     - name: Music
       guid: b06121cb992c24458e6b783a61bf1202
       id: 3991942870

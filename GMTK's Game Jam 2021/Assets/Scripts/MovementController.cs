@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+    //public variables
     public bool canMove;
 
+    //private variables
     private bool moveForward;
     private bool moveBack;
     private bool moveLeft;
     private bool moveRight;
     private bool jump;
-
-    public enum LastMove
-    {
-        Forward = 0,
-        Right,
-        Back,
-        Left
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +39,6 @@ public class MovementController : MonoBehaviour
         {
             direction += Vector3.forward;
             moveForward = false;
-            
         }
 
         if (moveBack)

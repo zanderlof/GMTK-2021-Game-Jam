@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+    //public
     public bool canMove;
     public float playerSpeed;
+    public float knockBackStunTime = 1f;
 
+    //private
     private bool moveForward;
     private bool moveBack;
     private bool moveLeft;
@@ -14,6 +17,7 @@ public class MovementController : MonoBehaviour
     private bool jump;
     public float jumpForce;
     private Rigidbody rb;
+    [HideInInspector] public bool knockedBack;
 
     public enum LastMove
     {
@@ -32,10 +36,20 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
+        if (canMove && !knockedBack)
         {
             Movement();
         }
+        if (knockedBack)
+        {
+            StartCoroutine(KnockBackRevert());
+        }
+    }
+
+    IEnumerator KnockBackRevert()
+    {
+        yield return new WaitForSeconds(knockBackStunTime);
+        knockedBack = false;
     }
 
     void Movement()

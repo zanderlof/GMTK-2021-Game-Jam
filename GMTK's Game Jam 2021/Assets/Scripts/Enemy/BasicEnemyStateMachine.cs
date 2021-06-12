@@ -144,6 +144,13 @@ public class BasicEnemyStateMachine : MonoBehaviour
             nextTimeToShoot = Time.time + 1 / fireRate;
         }
 
+        // if (closeBy)
+        // {
+        //     player.GetComponent<MovementController>().knockedBack = true;
+        //     player.GetComponent<Rigidbody>().AddForce(-player.transform.forward * 0.25f, ForceMode.Impulse);
+        //     player.GetComponent<Rigidbody>().AddForce(player.transform.up * 0.25f, ForceMode.Impulse);
+        // }
+
         if (Vector3.Distance(player.position, transform.position) >= minEngageDist && !LineOfSighCheck)
         {
             state = enemyState.Roam;

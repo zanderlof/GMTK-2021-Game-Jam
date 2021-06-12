@@ -1464,6 +1464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7394535126245182351}
   - component: {fileID: 6995238085465894355}
+  - component: {fileID: 4107382219838625629}
   m_Layer: 0
   m_Name: PowerSource
   m_TagString: Untagged
@@ -1521,6 +1522,20 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 01baadd8d04084b4ab15a6a105dc85e6, type: 2}
+--- !u!136 &4107382219838625629
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914366234207867189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.69
+  m_Height: 2.54
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.25, z: 0}
 --- !u!1 &8434227541160571311
 GameObject:
   m_ObjectHideFlags: 0

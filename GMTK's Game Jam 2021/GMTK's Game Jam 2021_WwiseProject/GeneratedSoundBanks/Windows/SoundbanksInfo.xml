@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3171450434">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1605301701">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,43 +25,43 @@
 					<IncludedMemoryFiles>
 						<File Id="120745981" Language="SFX">
 							<ShortName>Metal footsteps-1.WAV</ShortName>
-							<Path>SFX\Metal footsteps-1_1B59AEA7.wem</Path>
+							<Path>SFX\Metal footsteps-1_BE2A7081.wem</Path>
 						</File>
 						<File Id="154598439" Language="SFX">
 							<ShortName>Tile Footsteps.WAV</ShortName>
-							<Path>SFX\Tile Footsteps_5A602735.wem</Path>
+							<Path>SFX\Tile Footsteps_A49F0A94.wem</Path>
 						</File>
 						<File Id="221413942" Language="SFX">
 							<ShortName>Tile Footsteps.WAV</ShortName>
-							<Path>SFX\Tile Footsteps_04E76CEE.wem</Path>
+							<Path>SFX\Tile Footsteps_8964884B.wem</Path>
 						</File>
 						<File Id="234352725" Language="SFX">
 							<ShortName>Tile Footsteps.WAV</ShortName>
-							<Path>SFX\Tile Footsteps_E56C8329.wem</Path>
+							<Path>SFX\Tile Footsteps_F847B441.wem</Path>
 						</File>
 						<File Id="264691709" Language="SFX">
 							<ShortName>Tile Footsteps.WAV</ShortName>
-							<Path>SFX\Tile Footsteps_C2543860.wem</Path>
+							<Path>SFX\Tile Footsteps_39F517A8.wem</Path>
 						</File>
 						<File Id="347570575" Language="SFX">
 							<ShortName>Tile Footsteps.WAV</ShortName>
-							<Path>SFX\Tile Footsteps_7C05F0E6.wem</Path>
+							<Path>SFX\Tile Footsteps_09F14C38.wem</Path>
 						</File>
 						<File Id="619807268" Language="SFX">
 							<ShortName>Metal footsteps-1.WAV</ShortName>
-							<Path>SFX\Metal footsteps-1_9ACC7220.wem</Path>
+							<Path>SFX\Metal footsteps-1_036B64E3.wem</Path>
 						</File>
 						<File Id="625583277" Language="SFX">
 							<ShortName>Metal footsteps-1.WAV</ShortName>
-							<Path>SFX\Metal footsteps-1_7FDF7E00.wem</Path>
+							<Path>SFX\Metal footsteps-1_809BCE3D.wem</Path>
 						</File>
 						<File Id="689818044" Language="SFX">
 							<ShortName>Metal footsteps-1.WAV</ShortName>
-							<Path>SFX\Metal footsteps-1_FF1F5F81.wem</Path>
+							<Path>SFX\Metal footsteps-1_8C75F558.wem</Path>
 						</File>
 						<File Id="889141521" Language="SFX">
 							<ShortName>Metal footsteps-1.WAV</ShortName>
-							<Path>SFX\Metal footsteps-1_2F19B5A1.wem</Path>
+							<Path>SFX\Metal footsteps-1_711C5136.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{707CE113-0104-461F-919C-7C86EF71121C}</DefaultSwitchValue>

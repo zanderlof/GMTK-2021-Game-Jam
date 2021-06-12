@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class PowerGenerator : MonoBehaviour
 {
+    //public variables
     public GunController gun;
     public float powerDistance;
 
+    //sounds
+    public AK.Wwise.Event powerUp;
+    public AK.Wwise.Event powerDown;
+
+    //private variables
     private float distance;
     bool powering;
+    bool previous;
 
     // Start is called before the first frame update
     void Start()
     {
         powering = false;
+        previous = false;
     }
 
     // Update is called once per frame
@@ -34,6 +42,19 @@ public class PowerGenerator : MonoBehaviour
             powering = false;
         }
 
+        if (powering != previous)
+        {
+            previous = powering;
+
+            if (powering)
+            {
+                powerUp.Post(gameObject);
+            }
+            else
+            {
+                powerDown.Post(gameObject);
+            }
+        }
     }
 
     

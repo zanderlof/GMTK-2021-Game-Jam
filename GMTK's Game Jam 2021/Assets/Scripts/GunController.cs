@@ -10,8 +10,6 @@ public class GunController : MonoBehaviour
     public float bulletSpeed;
 
     //sounds
-    public AK.Wwise.Event powerUp;
-    public AK.Wwise.Event powerDown;
     public AK.Wwise.Event fireBullet;
 
     //private variables
@@ -37,21 +35,7 @@ public class GunController : MonoBehaviour
             Shoot();
         }
 
-        if (powered != previous)
-        {
-            previous = powered;
-
-            if(powered)
-            {
-                powerUp.Post(gameObject);
-                //AkSoundEngine.PostEvent("PowerUp", gameObject);
-            }
-            else
-            {
-                powerDown.Post(gameObject);
-                //AkSoundEngine.PostEvent("PowerDown", gameObject);
-            }
-        }
+        
     }
 
     public void Shoot()

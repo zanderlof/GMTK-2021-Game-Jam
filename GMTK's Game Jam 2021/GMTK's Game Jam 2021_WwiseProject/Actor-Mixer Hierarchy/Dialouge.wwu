@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{123DFB89-27FE-4865-A183-479321D4E628}" SchemaVersion="103" RootDocumentID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}" ParentDocumentID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}">
+	<AudioObjects>
+		<WorkUnit Name="Dialouge" ID="{123DFB89-27FE-4865-A183-479321D4E628}" OwnerID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}" PersistMode="Nested"/>
+	</AudioObjects>
+</WwiseDocument>

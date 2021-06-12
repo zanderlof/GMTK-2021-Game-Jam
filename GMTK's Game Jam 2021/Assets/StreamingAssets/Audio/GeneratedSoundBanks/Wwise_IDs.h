@@ -17,6 +17,14 @@ namespace AK
         static const AkUniqueID FIREPISTOL = 3866501340U;
         static const AkUniqueID FIRESHOTGUN = 2496290125U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID LINE1 = 2054046796U;
+        static const AkUniqueID LINE2 = 2054046799U;
+        static const AkUniqueID LINE3 = 2054046798U;
+        static const AkUniqueID LINE4 = 2054046793U;
+        static const AkUniqueID LINE5 = 2054046792U;
+        static const AkUniqueID LINE6 = 2054046795U;
+        static const AkUniqueID LINE7 = 2054046794U;
+        static const AkUniqueID LINE8 = 2054046789U;
         static const AkUniqueID POWERDOWN = 2715854868U;
         static const AkUniqueID POWERUP = 3950429679U;
         static const AkUniqueID STARTLEVELMUSIC = 1628310244U;

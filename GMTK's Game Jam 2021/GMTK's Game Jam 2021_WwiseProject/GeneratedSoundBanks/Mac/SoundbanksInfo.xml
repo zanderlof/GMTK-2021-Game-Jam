@@ -16,12 +16,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3497978461">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1056898348">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
+				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
 					<IncludedMemoryFiles>
 						<File Id="643898" Language="SFX">
 							<ShortName>Pistol Shots GMTK.wav</ShortName>
@@ -37,7 +37,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" DurationType="OneShot" DurationMin="0.755252" DurationMax="1.224864">
+				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="0.755252" DurationMax="1.224864">
 					<IncludedMemoryFiles>
 						<File Id="466470151" Language="SFX">
 							<ShortName>AR Sounds GMTK.wav</ShortName>
@@ -57,7 +57,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2496290125" Name="FireShotgun" ObjectPath="\Events\Default Work Unit\Weapons\FireShotgun" DurationType="OneShot" DurationMin="1.128861" DurationMax="1.740225">
+				<Event Id="2496290125" Name="FireShotgun" ObjectPath="\Events\Default Work Unit\Weapons\FireShotgun" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="1.128861" DurationMax="1.740225">
 					<IncludedMemoryFiles>
 						<File Id="449462211" Language="SFX">
 							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
@@ -142,7 +142,7 @@
 					<IncludedMemoryFiles>
 						<File Id="577769125" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_0FA3B668.wem</Path>
+							<Path>SFX\Level 1 Dialouge_7921EA4B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -150,7 +150,7 @@
 					<IncludedMemoryFiles>
 						<File Id="584110017" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_705B054D.wem</Path>
+							<Path>SFX\Level 1 Dialouge_0C781053.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -158,7 +158,7 @@
 					<IncludedMemoryFiles>
 						<File Id="215009283" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_7B474D98.wem</Path>
+							<Path>SFX\Level 1 Dialouge_3C8EE92A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -166,7 +166,7 @@
 					<IncludedMemoryFiles>
 						<File Id="105379253" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_C95AFC14.wem</Path>
+							<Path>SFX\Level 1 Dialouge_30124785.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -174,7 +174,7 @@
 					<IncludedMemoryFiles>
 						<File Id="452681865" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_A06CB544.wem</Path>
+							<Path>SFX\Level 1 Dialouge_032E5AC5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -182,7 +182,7 @@
 					<IncludedMemoryFiles>
 						<File Id="326923306" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_33792D95.wem</Path>
+							<Path>SFX\Level 1 Dialouge_29B105FD.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -190,7 +190,7 @@
 					<IncludedMemoryFiles>
 						<File Id="832109984" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_FE1BB31B.wem</Path>
+							<Path>SFX\Level 1 Dialouge_05CC8471.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -198,7 +198,7 @@
 					<IncludedMemoryFiles>
 						<File Id="265355656" Language="SFX">
 							<ShortName>Level 1 Dialouge.wav</ShortName>
-							<Path>SFX\Level 1 Dialouge_69A68029.wem</Path>
+							<Path>SFX\Level 1 Dialouge_01328BA2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

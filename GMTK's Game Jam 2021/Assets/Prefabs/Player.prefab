@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 8853628464342859038}
   - component: {fileID: 8853628464342859037}
   - component: {fileID: 8853628464342859036}
-  - component: {fileID: 3085823714160785659}
-  - component: {fileID: 5172990170919603047}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -128,42 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 8853628464342859037}
   lookSpeed: 1
---- !u!114 &3085823714160785659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853628464342859035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c565771f7753b49bc7321d4244fcfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &5172990170919603047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853628464342859035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18aa2fea01f5abd4cb4bb39b10f21557, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
+  footsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4d82e6c0c500d18468d574ebf59e9f3d, type: 2}
 --- !u!1 &8853628464697891728
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +242,7 @@ MonoBehaviour:
   player: {fileID: 8853628464342859036}
   bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
   bulletSpeed: 2
+  bulletSpawn: 0
   fireBullet:
     idInternal: 0
     valueGuidInternal: 

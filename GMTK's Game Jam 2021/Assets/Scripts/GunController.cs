@@ -8,7 +8,7 @@ public class GunController : MonoBehaviour
     public PlayerController player;
     public GameObject bullet;
     public float bulletSpeed;
-
+    public float bulletSpawn;
     //sounds
     public AK.Wwise.Event fireBullet;
 
@@ -41,7 +41,7 @@ public class GunController : MonoBehaviour
     public void Shoot()
     {
         fireBullet.Post(gameObject);
-        GameObject holder = Instantiate(bullet, transform.position, transform.localRotation);
+        GameObject holder = Instantiate(bullet, transform.position + (transform.forward * bulletSpawn), transform.localRotation);
         holder.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
     }
 

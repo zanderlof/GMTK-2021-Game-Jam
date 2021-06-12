@@ -32,13 +32,18 @@ public class PowerGenerator : MonoBehaviour
         distance = Vector3.Distance(gun.gameObject.transform.position, transform.position);
 
         //if distance is close enough
-        if(distance <= powerDistance)
+        if (distance <= powerDistance && powerleft > 0)
         {
             gun.powerOn();
             powering = true;
             powerleft -= Time.deltaTime;
         }
-        else if(distance > powerDistance && powering)
+        else if (distance > powerDistance && powering)
+        {
+            gun.powerOff();
+            powering = false;
+        }
+        else if (powerleft <= 0)
         {
             gun.powerOff();
             powering = false;
@@ -58,11 +63,7 @@ public class PowerGenerator : MonoBehaviour
             }
         }
 
-        if (powerleft <= 0)
-        {
-            gun.powerOff();
-        }
     }
 
-    
+
 }

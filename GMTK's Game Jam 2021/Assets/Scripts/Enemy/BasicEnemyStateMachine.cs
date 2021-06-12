@@ -17,6 +17,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     [SerializeField] Transform[] patrolPoints;
     [SerializeField] bool isStill;
     [SerializeField] float viewRadius;
+    [SerializeField] float senseRadius;
     [SerializeField] float viewAngle;
 
     [Header("Shooting")]
@@ -40,6 +41,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     private bool LineOfSighCheck;
     int destPoint = 0;
     private bool inView;
+    private bool closeBy;
 
     private void Start()
     {
@@ -89,6 +91,13 @@ public class BasicEnemyStateMachine : MonoBehaviour
         if (!enemy.pathPending && enemy.remainingDistance <= 0.5f)   //If distance to next point is short
         {
             GotoNextPoint();
+        }
+
+        if (closeBy)
+        {
+            Quaternion lookdir = Quaternion.LookRotation(player.transform.position - gun.transform.position, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, lookdir, Time.deltaTime * 50);
+            transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
         }
 
         if (inView)
@@ -155,6 +164,13 @@ public class BasicEnemyStateMachine : MonoBehaviour
                 }
             }
         }
+
+        closeBy = false;
+        Collider[] smallRadius = Physics.OverlapSphere(transform.position, senseRadius, playerMask);
+        if (smallRadius.Length >= 1)
+        {
+            closeBy = true;
+        }
     }
 
     private void OnDrawGizmos()
@@ -162,6 +178,8 @@ public class BasicEnemyStateMachine : MonoBehaviour
         if (drawGizmo)
         {
             Gizmos.DrawWireSphere(transform.position, viewRadius);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, senseRadius);
         }
     }
 }

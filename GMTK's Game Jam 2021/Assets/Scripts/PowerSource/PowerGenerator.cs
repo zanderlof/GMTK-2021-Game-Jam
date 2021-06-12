@@ -46,6 +46,9 @@ public class PowerGenerator : MonoBehaviour
         powering = false;
         previous = false;
         manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        elecIndicator.SetActive(false);
+        fireIndicator.SetActive(false);
+        waterIndicator.SetActive(false);
     }
 
     // Update is called once per frame
@@ -87,16 +90,11 @@ public class PowerGenerator : MonoBehaviour
                 powerDown.Post(gameObject);
             }
         }
-        if (!elementalChosen)
-        { ElementalSwitch(); }
+        ElementalSwitch();
     }
 
     private void ElementalSwitch()
     {
-        elecIndicator.SetActive(false);
-        fireIndicator.SetActive(false);
-        waterIndicator.SetActive(false);
-
         Collider[] player = Physics.OverlapSphere(transform.position, interactDistance, playerMask);
         if (player.Length >= 1)
         {
@@ -105,43 +103,33 @@ public class PowerGenerator : MonoBehaviour
             {
                 elemCurrent = Elemental.electricity;
                 elementalChosen = true;
+                elecIndicator.SetActive(true);
+                fireIndicator.SetActive(false);
+                waterIndicator.SetActive(false);
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 elemCurrent = Elemental.fire;
                 elementalChosen = true;
+                elecIndicator.SetActive(false);
+                fireIndicator.SetActive(true);
+                waterIndicator.SetActive(false);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
                 elemCurrent = Elemental.water;
                 elementalChosen = true;
+                elecIndicator.SetActive(false);
+                fireIndicator.SetActive(false);
+                waterIndicator.SetActive(true);
             }
         }
         else
         {
             promptText.SetActive(false);
         }
-
-        if (!elementalChosen) return;
-        switch (elemCurrent)
-        {
-            case Elemental.electricity:
-                elecIndicator.SetActive(true);
-                fireIndicator.SetActive(false);
-                waterIndicator.SetActive(false);
-                break;
-            case Elemental.water:
-                elecIndicator.SetActive(false);
-                fireIndicator.SetActive(false);
-                waterIndicator.SetActive(true);
-                break;
-            case Elemental.fire:
-                elecIndicator.SetActive(false);
-                fireIndicator.SetActive(true);
-                waterIndicator.SetActive(false);
-                break;
-        }
     }
+
 
     private void OnDrawGizmos()
     {

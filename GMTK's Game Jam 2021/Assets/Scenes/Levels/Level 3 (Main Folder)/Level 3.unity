@@ -2759,6 +2759,25 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &573515542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 480521c4f0126f543ad3234385df4658, type: 3}
+  m_PrefabInstance: {fileID: 432930760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &573515543
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573515542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5435341357716912561, guid: 480521c4f0126f543ad3234385df4658, type: 3}
 --- !u!1001 &634613958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7013,7 +7032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1179366889
 PrefabInstance:

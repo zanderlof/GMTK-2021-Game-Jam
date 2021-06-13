@@ -130,9 +130,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2146553040}
     m_Modifications:
+    - target: {fileID: 5999230235305179026, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318178, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999230235589318188, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: fireRate
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder
@@ -299,9 +307,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2146553040}
     m_Modifications:
+    - target: {fileID: 2377899996753626031, guid: 6d41532d0a157c74686e848116710943, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: isStill
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
+      propertyPath: fireRate
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: patrolPoints.Array.size
@@ -1812,9 +1828,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2146553040}
     m_Modifications:
+    - target: {fileID: 5999230235305179026, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318178, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999230235589318188, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: fireRate
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder

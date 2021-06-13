@@ -31,15 +31,23 @@
 							<ChildrenList>
 								<Action Name="" ID="{30A52AF8-9E70-4A32-AE85-0F425271D36E}" ShortID="473578480">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PowerUp" ID="{F67C173A-01FA-4B03-8717-AAA1AA9652F5}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{12FB6419-82B1-4A1D-A47F-D8820803F85D}" ShortID="979763556">
+								<Action Name="" ID="{5E459861-57F0-42DE-A825-2C3DA4D6CE3A}" ShortID="430658271">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Power Source Random" ID="{A9F613D5-29E4-4B09-A238-722A80FCD486}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{5DC2224B-A40C-46A2-9717-8913AE7D1B17}" ShortID="82037820">
 									<ReferenceList>
@@ -66,6 +74,25 @@
 											<ObjectRef Name="Footsteps" ID="{4F0CC7EB-D544-4D12-85FF-0CA43EEF8030}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
 										</Reference>
 									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopFootsteps" ID="{97D4E8D9-3D21-4909-8BFF-4E92699AF05E}">
+							<ChildrenList>
+								<Action Name="" ID="{B3B8375A-33FE-4D95-B278-CC54AF715420}" ShortID="991819195">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<EventActionException Name="" ID="{3EEFBEDA-88D8-440B-846D-C55D14094E94}">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="StartMenu" ID="{8BBFBFCD-554D-4D5F-ACC7-1F1F2DC173F2}" WorkUnitID="{7E83D18E-436E-45E8-A6CB-CDB31E17D753}"/>
+												</Reference>
+											</ReferenceList>
+										</EventActionException>
+									</ChildrenList>
 								</Action>
 							</ChildrenList>
 						</Event>

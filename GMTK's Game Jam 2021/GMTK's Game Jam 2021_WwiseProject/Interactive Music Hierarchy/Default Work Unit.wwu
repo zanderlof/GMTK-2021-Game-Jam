@@ -31,23 +31,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="StartMenuWav" ID="{67AD20A2-074F-4F26-838B-7ED5DB6A9CE2}" ShortID="657074752">
+								<MusicTrack Name="110621_JAM" ID="{EB0EF268-8804-474D-A1D0-5E0010A901C8}" ShortID="98001783">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StartMenuWav" ID="{183A7BB5-DF7A-4719-A10D-C237C08914DF}">
+										<AudioFileSource Name="110621_JAM" ID="{1F4E09C5-4B1C-47C7-94FB-3FE865611B0A}">
 											<Language>SFX</Language>
-											<AudioFile>StartMenuWav.wav</AudioFile>
+											<AudioFile>110621_JAM.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="323811426"/>
+												<MediaID ID="702639087"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{898C02D7-CB9D-4ECA-AFD5-E1F4148D0514}">
+										<MusicTransition Name="Root" ID="{217DF9B9-E808-4609-BBDE-DDE00DD47EE6}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -58,18 +58,18 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{22387FF6-019F-4B49-AD57-D208FB5ADD20}">
+													<MusicTrackSequence Name="" ID="{A5CF3C1F-3ECE-4BD2-BD22-21ADCB704820}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="StartMenuWav" ID="{0E2A1165-5897-46C3-800B-E240F15BD050}">
+																		<MusicClip Name="110621_JAM" ID="{F9DB796F-44CC-47F0-929C-1C85E3E23111}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="93473.6875"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="88421.0204081633"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="StartMenuWav" ID="{183A7BB5-DF7A-4719-A10D-C237C08914DF}"/>
+																			<AudioSourceRef Name="110621_JAM" ID="{1F4E09C5-4B1C-47C7-94FB-3FE865611B0A}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -94,7 +94,7 @@
 											<MusicCue Name="Exit Cue" ID="{6A34B0BE-0A51-4BE7-924B-BBEBF318B7AE}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="93473.6875"/>
+													<Property Name="TimeMs" Type="Real64" Value="75789.4736842105"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -155,7 +155,7 @@
 					<ChildrenList>
 						<MusicSegment Name="StealthWav" ID="{213BBE43-C7F0-48E6-8FBE-73B16A6449A1}" ShortID="1024193254">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="262736.854166667"/>
+								<Property Name="EndPosition" Type="Real64" Value="351157.87457483"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -166,23 +166,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="StealthWav" ID="{62924515-A6A0-4A0C-BA1E-96872C0A3CF9}" ShortID="648148327">
+								<MusicTrack Name="120621_JAMsneak" ID="{086982ED-F13E-4562-88DD-C6C9486C5894}" ShortID="936594276">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="StealthWav" ID="{4CE7EE97-3AD9-474F-8C40-038A0C3A6656}">
+										<AudioFileSource Name="120621_JAMsneak" ID="{75019A5C-B8DB-42FB-B4C3-6C7E29AF5ED1}">
 											<Language>SFX</Language>
-											<AudioFile>StealthWav.wav</AudioFile>
+											<AudioFile>120621_JAMsneak.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="476251438"/>
+												<MediaID ID="653208491"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{7558FE04-EDCB-4DA7-8C8D-BAEE09782B49}">
+										<MusicTransition Name="Root" ID="{42B0CBC1-26FC-4992-9BCB-93B06DCAC50E}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -193,18 +193,18 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{9D344FD8-F155-43E7-8C6A-F4D7FAF963C3}">
+													<MusicTrackSequence Name="" ID="{4EC52915-7765-46CD-AE35-D3EF42974C27}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="StealthWav" ID="{F0C26D19-E6D8-4AA2-AB2E-2832B3FD661A}">
+																		<MusicClip Name="120621_JAMsneak" ID="{593C2FD5-CB10-4D4C-92B2-2F2E43617A9E}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="262736.854166667"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="261599.977324263"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="StealthWav" ID="{4CE7EE97-3AD9-474F-8C40-038A0C3A6656}"/>
+																			<AudioSourceRef Name="120621_JAMsneak" ID="{75019A5C-B8DB-42FB-B4C3-6C7E29AF5ED1}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>

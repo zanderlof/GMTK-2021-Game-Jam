@@ -18,6 +18,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="StopFootsteps" ID="{97D4E8D9-3D21-4909-8BFF-4E92699AF05E}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="FirePistol" ID="{97447E61-5967-4821-A2C8-B4E857D4B977}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
 							<Position X="1" Y="0"/>
 						</Module>

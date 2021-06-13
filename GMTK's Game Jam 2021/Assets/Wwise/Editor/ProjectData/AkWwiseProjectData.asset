@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 4b72d4eb31781c4db99652ef06725f4d
     GuidInternal: 
-    m_lastTime: -8585781166439414498
+    m_lastTime: -8585780411189186493
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585781166442366612
+    m_lastTime: -8585780411242733071
     List:
+    - name: Dialouge
+      guid: 572cd97638626e4d96b78725ad0aa3c7
+      id: 3362655095
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 343a6dae72fd0b41826c85d6a308ddb2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Dialouge
+        ObjectType: 2
+        guid: 572cd97638626e4d96b78725ad0aa3c7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Dialouge
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 78a174c30cd8ab4bbefe701e841aa5a9
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 343a6dae72fd0b41826c85d6a308ddb2
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 78a174c30cd8ab4bbefe701e841aa5a9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585781166439494294
+    m_lastTime: -8585780411189216422
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -94,8 +128,122 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585781166442945050
+    m_lastTime: -8585780411255825053
     List:
+    - name: Dialouge
+      guid: 7e30636f6684f342845ee07fd45934c3
+      id: 3362655095
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      Path: Events\Default Work Unit\Dialouge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemy
+      guid: 1cdf7bf5cdabec4998d873b8715c182d
+      id: 2299321487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      Path: Events\Default Work Unit\Enemy
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnemyDeath
+      guid: 54f4f292d9061548b5881d96e2c2f46e
+      id: 3249137159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyDeath
+        ObjectType: 3
+        guid: 54f4f292d9061548b5881d96e2c2f46e
+      Path: Events\Default Work Unit\Enemy\EnemyDeath
+      maxAttenuation: 16
+      maxDuration: 1.576709
+      minDuration: 1.088875
+    - name: EnemyFootsteps
+      guid: 0bd3072906323b46a93d113c9a4dc195
+      id: 2051507304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyFootsteps
+        ObjectType: 3
+        guid: 0bd3072906323b46a93d113c9a4dc195
+      Path: Events\Default Work Unit\Enemy\EnemyFootsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnemyHurt
+      guid: c8897fa41d03ef448c712873c6229327
+      id: 208556064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyHurt
+        ObjectType: 3
+        guid: c8897fa41d03ef448c712873c6229327
+      Path: Events\Default Work Unit\Enemy\EnemyHurt
+      maxAttenuation: 16
+      maxDuration: 0.593547
+      minDuration: 0.303537
+    - name: FireAR
+      guid: 63ec88cb9bd41140bab1f0284fba7518
+      id: 408495308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: FireAR
+        ObjectType: 3
+        guid: 63ec88cb9bd41140bab1f0284fba7518
+      Path: Events\Default Work Unit\Weapons\FireAR
+      maxAttenuation: 24
+      maxDuration: 1.067931
+      minDuration: 0.775096
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
       id: 3866501340
@@ -113,9 +261,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 617e449767592148a2c8b4e857d4b977
       Path: Events\Default Work Unit\Weapons\FirePistol
-      maxAttenuation: 0
-      maxDuration: 1.067931
-      minDuration: 0.775096
+      maxAttenuation: 24
+      maxDuration: 1.224864
+      minDuration: 0.755252
+    - name: FireShotgun
+      guid: 2de9196f19b01e4ab8d7571ce89d2f77
+      id: 2496290125
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: FireShotgun
+        ObjectType: 3
+        guid: 2de9196f19b01e4ab8d7571ce89d2f77
+      Path: Events\Default Work Unit\Weapons\FireShotgun
+      maxAttenuation: 24
+      maxDuration: 1.740225
+      minDuration: 1.128861
     - name: Footstep
       guid: 5de034826cc5674a8f9819daa8dae980
       id: 1866025847
@@ -133,6 +301,273 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5de034826cc5674a8f9819daa8dae980
       Path: Events\Default Work Unit\Player\Footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level1
+      guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      id: 2678230382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      Path: Events\Default Work Unit\Dialouge\Level1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line1
+      guid: ebc46c7e3bd2804fbb7a2c39ce698613
+      id: 2054046796
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line1
+        ObjectType: 3
+        guid: ebc46c7e3bd2804fbb7a2c39ce698613
+      Path: Events\Default Work Unit\Dialouge\Level1\Line1
+      maxAttenuation: 0
+      maxDuration: 4.610152
+      minDuration: 4.610152
+    - name: Line10
+      guid: cf9a6ab7c2337c46a5ddeecb99d1deb2
+      id: 127239060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line10
+        ObjectType: 3
+        guid: cf9a6ab7c2337c46a5ddeecb99d1deb2
+      Path: Events\Default Work Unit\Dialouge\Level1\Line10
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line2
+      guid: d8c4de4e990f214e8cde4f77d8d96205
+      id: 2054046799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line2
+        ObjectType: 3
+        guid: d8c4de4e990f214e8cde4f77d8d96205
+      Path: Events\Default Work Unit\Dialouge\Level1\Line2
+      maxAttenuation: 0
+      maxDuration: 7.482245
+      minDuration: 7.482245
+    - name: Line3
+      guid: 53457268ce9b4d4bb6f6eda0f020f9bc
+      id: 2054046798
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line3
+        ObjectType: 3
+        guid: 53457268ce9b4d4bb6f6eda0f020f9bc
+      Path: Events\Default Work Unit\Dialouge\Level1\Line3
+      maxAttenuation: 0
+      maxDuration: 7.662179
+      minDuration: 7.662179
+    - name: Line4
+      guid: 25e4472612d9ac41ba1038bd6a4eb0a2
+      id: 2054046793
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line4
+        ObjectType: 3
+        guid: 25e4472612d9ac41ba1038bd6a4eb0a2
+      Path: Events\Default Work Unit\Dialouge\Level1\Line4
+      maxAttenuation: 0
+      maxDuration: 11.293247
+      minDuration: 11.293247
+    - name: Line5
+      guid: 9ede27fcff1d454ba5b4c9834498b010
+      id: 2054046792
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line5
+        ObjectType: 3
+        guid: 9ede27fcff1d454ba5b4c9834498b010
+      Path: Events\Default Work Unit\Dialouge\Level1\Line5
+      maxAttenuation: 0
+      maxDuration: 11.201444
+      minDuration: 11.201444
+    - name: Line6
+      guid: 39371c990024d74390ba174fbc31a406
+      id: 2054046795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line6
+        ObjectType: 3
+        guid: 39371c990024d74390ba174fbc31a406
+      Path: Events\Default Work Unit\Dialouge\Level1\Line6
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Line7
+      guid: dd4351931f90984ab813771c128f7c5c
+      id: 2054046794
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line7
+        ObjectType: 3
+        guid: dd4351931f90984ab813771c128f7c5c
+      Path: Events\Default Work Unit\Dialouge\Level1\Line7
+      maxAttenuation: 0
+      maxDuration: 14.318056
+      minDuration: 14.318056
+    - name: Line8
+      guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
+      id: 2054046789
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line8
+        ObjectType: 3
+        guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
+      Path: Events\Default Work Unit\Dialouge\Level1\Line8
+      maxAttenuation: 0
+      maxDuration: 13.349008
+      minDuration: 13.349008
+    - name: Line9
+      guid: 33b42af070d4f54aac7ca8c7dba100a7
+      id: 2054046788
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Dialouge
+        ObjectType: 4
+        guid: 7e30636f6684f342845ee07fd45934c3
+      - ElementName: Level1
+        ObjectType: 4
+        guid: fb3bc16c5f15b84d8fa983ebc44fa88c
+      - ElementName: Line9
+        ObjectType: 3
+        guid: 33b42af070d4f54aac7ca8c7dba100a7
+      Path: Events\Default Work Unit\Dialouge\Level1\Line9
+      maxAttenuation: 0
+      maxDuration: 4.332036
+      minDuration: 4.332036
+    - name: Music
+      guid: b06121cb992c24458e6b783a61bf1202
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      Path: Events\Default Work Unit\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -210,6 +645,106 @@ MonoBehaviour:
       maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
+    - name: StartLevelMusic
+      guid: a8509098aa02e9469a2c2bd9d28c41b2
+      id: 1628310244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StartLevelMusic
+        ObjectType: 3
+        guid: a8509098aa02e9469a2c2bd9d28c41b2
+      Path: Events\Default Work Unit\Music\StartLevelMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartMenuMusic
+      guid: cf36ff116db5d44590800159dd46ca6d
+      id: 2440264179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StartMenuMusic
+        ObjectType: 3
+        guid: cf36ff116db5d44590800159dd46ca6d
+      Path: Events\Default Work Unit\Music\StartMenuMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopEnemyFootsteps
+      guid: b671f1fe415a7148a70f3408787a3008
+      id: 1284332368
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: StopEnemyFootsteps
+        ObjectType: 3
+        guid: b671f1fe415a7148a70f3408787a3008
+      Path: Events\Default Work Unit\Enemy\StopEnemyFootsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopLevelMusic
+      guid: 0709158ca8f5b24598a3251aabdf4da5
+      id: 1307992046
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StopLevelMusic
+        ObjectType: 3
+        guid: 0709158ca8f5b24598a3251aabdf4da5
+      Path: Events\Default Work Unit\Music\StopLevelMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopMenuMusic
+      guid: fc7975d3b160fc49a4d0858cc85c1175
+      id: 1973898857
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Music
+        ObjectType: 4
+        guid: b06121cb992c24458e6b783a61bf1202
+      - ElementName: StopMenuMusic
+        ObjectType: 3
+        guid: fc7975d3b160fc49a4d0858cc85c1175
+      Path: Events\Default Work Unit\Music\StopMenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Weapons
       guid: 7886572c0c693241a55ad2a39b8faa02
       id: 1467963052
@@ -239,7 +774,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585780939976503726
+    m_lastTime: -8585780411255785267
     List:
     - name: Sneaking
       guid: 3316115213a1b74cbd2b4dc25f9fcb8c
@@ -267,7 +802,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9b5031cafb7e884fb342cdce09d62650
     GuidInternal: 
-    m_lastTime: -8585781166439434449
+    m_lastTime: -8585780411189206443
     List:
     - name: Stealth
       guid: 52d81e09c3b0df499a81a2494f1b733e
@@ -347,7 +882,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8912458e35d9ab4588e2bc836e0a274b
     GuidInternal: 
-    m_lastTime: -8585781166439424475
+    m_lastTime: -8585780411189196463
     List:
     - name: Footsteps
       guid: 7e7cebb924e9cc428ed6b345329a9562
@@ -411,9 +946,9 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 922f59e39495264192878304c51842a7
     GuidInternal: 
-    m_lastTime: -8585781166439414498
+    m_lastTime: -8585780411189186493
     List: []
-  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000080000000a0000001400000015000000
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000080000000a00000014000000150000002e0000002f000000
   ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000e0000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

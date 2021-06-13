@@ -5,10 +5,26 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{477B70F4-5B32-488A-862E-CF389BF89600}">
 					<ObjectInclusionList>
+						<ObjectRef Name="FireAR" ID="{CB88EC63-D49B-4011-BAB1-F0284FBA7518}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line4" ID="{2647E425-D912-41AC-BA10-38BD6A4EB0A2}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EnemyHurt" ID="{A47F89C8-031D-44EF-8C71-2873C6229327}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line8" ID="{10D5B48C-CBC6-450B-BEA3-BDD021BA30C0}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopLevelMusic" ID="{8C150907-F5A8-45B2-98A3-251AABDF4DA5}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartMenuMusic" ID="{11FF36CF-B56D-45D4-9080-0159DD46CA6D}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartLevelMusic" ID="{989050A8-02AA-46E9-9A2C-2BD9D28C41B2}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EnemyDeath" ID="{92F2F454-06D9-4815-B588-1D96E2C2F46E}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FirePistol" ID="{97447E61-5967-4821-A2C8-B4E857D4B977}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopMenuMusic" ID="{D37579FC-60B1-49FC-A4D0-858CC85C1175}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FireShotgun" ID="{6F19E92D-B019-4A1E-B8D7-571CE89D2F77}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep" ID="{8234E05D-C56C-4A67-8F98-19DAA8DAE980}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line7" ID="{935143DD-901F-4A98-B813-771C128F7C5C}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line9" ID="{F02AB433-D470-4AF5-AC7C-A8C7DBA100A7}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line5" ID="{FC27DE9E-1DFF-4B45-A5B4-C9834498B010}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line3" ID="{68724553-9BCE-4B4D-B6F6-EDA0F020F9BC}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PowerDown" ID="{6CAAF3A4-2314-4BE4-B63D-636759FF73DB}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PowerUp" ID="{B21D1FD9-8838-4DE3-A852-BA54F3DCB342}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line2" ID="{4EDEC4D8-0F99-4E21-8CDE-4F77D8D96205}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Line1" ID="{7E6CC4EB-D23B-4F80-BB7A-2C39CE698613}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -5,16 +5,20 @@ using UnityEngine;
 public class PowerGenerator : MonoBehaviour
 {
     //References
-    EnemyManager manager;
+    public EnemyManager manager;
     public GameObject elecIndicator, waterIndicator, fireIndicator;
     public LayerMask playerMask;
     public GameObject promptText;
+    public LineRenderer powerLine;
+    public Transform powerStartPosition;
+    public Material elecMat, fireMat, waterMat;
 
     //misc
     [SerializeField] bool drawGizmo;
 
     //public variables
-    public GunController gun;
+    // public GunController gun;
+    private PlayerController pc;
     public float powerDistance;
     public float powerleft = 60f;
     public bool noEnemyAlert = false;
@@ -43,9 +47,10 @@ public class PowerGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         powering = false;
         previous = false;
-        manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        // manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         elecIndicator.SetActive(false);
         fireIndicator.SetActive(false);
         waterIndicator.SetActive(false);
@@ -55,26 +60,30 @@ public class PowerGenerator : MonoBehaviour
     void Update()
     {
         //get distance to player's gun
-        distance = Vector3.Distance(gun.gameObject.transform.position, transform.position);
+        distance = Vector3.Distance(pc.transform.position, transform.position);
 
         //if distance is close enough
         if (distance <= powerDistance && powerleft > 0 && elementalChosen)
         {
-            gun.powerOn();
+            pc.powered = true;
             if (!noEnemyAlert)
             { manager.ISaw(); }
             powering = true;
             powerleft -= Time.deltaTime;
+            powerLine.SetPosition(1, pc.transform.localPosition);
+            powerLine.SetPosition(0, powerStartPosition.position);
         }
         else if (distance > powerDistance && powering)
         {
-            gun.powerOff();
+            pc.powered = false;
             powering = false;
+            powerLine.SetPosition(1, powerStartPosition.position);
         }
         else if (powerleft <= 0)
         {
-            gun.powerOff();
+            pc.powered = false;
             powering = false;
+            powerLine.SetPosition(1, powerStartPosition.position);
         }
 
         if (powering != previous)
@@ -106,7 +115,9 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(true);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(false);
-                gun.SetType(elemCurrent);
+                powerLine.material = elecMat;
+                pc.SetType(elemCurrent);
+
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -115,7 +126,8 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(true);
                 waterIndicator.SetActive(false);
-                gun.SetType(elemCurrent);
+                powerLine.material = fireMat;
+                pc.SetType(elemCurrent);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
@@ -124,7 +136,8 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(true);
-                gun.SetType(elemCurrent);
+                powerLine.material = waterMat;
+                pc.SetType(elemCurrent);
             }
         }
         else

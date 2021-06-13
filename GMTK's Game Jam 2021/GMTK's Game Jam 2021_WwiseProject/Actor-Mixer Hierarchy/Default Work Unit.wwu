@@ -744,35 +744,14 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="PistolShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" ShortID="31889689">
+						<ActorMixer Name="WeaponsMixer" ID="{BEA152FA-7295-450B-B99D-FB8C9A4DC775}" ShortID="578161740">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{438FE92F-A10A-43DD-BA22-2588294505D1}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="152"/>
-													<Property Name="Min" Type="Real64" Value="-101"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4F13710F-A8C3-420E-A492-AEA6C2CB2759}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-1"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Weapons" ID="{DA0E6DE8-79DE-44CD-9D9B-A8631B24BA71}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
 								</Reference>
@@ -781,7 +760,34 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Pistol Shots GMTK" ID="{D1B06592-65FC-44FC-8350-9DA35A9B396F}" ShortID="926843505">
+								<RandomSequenceContainer Name="ARShots" ID="{108298C4-59E0-419A-80D9-CEFFF0AB1C75}" ShortID="31889689">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{438FE92F-A10A-43DD-BA22-2588294505D1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="152"/>
+															<Property Name="Min" Type="Real64" Value="-101"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4F13710F-A8C3-420E-A492-AEA6C2CB2759}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
@@ -791,26 +797,110 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.268642917726887"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.21560920271416"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="518679608"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="Pistol Shots GMTK" ID="{D1B06592-65FC-44FC-8350-9DA35A9B396F}" ShortID="926843505">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.268642917726887"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.21560920271416"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="518679608"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pistol Shots GMTK_01" ID="{436AE0B9-5CED-492C-84F1-EFD3E09478EF}" ShortID="654984929">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.94766115351993"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.79388634435963"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="643898"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Pistol Shots GMTK_02" ID="{A0779128-85EE-419B-B6FC-DE586F1F4E07}" ShortID="66310978">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.61324724342663"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.62065818490247"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Pistol Shots GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="153030953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Pistol Shots GMTK" ID="{9D60D4F2-7AE7-4AC3-ABAF-11AAD2FD250A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Pistol Shots GMTK_01" ID="{436AE0B9-5CED-492C-84F1-EFD3E09478EF}" ShortID="654984929">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="PistolShots" ID="{D4AFB8B0-4519-4EB8-98FC-6BA88927B933}" ShortID="154032372">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{579A8170-E484-4BDD-A6B7-90CAC772DEC6}">
+														<PropertyList>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
@@ -820,26 +910,168 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}">
+										<Sound Name="AR Sounds GMTK" ID="{2D25845E-DB05-4E52-8007-0FD2B4E7BFD8}" ShortID="175976900">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AR Sounds GMTK" ID="{8838C3E4-63E4-405D-BFFC-2C0F5ACAD7DD}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.107658039842826"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.971963272270117"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AR Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="466470151"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AR Sounds GMTK" ID="{8838C3E4-63E4-405D-BFFC-2C0F5ACAD7DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AR Sounds GMTK_01" ID="{BA711318-E826-4D85-A924-CC16F45C21C4}" ShortID="891033991">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AR Sounds GMTK" ID="{43AA8351-3716-4881-8AA3-208F2FCE116F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.298407231501437"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.76862969920712"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.99349334770117"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AR Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032488285"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AR Sounds GMTK" ID="{43AA8351-3716-4881-8AA3-208F2FCE116F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AR Sounds GMTK_02" ID="{E25D7D2D-D609-4828-9DE7-CF80280B8AAD}" ShortID="860378425">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AR Sounds GMTK" ID="{A7662033-9CA4-4B9C-92AD-1DA7CE2AE127}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.107902669920206"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.536146453264"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.2913988484114"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AR Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509447025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AR Sounds GMTK" ID="{A7662033-9CA4-4B9C-92AD-1DA7CE2AE127}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AR Sounds GMTK_03" ID="{41315723-F591-4697-800C-B54841A192E7}" ShortID="764237059">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.94766115351993"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.79388634435963"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3E787AC3-BC94-4FD7-AECE-0C0775BAAADC}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-354"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="643898"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AR Sounds GMTK" ID="{E4317289-0B76-4D40-B27F-A3E6C9067641}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.198168356143626"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="17.3066704523434"/>
+														<Property Name="TrimEnd" Type="Real64" Value="18.2515751097925"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AR Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1039773414"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AR Sounds GMTK" ID="{E4317289-0B76-4D40-B27F-A3E6C9067641}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Pistol Shots GMTK" ID="{B35FF623-9CAE-46A0-BC37-3A5D2F0EFB59}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Pistol Shots GMTK_02" ID="{A0779128-85EE-419B-B6FC-DE586F1F4E07}" ShortID="66310978">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ShotgunShots" ID="{37086473-BB11-4FEF-A143-3E7EBAA1CCA4}" ShortID="8153574">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6E4BF3C1-CF09-4006-B350-8672C6359309}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Min" Type="Real64" Value="-101"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0D67B571-53D8-4BF2-B01D-07B12336E335}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
@@ -849,28 +1081,1036 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.295507209499576"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.61324724342663"/>
-												<Property Name="TrimEnd" Type="Real64" Value="4.62065818490247"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Pistol Shots GMTK.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="153030953"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="ShotGun Sounds GMTK" ID="{BCBB1E24-06C3-46DA-917A-5DDBDDA4B1C9}" ShortID="161924962">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShotGun Sounds GMTK" ID="{5D21DD8D-05D4-425C-80AA-E43DFC9BB517}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.580886152883292"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.85749860663724"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.07158256422346"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="836463758"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ShotGun Sounds GMTK" ID="{5D21DD8D-05D4-425C-80AA-E43DFC9BB517}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShotGun Sounds GMTK_01" ID="{8564FFBD-DEE8-4086-B0A6-BCA00E5CC7BC}" ShortID="974048184">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShotGun Sounds GMTK" ID="{16656288-5288-40F2-BCF5-C3475C180666}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.286293887478849"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.31911786666299"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.62567488895939"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="842778150"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ShotGun Sounds GMTK" ID="{16656288-5288-40F2-BCF5-C3475C180666}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShotGun Sounds GMTK_02" ID="{02DD9FC4-B77D-4D12-9FF8-F28E1D6AC5BE}" ShortID="97137145">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShotGun Sounds GMTK" ID="{145836B4-C8A7-40F9-B9C1-6AE029C9BAAB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.609691462774957"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.80929939725262"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.4509047783418"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ShotGun Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449462211"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ShotGun Sounds GMTK" ID="{145836B4-C8A7-40F9-B9C1-6AE029C9BAAB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Pistol Shots GMTK" ID="{2BFC3CBC-D345-4518-87B5-BC98FB36E196}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
-						</RandomSequenceContainer>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{120040B9-0A5F-47B9-9488-82D977F7D333}" ShortID="460149104">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<ActorMixer Name="Enemy" ID="{447D8BC6-A166-4100-82CF-CD80C62418D9}" ShortID="256290036">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="EnemyFootsteps" ID="{C7A91899-CDE7-4C32-9C0F-466CC2741DED}" ShortID="648303112">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Concrete" ID="{707CE113-0104-461F-919C-7C86EF71121C}" WorkUnitID="{8E451289-D935-45AB-88E2-BC836E0A274B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Footsteps" ID="{B9EB7C7E-E924-42CC-8ED6-B345329A9562}" WorkUnitID="{8E451289-D935-45AB-88E2-BC836E0A274B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Concrete" ID="{14A74C1B-2D94-4D45-B01F-D70BA6ADC558}" ShortID="766048309">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E12A8FAB-115A-4682-A716-5F29430A5920}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="25"/>
+																	<Property Name="Min" Type="Real64" Value="-76"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
+													<RTPCList>
+														<RTPC Name="" ID="{A402404C-3176-4341-98F9-CE3262C8E0A9}" ShortID="214901116">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Sneaking" ID="{52111633-A113-4CB7-BD2B-4DC25F9FCB8C}" WorkUnitID="{8993FC05-D9B9-4BBA-80DC-61D028557457}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C9A0A01D-A651-404C-897B-1995F4EEFE5A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.56849</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.94091</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tile Footsteps" ID="{949FA44D-2108-4981-8039-CBC0B1B3DD2F}" ShortID="1025392400">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tile Footsteps" ID="{E47B9DD5-F4C6-4F97-82BB-54737F625A63}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0621638337125283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.59416737193498"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.85396465083288"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Tile Footsteps.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="221413942"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Tile Footsteps" ID="{E47B9DD5-F4C6-4F97-82BB-54737F625A63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tile Footsteps_01" ID="{89E65E54-17D3-4730-BF61-24F2A2BE4521}" ShortID="1014124009">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tile Footsteps" ID="{EEDF34B3-738C-49CB-A598-A2288C0D7055}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0621638337125283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.04082228386963"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.31423709057041"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Tile Footsteps.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="154598439"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Tile Footsteps" ID="{EEDF34B3-738C-49CB-A598-A2288C0D7055}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tile Footsteps_02" ID="{2C186806-5751-4E58-A923-11EE6B299091}" ShortID="345846731">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tile Footsteps" ID="{5563B593-34DD-47D7-BB43-54350E89F1F4}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0621638337125283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.50417893710253"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.78604915718348"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Tile Footsteps.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="234352725"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Tile Footsteps" ID="{5563B593-34DD-47D7-BB43-54350E89F1F4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tile Footsteps_03" ID="{C2C6000E-5EC2-44D6-B0E1-B84930F0A041}" ShortID="1001638449">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tile Footsteps" ID="{0742DCBD-66EA-4505-BA40-BBAC70386BFD}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0621638337125283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.92830247225148"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.19715135572698"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Tile Footsteps.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="347570575"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Tile Footsteps" ID="{0742DCBD-66EA-4505-BA40-BBAC70386BFD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tile Footsteps_04" ID="{75F95871-E20D-4191-8039-89003A8FC206}" ShortID="207883448">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tile Footsteps" ID="{77962819-28F4-4B1A-BDD8-B6466929F4DB}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0621638337125283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.37648254730005"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.59260436312277"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Tile Footsteps.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="264691709"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Tile Footsteps" ID="{77962819-28F4-4B1A-BDD8-B6466929F4DB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Metal" ID="{E28FF45B-2C51-4BEA-AC64-F62F4E561DCE}" ShortID="856482434">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
+													<RTPCList>
+														<RTPC Name="" ID="{7729BBF2-A645-417C-9159-03C92773223F}" ShortID="798637769">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Sneaking" ID="{52111633-A113-4CB7-BD2B-4DC25F9FCB8C}" WorkUnitID="{8993FC05-D9B9-4BBA-80DC-61D028557457}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B9185384-EC41-4538-A46A-FA8E893F8EA5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.58</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.8896247240618</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Metal footsteps-1" ID="{A978CF45-616D-4271-B612-904D259EEB3A}" ShortID="273771048">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Metal footsteps-1" ID="{E658F0E6-1743-46B9-8A73-32A1EA85629E}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.104356765944313"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="11.7574629294692"/>
+																<Property Name="TrimEnd" Type="Real64" Value="12.0479774128979"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Metal footsteps-1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="689818044"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Metal footsteps-1" ID="{E658F0E6-1743-46B9-8A73-32A1EA85629E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Metal footsteps-1_01" ID="{DC05383B-F0C3-43B7-8990-F6D2E237C8AC}" ShortID="920504343">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Metal footsteps-1" ID="{2C154B3E-5FE5-4CE2-A504-1D369121ECC8}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.151061398463735"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="12.8083171611562"/>
+																<Property Name="TrimEnd" Type="Real64" Value="13.1294115097273"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Metal footsteps-1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="889141521"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Metal footsteps-1" ID="{2C154B3E-5FE5-4CE2-A504-1D369121ECC8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Metal footsteps-1_02" ID="{444AC12C-904B-4FCE-AFB4-169D55CC7BE6}" ShortID="109026520">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Metal footsteps-1" ID="{CCFD73A8-B794-4FE4-88C4-8D65B5AF1797}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.104356765944313"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="10.8004246716607"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.0730182090549"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Metal footsteps-1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="120745981"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Metal footsteps-1" ID="{CCFD73A8-B794-4FE4-88C4-8D65B5AF1797}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Metal footsteps-1_03" ID="{A1254A93-09AE-46E2-AB01-850DB42B69AC}" ShortID="753960304">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Metal footsteps-1" ID="{FF172ADC-5B43-4F41-BEFB-E44B59B6D4B6}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.104356765944313"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.78490578554387"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.0800036364685"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Metal footsteps-1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="625583277"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Metal footsteps-1" ID="{FF172ADC-5B43-4F41-BEFB-E44B59B6D4B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Metal footsteps-1_04" ID="{4DFCF402-859E-4E64-8DBC-C163D19E73D7}" ShortID="994521663">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>21</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Metal footsteps-1" ID="{BE03FA93-22FA-4180-BAC9-8D3F0130B4C1}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.104356765944313"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="13.7804714886252"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.1005544696634"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Metal footsteps-1.WAV</AudioFile>
+															<MediaIDList>
+																<MediaID ID="619807268"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Metal footsteps-1" ID="{BE03FA93-22FA-4180-BAC9-8D3F0130B4C1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Stealth" ID="{091ED852-B0C3-49DF-9A81-A2494F1B733E}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Walk" ID="{9364BC35-94A8-4944-8A9D-1933371DCBFF}"/>
+												<CustomState Name="" ID="{B9720C48-5138-4547-BF4A-DF7B948EC9BE}" ShortID="11639375"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Sneak" ID="{75A0AE61-02AF-4C27-A9D8-B581676D7854}"/>
+												<CustomState Name="" ID="{39354E15-1767-4568-BAC5-EE4A2611E1A0}" ShortID="53814188">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-10"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Concrete" ID="{14A74C1B-2D94-4D45-B01F-D70BA6ADC558}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Metal" ID="{E28FF45B-2C51-4BEA-AC64-F62F4E561DCE}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Concrete" ID="{707CE113-0104-461F-919C-7C86EF71121C}"/>
+												<ItemList>
+													<ItemRef Name="Concrete" ID="{14A74C1B-2D94-4D45-B01F-D70BA6ADC558}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Metal" ID="{3AA0F9F8-D53B-4A1E-9F0C-D1F51E2944ED}"/>
+												<ItemList>
+													<ItemRef Name="Metal" ID="{E28FF45B-2C51-4BEA-AC64-F62F4E561DCE}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<RandomSequenceContainer Name="HurtSounds" ID="{6755B831-0A11-4ACD-A48A-945A77AD1856}" ShortID="135037054">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5BAEABC7-85C1-4AB3-B426-518771A73EC4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="177"/>
+															<Property Name="Min" Type="Real64" Value="-202"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2C73E197-16C8-482A-98DC-823A420A4DD2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Enemy Death Sounds GMTK" ID="{BF2E6613-F120-4496-AB7E-F81601E5B6D0}" ShortID="118714772">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{898C3E1D-5BBC-4316-9C88-A22F147F3BD7}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0882361015422539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.0300715218508"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.4835973120211"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="797972712"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{898C3E1D-5BBC-4316-9C88-A22F147F3BD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_01" ID="{C3C75B38-B118-474E-8AE5-D98F67ED3CCD}" ShortID="1042623670">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{D78814E2-D1CD-461E-A028-94A2375BDD83}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0882361015422539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.2352052922052"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.7633853867337"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="629001719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{D78814E2-D1CD-461E-A028-94A2375BDD83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_02" ID="{0D1EC79F-B026-4170-91C5-77EA8251ED2A}" ShortID="650368331">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{E3219F7A-79A7-4CC0-9036-0CF0B9916FF5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0882361015422539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.1737165469945"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.5099284303161"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="850718116"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{E3219F7A-79A7-4CC0-9036-0CF0B9916FF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_03" ID="{A79C463D-DB6E-405F-86EF-9C9F0D190746}" ShortID="1039817875">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{3C1FF51B-B222-4949-91F5-90FAD6CC6A2B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0882361015422539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="13.3575205161037"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.7470569025383"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="636594812"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{3C1FF51B-B222-4949-91F5-90FAD6CC6A2B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_04" ID="{1AD32D65-60D4-494B-BC2C-76AB34E941ED}" ShortID="914527491">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{C0F37832-D4BD-4DAE-98B1-00641B3F50EE}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0882361015422539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.1573880627991"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.6322436542146"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298971148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{C0F37832-D4BD-4DAE-98B1-00641B3F50EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="DeathSounds" ID="{6CEA0A23-0E63-4047-B150-2CBC09DFA1D5}" ShortID="771683142">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F02F6F8A-3FC9-4FF1-9FB8-75BC0A6CA1F6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="126"/>
+															<Property Name="Min" Type="Real64" Value="-202"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BE1BAE6A-3586-4CB2-804D-FB957F01373F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Enemy Death Sounds GMTK" ID="{26F22441-029A-491D-BFEB-8D99E4508F39}" ShortID="74517317">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{4D0DC21C-7194-45D1-A6CD-E40C37531908}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0974817104429877"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0580248276446355"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.27978807471265"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="82753902"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{4D0DC21C-7194-45D1-A6CD-E40C37531908}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_01" ID="{48371188-4ECD-46B3-8492-F170ADB312CF}" ShortID="347535995">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{AB0C9F9B-9641-4785-B3E3-7905F38933F2}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.374769126630727"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.20166985278831"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.60473641044062"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="702585870"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{AB0C9F9B-9641-4785-B3E3-7905F38933F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_02" ID="{CCEFC815-DAF5-4B27-AC35-5FB9544E0E09}" ShortID="706766652">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{D2259B83-0CF5-4037-B80B-B5173E9B7BAD}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0974817104429877"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.07855313268054"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.24963176484675"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="555911617"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{D2259B83-0CF5-4037-B80B-B5173E9B7BAD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Enemy Death Sounds GMTK_03" ID="{D96DB1F6-9EB0-41B8-A6CB-8C2AB03F0905}" ShortID="1039754878">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Enemy" ID="{35217BBA-3716-483F-9500-3976D711B09D}" WorkUnitID="{225F7466-B288-47AB-9636-6BB2BA6AED9F}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Enemy Death Sounds GMTK" ID="{496EF54A-67D8-477B-8C47-7F0F4DFB1B3A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0974817104429877"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.48079566097797"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.7452185105364"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Enemy Death Sounds GMTK.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="50458522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Enemy Death Sounds GMTK" ID="{496EF54A-67D8-477B-8C47-7F0F4DFB1B3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

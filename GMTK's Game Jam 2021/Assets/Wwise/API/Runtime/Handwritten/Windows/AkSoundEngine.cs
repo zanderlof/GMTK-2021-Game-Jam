@@ -1,4 +1,6 @@
-﻿public partial class AkSoundEngine
+﻿using System;
+
+public partial class AkSoundEngine
 {
 #if UNITY_EDITOR_WIN || (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || UNITY_WSA
 	/// <summary>
@@ -10,5 +12,7 @@
 	{
 		return StringFromIntPtrWString(ptr);
 	}
+
+  
 #endif
 }

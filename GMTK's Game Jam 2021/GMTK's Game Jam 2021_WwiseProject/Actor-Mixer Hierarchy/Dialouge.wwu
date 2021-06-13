@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{123DFB89-27FE-4865-A183-479321D4E628}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Dialouge" ID="{123DFB89-27FE-4865-A183-479321D4E628}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Level 1" ID="{D7ADF6F2-B1C8-4167-AD71-F6D08D139CC9}" ShortID="895314476">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="27"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<ActorMixer Name="Dialouge" ID="{860EF5DB-89BB-45FA-B643-29B810B36DC8}" ShortID="847951840">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Dialouge" ID="{76D92C57-6238-4D6E-96B7-8725AD0AA3C7}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Level 1 Dialouge" ID="{125363DF-7BAB-47D5-AB69-84B7896B2F27}" ShortID="152249794">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{1A7169E3-018B-43E5-8748-17FE547AAFB1}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.58234516380389"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.46890130072521"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.07905329561782"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="577769125"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{1A7169E3-018B-43E5-8748-17FE547AAFB1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge Line 6" ID="{1642F054-DF4C-4F20-9EF7-5DD495A84B98}" ShortID="486503772">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge Line 6" ID="{1BB686C6-8C35-43BC-99B3-99028E236923}">
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge Line 6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1607499"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge Line 6" ID="{1BB686C6-8C35-43BC-99B3-99028E236923}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge Line 10" ID="{2B4FC685-CB40-4D43-BEAD-B31940026CB6}" ShortID="246849189">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge Line 10" ID="{0CCB1ACB-B036-489B-A0EF-BC88801B186A}">
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge Line 10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972050720"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge Line 10" ID="{0CCB1ACB-B036-489B-A0EF-BC88801B186A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_01" ID="{1F174F2C-1149-4403-A1AF-CD2427616B15}" ShortID="229197612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{D2139FAE-7A0C-4720-983A-6410DB1C93A5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.14755274135869"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.32571492726874"/>
+												<Property Name="TrimEnd" Type="Real64" Value="14.8079600647576"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="584110017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{D2139FAE-7A0C-4720-983A-6410DB1C93A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_02" ID="{E3B1BE4D-AC6B-43BE-AA28-77F59061E4AD}" ShortID="168322210">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{D914EF9E-C04C-4DD0-8BA0-381BE30CD5C0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.482334536446871"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="16.7063193109828"/>
+												<Property Name="TrimEnd" Type="Real64" Value="27.9995669292115"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="105379253"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{D914EF9E-C04C-4DD0-8BA0-381BE30CD5C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_03" ID="{8B7FBE13-4874-44C1-A006-1AC662975995}" ShortID="841403138">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{CD903E9A-4CE1-40B1-9719-1A1E346F03A6}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.657728913336641"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="30.8382651200238"/>
+												<Property Name="TrimEnd" Type="Real64" Value="38.5004445151275"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="215009283"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{CD903E9A-4CE1-40B1-9719-1A1E346F03A6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_04" ID="{FC6A3E9F-BC4B-4B08-8061-6F6B987E46C8}" ShortID="352568810">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{920A2BD4-A99F-4E04-BBD5-6FAE3A02F4A0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.482334536446871"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="40.8170816958205"/>
+												<Property Name="TrimEnd" Type="Real64" Value="52.0185251120841"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452681865"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{920A2BD4-A99F-4E04-BBD5-6FAE3A02F4A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_05" ID="{859FFCF0-9DF6-4800-A05E-5617D8E07BF9}" ShortID="96108328">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{973B0D84-7782-41C8-A9F6-D3ED600F0D19}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.723501804670306"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="55.4179588240639"/>
+												<Property Name="TrimEnd" Type="Real64" Value="69.7360145338431"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="326923306"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{973B0D84-7782-41C8-A9F6-D3ED600F0D19}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_06" ID="{DDD32A83-65FE-43DA-979D-3AE14BB8A27C}" ShortID="1003667754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{1CA30C1D-92A4-4789-A4BA-1A635DD27317}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.916653037032148"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="74.0582014367392"/>
+												<Property Name="TrimEnd" Type="Real64" Value="87.4072092570143"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="832109984"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{1CA30C1D-92A4-4789-A4BA-1A635DD27317}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Level 1 Dialouge_07" ID="{7D697BC9-69E1-400C-AB81-B5EFA238A098}" ShortID="9087248">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Level 1 Dialouge" ID="{9BAEB53B-4338-462F-80F3-0BAACF935738}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="89.9351924386245"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Level 1 Dialouge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="265355656"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Level 1 Dialouge" ID="{9BAEB53B-4338-462F-80F3-0BAACF935738}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

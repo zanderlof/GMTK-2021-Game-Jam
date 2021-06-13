@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780128174225147
+    m_lastTime: -8585780127745425762
     List:
     - name: Dialouge
       guid: 572cd97638626e4d96b78725ad0aa3c7
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780128165102927
+    m_lastTime: -8585780127739836313
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780128190756717
+    m_lastTime: -8585780127754004268
     List:
     - name: Dialouge
       guid: 7e30636f6684f342845ee07fd45934c3
@@ -181,9 +181,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 54f4f292d9061548b5881d96e2c2f46e
       Path: Events\Default Work Unit\Enemy\EnemyDeath
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 16
+      maxDuration: 1.576709
+      minDuration: 1.088875
     - name: EnemyFootsteps
       guid: 0bd3072906323b46a93d113c9a4dc195
       id: 2051507304
@@ -221,9 +221,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: c8897fa41d03ef448c712873c6229327
       Path: Events\Default Work Unit\Enemy\EnemyHurt
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 16
+      maxDuration: 0.593547
+      minDuration: 0.303537
     - name: FireAR
       guid: 63ec88cb9bd41140bab1f0284fba7518
       id: 408495308
@@ -241,9 +241,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 63ec88cb9bd41140bab1f0284fba7518
       Path: Events\Default Work Unit\Weapons\FireAR
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 24
+      maxDuration: 1.067931
+      minDuration: 0.775096
     - name: FirePistol
       guid: 617e449767592148a2c8b4e857d4b977
       id: 3866501340
@@ -261,9 +261,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 617e449767592148a2c8b4e857d4b977
       Path: Events\Default Work Unit\Weapons\FirePistol
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 24
+      maxDuration: 1.224864
+      minDuration: 0.755252
     - name: FireShotgun
       guid: 2de9196f19b01e4ab8d7571ce89d2f77
       id: 2496290125
@@ -281,9 +281,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2de9196f19b01e4ab8d7571ce89d2f77
       Path: Events\Default Work Unit\Weapons\FireShotgun
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 24
+      maxDuration: 1.740225
+      minDuration: 1.128861
     - name: FireUzi
       guid: 3a1f78873c22574390c760e20dfaab8b
       id: 277246121
@@ -301,7 +301,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3a1f78873c22574390c760e20dfaab8b
       Path: Events\Default Work Unit\Weapons\FireUzi
-      maxAttenuation: 0
+      maxAttenuation: 24
       maxDuration: -1
       minDuration: -1
     - name: Footstep
@@ -365,8 +365,8 @@ MonoBehaviour:
         guid: ebc46c7e3bd2804fbb7a2c39ce698613
       Path: Events\Default Work Unit\Dialouge\Level1\Line1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.610152
+      minDuration: 4.610152
     - name: Line10
       guid: cf9a6ab7c2337c46a5ddeecb99d1deb2
       id: 127239060
@@ -411,8 +411,8 @@ MonoBehaviour:
         guid: d8c4de4e990f214e8cde4f77d8d96205
       Path: Events\Default Work Unit\Dialouge\Level1\Line2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.482245
+      minDuration: 7.482245
     - name: Line3
       guid: 53457268ce9b4d4bb6f6eda0f020f9bc
       id: 2054046798
@@ -434,8 +434,8 @@ MonoBehaviour:
         guid: 53457268ce9b4d4bb6f6eda0f020f9bc
       Path: Events\Default Work Unit\Dialouge\Level1\Line3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.662179
+      minDuration: 7.662179
     - name: Line4
       guid: 25e4472612d9ac41ba1038bd6a4eb0a2
       id: 2054046793
@@ -457,8 +457,8 @@ MonoBehaviour:
         guid: 25e4472612d9ac41ba1038bd6a4eb0a2
       Path: Events\Default Work Unit\Dialouge\Level1\Line4
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 11.293247
+      minDuration: 11.293247
     - name: Line5
       guid: 9ede27fcff1d454ba5b4c9834498b010
       id: 2054046792
@@ -480,8 +480,8 @@ MonoBehaviour:
         guid: 9ede27fcff1d454ba5b4c9834498b010
       Path: Events\Default Work Unit\Dialouge\Level1\Line5
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 11.201444
+      minDuration: 11.201444
     - name: Line6
       guid: 39371c990024d74390ba174fbc31a406
       id: 2054046795
@@ -526,8 +526,8 @@ MonoBehaviour:
         guid: dd4351931f90984ab813771c128f7c5c
       Path: Events\Default Work Unit\Dialouge\Level1\Line7
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 14.318056
+      minDuration: 14.318056
     - name: Line8
       guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
       id: 2054046789
@@ -549,8 +549,8 @@ MonoBehaviour:
         guid: 8cb4d510c6cb0b45bea3bdd021ba30c0
       Path: Events\Default Work Unit\Dialouge\Level1\Line8
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 13.349008
+      minDuration: 13.349008
     - name: Line9
       guid: 33b42af070d4f54aac7ca8c7dba100a7
       id: 2054046788
@@ -572,8 +572,8 @@ MonoBehaviour:
         guid: 33b42af070d4f54aac7ca8c7dba100a7
       Path: Events\Default Work Unit\Dialouge\Level1\Line9
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.332036
+      minDuration: 4.332036
     - name: Music
       guid: b06121cb992c24458e6b783a61bf1202
       id: 3991942870
@@ -625,9 +625,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4f3aa6c1423e44bb63d636759ff73db
       Path: Events\Default Work Unit\PowerSource\PowerDown
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 16
+      maxDuration: 1.40344
+      minDuration: 1.40344
     - name: PowerSource
       guid: eaea44b4b738aa40928a02294cd31591
       id: 136408055
@@ -662,7 +662,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d91f1db23888e34da852ba54f3dcb342
       Path: Events\Default Work Unit\PowerSource\PowerUp
-      maxAttenuation: 0
+      maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
     - name: StartLevelMusic
@@ -742,9 +742,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 72e0f1c8050e0f40a2a3eaec428f882a
       Path: Events\Default Work Unit\Weapons\StopFireUzi
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 24
+      maxDuration: 2.6915
+      minDuration: 2.6915
     - name: StopFootsteps
       guid: d9e8d497213d09498bff4e92699af05e
       id: 177027278
@@ -783,8 +783,8 @@ MonoBehaviour:
         guid: 0709158ca8f5b24598a3251aabdf4da5
       Path: Events\Default Work Unit\Music\StopLevelMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopMenuMusic
       guid: fc7975d3b160fc49a4d0858cc85c1175
       id: 1973898857
@@ -803,8 +803,8 @@ MonoBehaviour:
         guid: fc7975d3b160fc49a4d0858cc85c1175
       Path: Events\Default Work Unit\Music\StopMenuMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Weapons
       guid: 7886572c0c693241a55ad2a39b8faa02
       id: 1467963052

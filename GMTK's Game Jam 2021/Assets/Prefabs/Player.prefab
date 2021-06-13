@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 100
-  healthCounter: {fileID: 0}
+  healthCounter: {fileID: 8233010939891508223, guid: 5cdc44e3ea19bda419783c39c4508b43, type: 3}
 --- !u!54 &8218114909432573158
 Rigidbody:
   m_ObjectHideFlags: 0

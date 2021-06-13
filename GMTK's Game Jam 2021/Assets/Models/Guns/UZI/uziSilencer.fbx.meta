@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 18b0fde80d09b5244bae0c6f925706d5
+guid: ce19793ed41d5854f8ac7592e92d2897
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: uziSilencer
+    second: {fileID: 2100000, guid: 8cbb2472556a83a4fa64e30b69cc7069, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

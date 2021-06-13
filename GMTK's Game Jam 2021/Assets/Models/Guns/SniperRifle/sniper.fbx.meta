@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: ce19793ed41d5854f8ac7592e92d2897
+guid: 5219310591c94d54caa2e1e9d27a0d3c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sniper
+    second: {fileID: 2100000, guid: f28d9e8d07c086b47a70edb828e028eb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

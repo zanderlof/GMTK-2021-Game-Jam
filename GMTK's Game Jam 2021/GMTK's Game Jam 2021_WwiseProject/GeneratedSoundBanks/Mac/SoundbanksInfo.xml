@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1853232203">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1882079138">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2026451899">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2792619263">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -121,15 +121,15 @@
 					<IncludedMemoryFiles>
 						<File Id="326513137" Language="SFX">
 							<ShortName>Uzi Sounds GMTK.wav</ShortName>
-							<Path>SFX\Uzi Sounds GMTK_DD63CCFF.wem</Path>
+							<Path>SFX\Uzi Sounds GMTK_BBF0F726.wem</Path>
 						</File>
 						<File Id="506263230" Language="SFX">
 							<ShortName>Uzi Sounds GMTK.wav</ShortName>
-							<Path>SFX\Uzi Sounds GMTK_6602290A.wem</Path>
+							<Path>SFX\Uzi Sounds GMTK_F4FA83FC.wem</Path>
 						</File>
 						<File Id="899261252" Language="SFX">
 							<ShortName>Uzi Sounds GMTK.wav</ShortName>
-							<Path>SFX\Uzi Sounds GMTK_D3B9E143.wem</Path>
+							<Path>SFX\Uzi Sounds GMTK_E7158024.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -288,17 +288,17 @@
 				</Event>
 				<Event Id="1628310244" Name="StartLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StartLevelMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="476251438" Language="SFX">
-							<ShortName>StealthWav.wav</ShortName>
-							<Path>SFX\StealthWav_D79FB2B7.wem</Path>
+						<File Id="653208491" Language="SFX">
+							<ShortName>120621_JAMsneak.wav</ShortName>
+							<Path>SFX\120621_JAMsneak_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2440264179" Name="StartMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StartMenuMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="323811426" Language="SFX">
-							<ShortName>StartMenuWav.wav</ShortName>
-							<Path>SFX\StartMenuWav_D79FB2B7.wem</Path>
+						<File Id="702639087" Language="SFX">
+							<ShortName>110621_JAM.wav</ShortName>
+							<Path>SFX\110621_JAM_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

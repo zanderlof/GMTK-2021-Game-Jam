@@ -12,9 +12,12 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthCounter;
     public TextMeshProUGUI currentHealthText;
 
+    public AK.Wwise.Event stopFootsteps;
+
     private void Start()
     {
         currentHealth = startHealth;
+
     }
 
     // private void OnCollisionEnter(Collision other)
@@ -38,6 +41,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+
+            stopFootsteps.Post(gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             currentHealth = startHealth;
         }

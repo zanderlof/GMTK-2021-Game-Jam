@@ -9,6 +9,9 @@ public class PowerGenerator : MonoBehaviour
     public GameObject elecIndicator, waterIndicator, fireIndicator;
     public LayerMask playerMask;
     public GameObject promptText;
+    public LineRenderer powerLine;
+    public Transform powerStartPosition;
+    public Material elecMat, fireMat, waterMat;
 
     //misc
     [SerializeField] bool drawGizmo;
@@ -67,16 +70,20 @@ public class PowerGenerator : MonoBehaviour
             { manager.ISaw(); }
             powering = true;
             powerleft -= Time.deltaTime;
+            powerLine.SetPosition(1, pc.transform.localPosition);
+            powerLine.SetPosition(0, powerStartPosition.position);
         }
         else if (distance > powerDistance && powering)
         {
             pc.powered = false;
             powering = false;
+            powerLine.SetPosition(1, powerStartPosition.position);
         }
         else if (powerleft <= 0)
         {
             pc.powered = false;
             powering = false;
+            powerLine.SetPosition(1, powerStartPosition.position);
         }
 
         if (powering != previous)
@@ -108,6 +115,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(true);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(false);
+                powerLine.material = elecMat;
                 pc.SetType(elemCurrent);
 
             }
@@ -118,6 +126,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(true);
                 waterIndicator.SetActive(false);
+                powerLine.material = fireMat;
                 pc.SetType(elemCurrent);
             }
             if (Input.GetKeyDown(KeyCode.G))
@@ -127,6 +136,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(true);
+                powerLine.material = waterMat;
                 pc.SetType(elemCurrent);
             }
         }

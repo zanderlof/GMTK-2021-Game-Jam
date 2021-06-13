@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour
 
     //sounds
     public AK.Wwise.Event footsteps;
-    
-    
-    
+
+
+
 
     //movement detection
     bool ForwardIsPressed;
@@ -23,9 +23,6 @@ public class PlayerController : MonoBehaviour
     bool JumpIsPressed;
     bool CrouchIsPressed;
     bool SlideIsPressed;
-
-    //private variables
-    private PowerGenerator.Elemental type;
 
     //states
     bool isMoving;
@@ -119,7 +116,7 @@ public class PlayerController : MonoBehaviour
             if (CrouchIsPressed)
             {
                 movement.Crouch();
-                            }
+            }
             else
             {
                 movement.Stand();
@@ -199,27 +196,22 @@ public class PlayerController : MonoBehaviour
         type = element;
     }
 
-    public void SetType(PowerGenerator.Elemental element)
-    {
-        type = element;
-    }
+    // public void PowerOn()
+    // {
+    //     isPowered = true;
 
-    public void PowerOn()
-    {
-        isPowered = true;
+    //     for (int i = 0; i < 1; i++)
+    //     {
+    //         transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOn();
+    //     }
+    // }
 
-        for (int i = 0; i < 1; i++)
-        {
-            transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOn();
-        }
-    }
-
-    public void PowerOff()
-    {
-        isPowered = false;
-        for (int i = 0; i < 1; i++)
-        {
-            transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOff();
-        }
-    }
+    // public void PowerOff()
+    // {
+    //     isPowered = false;
+    //     for (int i = 0; i < 1; i++)
+    //     {
+    //         transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOff();
+    //     }
+    // }
 }

@@ -14,7 +14,8 @@ public class PowerGenerator : MonoBehaviour
     [SerializeField] bool drawGizmo;
 
     //public variables
-    public PlayerController guns;
+    // public GunController gun;
+    private PlayerController pc;
     public float powerDistance;
     public float powerleft = 60f;
     public bool noEnemyAlert = false;
@@ -43,6 +44,7 @@ public class PowerGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         powering = false;
         previous = false;
         manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
@@ -55,12 +57,12 @@ public class PowerGenerator : MonoBehaviour
     void Update()
     {
         //get distance to player's gun
-        distance = Vector3.Distance(guns.gameObject.transform.position, transform.position);
+        distance = Vector3.Distance(pc.transform.position, transform.position);
 
         //if distance is close enough
         if (distance <= powerDistance && powerleft > 0 && elementalChosen)
         {
-            
+            pc.powered = true;
             if (!noEnemyAlert)
             { manager.ISaw(); }
             powering = true;
@@ -68,10 +70,12 @@ public class PowerGenerator : MonoBehaviour
         }
         else if (distance > powerDistance && powering)
         {
+            pc.powered = false;
             powering = false;
         }
         else if (powerleft <= 0)
         {
+            pc.powered = false;
             powering = false;
         }
 
@@ -81,12 +85,10 @@ public class PowerGenerator : MonoBehaviour
 
             if (powering)
             {
-                guns.PowerOn();
                 powerUp.Post(gameObject);
             }
             else
             {
-                guns.PowerOff();
                 powerDown.Post(gameObject);
             }
         }
@@ -106,8 +108,8 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(true);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(false);
-                guns.SetType(elemCurrent);
-                
+                pc.SetType(elemCurrent);
+
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -116,7 +118,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(true);
                 waterIndicator.SetActive(false);
-                guns.SetType(elemCurrent);
+                pc.SetType(elemCurrent);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
@@ -125,7 +127,7 @@ public class PowerGenerator : MonoBehaviour
                 elecIndicator.SetActive(false);
                 fireIndicator.SetActive(false);
                 waterIndicator.SetActive(true);
-                guns.SetType(elemCurrent);
+                pc.SetType(elemCurrent);
             }
         }
         else

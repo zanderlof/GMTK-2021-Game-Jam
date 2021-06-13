@@ -18,5 +18,9 @@ public class LevelEnder : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
+        else
+        {
+            eText.SetActive(true);
+        }
     }
 }

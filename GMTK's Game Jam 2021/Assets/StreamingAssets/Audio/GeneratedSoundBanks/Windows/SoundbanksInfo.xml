@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2101829336">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2156183491">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2792619263">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1540937068">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -286,19 +286,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1628310244" Name="StartLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StartLevelMusic" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="653208491" Language="SFX">
-							<ShortName>120621_JAMsneak.wav</ShortName>
-							<Path>SFX\120621_JAMsneak_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="2440264179" Name="StartMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StartMenuMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="702639087" Language="SFX">
 							<ShortName>110621_JAM.wav</ShortName>
 							<Path>SFX\110621_JAM_D79FB2B7.wem</Path>
+						</File>
+						<File Id="780966618" Language="SFX">
+							<ShortName>220920_untz.wav</ShortName>
+							<Path>SFX\220920_untz_D79FB2B7.wem</Path>
+						</File>
+						<File Id="889288800" Language="SFX">
+							<ShortName>120920_däns.wav</ShortName>
+							<Path>SFX\120920_däns_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -310,7 +310,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1307992046" Name="StopLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StopLevelMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1973898857" Name="StopMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StopMenuMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>

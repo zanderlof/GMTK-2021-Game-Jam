@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1400480661167057638}
   - component: {fileID: 8843860460767086228}
   - component: {fileID: 1776674056154871757}
-  - component: {fileID: 7932121091580390685}
+  - component: {fileID: 1991553184}
   m_Layer: 0
   m_Name: Uzi
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055957656599100570}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.414, y: 0.028, z: 0.522}
+  m_LocalPosition: {x: 0.414, y: -0.12, z: 0.522}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 7749893354451218766}
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7932121091580390685
+--- !u!114 &1991553184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,16 +109,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  bulletSpeed: 0
-  bulletSpawn: {fileID: 7749893354451218766}
+  bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
+  bulletSpeed: 100
+  bulletSpawn: {fileID: 0}
   damage: 10
   continuousFire: 0
   FireRate: 1
   fireBullet:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1 &2715447398428760016
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 1901068998356110622}
   - component: {fileID: 3627924872618949952}
   - component: {fileID: 3284530277456472243}
-  - component: {fileID: 9200149196722753299}
+  - component: {fileID: 1660108392}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -177,7 +177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2906236636463791103}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.456, y: 0.137, z: 0.633}
+  m_LocalPosition: {x: 0.456, y: -0.1, z: 0.52}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2066562337779551727}
@@ -246,7 +246,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9200149196722753299
+--- !u!114 &1660108392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,14 +260,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
   bulletSpeed: 100
-  bulletSpawn: {fileID: 2066562337779551727}
+  bulletSpawn: {fileID: 0}
   damage: 10
-  continuousFire: 1
+  continuousFire: 0
   FireRate: 1
   fireBullet:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 16af289240ac9ef41a677325d957364c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1 &4025941409712988871
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4025941409712988871}
   m_LocalRotation: {x: -0.55415493, y: -0.55415493, z: -0.43921784, w: 0.43921784}
-  m_LocalPosition: {x: 0.431, y: -0.113, z: 0.627}
+  m_LocalPosition: {x: 0.431, y: -0.2, z: 0.7}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1131574038382443079}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 4288223097286891714}
   - component: {fileID: 7482392220447598137}
   - component: {fileID: 7845958327545285585}
-  - component: {fileID: 777739661490138453}
+  - component: {fileID: 263130119}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -475,7 +475,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6148208440623565913}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.491, y: 0.092, z: 0.81}
+  m_LocalPosition: {x: 0.491, y: -0.21, z: 0.81}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 8113939467685429393}
@@ -544,7 +544,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &777739661490138453
+--- !u!114 &263130119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,16 +556,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  bulletSpeed: 0
-  bulletSpawn: {fileID: 8113939467685429393}
+  bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
+  bulletSpeed: 100
+  bulletSpawn: {fileID: 0}
   damage: 10
   continuousFire: 0
   FireRate: 1
   fireBullet:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1 &8022111519365346437
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 8853628464342859036}
   - component: {fileID: 7544659925475322817}
   - component: {fileID: 8218114909432573158}
+  - component: {fileID: 1155347966}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -799,6 +800,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!64 &1155347966
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853628464342859035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8853628464697891728
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8853628464697891728}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.42400005, y: -0.18900013, z: 0.508}
+  m_LocalPosition: {x: 0.42, y: -0.2, z: 0.508}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 6330445869911095999}

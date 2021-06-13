@@ -6702,33 +6702,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa746715017e27241a084556c6d700e0, type: 3}
---- !u!1 &263130117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6148208440623565913, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-  m_PrefabInstance: {fileID: 1523174873}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &263130119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263130117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
-  bulletSpeed: 100
-  bulletSpawn: {fileID: 0}
-  damage: 10
-  continuousFire: 0
-  FireRate: 1
-  fireBullet:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1 &264763249
 GameObject:
   m_ObjectHideFlags: 0
@@ -33541,25 +33514,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &1155347965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8853628464342859035, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-  m_PrefabInstance: {fileID: 1523174873}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1155347966
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155347965}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &1155623029
 GameObject:
   m_ObjectHideFlags: 0
@@ -43654,42 +43608,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1055957656599100570, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163082915398533885, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 2906236636463791103, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3356060722244223530, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3356060722244223530, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 3409909262849137625, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3409909262849137625, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4025941409712988871, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6148208440623565913, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7544659925475322817, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
       propertyPath: healthText
       value: 
@@ -43742,26 +43660,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8853628464697891728, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853628464697891729, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8853628464697891729, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9032142801858830038, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.12
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7932121091580390685, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-    - {fileID: 777739661490138453, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-    - {fileID: 9200149196722753299, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
 --- !u!1 &1523329493
 GameObject:
@@ -47300,33 +47199,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 220ea7610e9604a4f93fb0df8598139f, type: 3}
---- !u!1 &1660108390 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2906236636463791103, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-  m_PrefabInstance: {fileID: 1523174873}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1660108392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660108390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
-  bulletSpeed: 100
-  bulletSpawn: {fileID: 0}
-  damage: 10
-  continuousFire: 0
-  FireRate: 1
-  fireBullet:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1001 &1662312801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56201,33 +56073,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: 468310d6cbe13dc45aa36a7b47ee71fa, type: 3}
---- !u!1 &1991553182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1055957656599100570, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
-  m_PrefabInstance: {fileID: 1523174873}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1991553184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991553182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b989b7054fe1443965550283187e8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 7241174613102264780, guid: d2c1ee735c4a1134abc9f6bf11c9b01b, type: 3}
-  bulletSpeed: 100
-  bulletSpawn: {fileID: 0}
-  damage: 10
-  continuousFire: 0
-  FireRate: 1
-  fireBullet:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cf94b57960e874e4b81c52d753bbd716, type: 2}
 --- !u!1 &1992252633
 GameObject:
   m_ObjectHideFlags: 0

@@ -138,10 +138,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5999230235589318188, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
-      propertyPath: fireRate
-      value: 3.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -316,10 +312,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
-      propertyPath: fireRate
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -334,11 +326,11 @@ PrefabInstance:
     - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: patrolPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1331828948}
+      objectReference: {fileID: 0}
     - target: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: patrolPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 261147160}
+      objectReference: {fileID: 0}
     - target: {fileID: 8340230482822184737, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: m_Name
       value: PatrollingEnemy
@@ -912,11 +904,6 @@ Transform:
   m_Father: {fileID: 636603073}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &261147160 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8340230482950519619, guid: 6d41532d0a157c74686e848116710943, type: 3}
-  m_PrefabInstance: {fileID: 135161745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &300174349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1796,11 +1783,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991642894}
   m_CullTransparentMesh: 1
---- !u!4 &1331828948 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8340230484313745771, guid: 6d41532d0a157c74686e848116710943, type: 3}
-  m_PrefabInstance: {fileID: 135161745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1369488185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8340230483255913035, guid: 6d41532d0a157c74686e848116710943, type: 3}
@@ -1820,10 +1802,6 @@ PrefabInstance:
     - target: {fileID: 5999230235589318178, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5999230235589318188, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
-      propertyPath: fireRate
-      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder

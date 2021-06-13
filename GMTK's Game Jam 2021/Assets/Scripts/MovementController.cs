@@ -7,6 +7,7 @@ public class MovementController : MonoBehaviour
     //public
     public bool canMove;
     public float playerSpeed;
+    public float runSpeed = 8;
     public float knockBackStunTime = 1f;
 
     //private
@@ -17,6 +18,7 @@ public class MovementController : MonoBehaviour
     private bool jump;
     public float jumpForce;
     private Rigidbody rb;
+    private float currentSpeed;
     [HideInInspector] public bool knockedBack;
 
     public enum LastMove
@@ -36,21 +38,21 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !knockedBack)
+        if (canMove)
         {
             Movement();
         }
-        if (knockedBack)
-        {
-            StartCoroutine(KnockBackRevert());
-        }
+        // if (knockedBack)
+        // {
+        //     StartCoroutine(KnockBackRevert());
+        // }
     }
 
-    IEnumerator KnockBackRevert()
-    {
-        yield return new WaitForSeconds(knockBackStunTime);
-        knockedBack = false;
-    }
+    // IEnumerator KnockBackRevert()
+    // {
+    //     yield return new WaitForSeconds(knockBackStunTime);
+    //     knockedBack = false;
+    // }
 
     void Movement()
     {
@@ -92,7 +94,8 @@ public class MovementController : MonoBehaviour
 
         //Translate this transform in direction.
         // transform.Translate(direction * Time.deltaTime * playerSpeed);
-        rb.MovePosition(rb.position + direction * Time.deltaTime * playerSpeed);
+        currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : playerSpeed;
+        rb.MovePosition(rb.position + direction * Time.deltaTime * currentSpeed);
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 

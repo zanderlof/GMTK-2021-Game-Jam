@@ -56,7 +56,7 @@ public class GunController : MonoBehaviour
         if (Time.time >= nextTimeToFire || !continuousFire)
         {
             fireBullet.Post(gameObject);
-            GameObject holder = Instantiate(bullet, bulletSpawn.position, transform.localRotation);
+            GameObject holder = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             holder.GetComponent<Rigidbody>().velocity = transform.right * bulletSpeed;
             holder.GetComponent<BulletController>().bulletDamage = damage;
             holder.GetComponent<BulletController>().SetType(type);

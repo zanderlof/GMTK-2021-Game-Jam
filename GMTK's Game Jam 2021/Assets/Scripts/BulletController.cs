@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    private float deathTime = 3f;
+    public float deathTime = 3f;
     public int bulletDamage;
 
     private PowerGenerator.Elemental type;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -27,6 +27,23 @@ public class BulletController : MonoBehaviour
         // Destroy(gameObject);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.transform.name);
+        PlayerHealth pHealth;
+        EnemyHealth eHealth;
+
+        if (other.TryGetComponent<PlayerHealth>(out pHealth))
+        {
+            pHealth.TakeDamage(bulletDamage);
+        }
+        if (other.TryGetComponent<EnemyHealth>(out eHealth))
+        {
+            eHealth.TakeDamage(bulletDamage);
+        }
+        Destroy(gameObject);
+    }
+
     public void SetType(PowerGenerator.Elemental element)
     {
         type = element;
@@ -35,7 +52,7 @@ public class BulletController : MonoBehaviour
         {
             GetComponent<TrailRenderer>().material.color = Color.yellow;
         }
-        else if(type == PowerGenerator.Elemental.fire)
+        else if (type == PowerGenerator.Elemental.fire)
         {
             GetComponent<TrailRenderer>().material.color = Color.red;
         }
@@ -43,6 +60,5 @@ public class BulletController : MonoBehaviour
         {
             GetComponent<TrailRenderer>().material.color = Color.blue;
         }
-        
     }
 }

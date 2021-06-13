@@ -23,22 +23,27 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-         
             enemyDeath.Post(gameObject);
             manager.IDied(GetComponent<BasicEnemyStateMachine>());
             Destroy(gameObject);
         }
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.collider.CompareTag("bullet"))
-        {
-            
-            enemyHurt.Post(gameObject);
-            currentHealth -= other.gameObject.GetComponent<BulletController>().bulletDamage;
-            manager.ISaw();
-        }
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.collider.CompareTag("bullet"))
+    //     {
+    //         enemyHurt.Post(gameObject);
+    //         currentHealth -= other.gameObject.GetComponent<BulletController>().bulletDamage;
+    //         manager.ISaw();
+    //     }
 
+    // }
+
+    public void TakeDamage(int damage)
+    {
+        enemyHurt.Post(gameObject);
+        currentHealth -= damage;
+        manager.ISaw();
     }
 }

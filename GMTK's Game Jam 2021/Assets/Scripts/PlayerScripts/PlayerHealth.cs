@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
 {
     public int startHealth;
     private int currentHealth;
-    public string enemyTag;
     public Text healthText;
 
     private void Start()
@@ -16,16 +15,18 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startHealth;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag(enemyTag))
-        {
-            PlayerDamage(5);
-        }
-    }
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.collider.CompareTag("bullet"))
+    //     {
 
-    void PlayerDamage(int damage)
+    //     }
+
+    // }
+
+    public void TakeDamage(int damage)
     {
+        Debug.Log("HI");
         currentHealth -= damage;
     }
 

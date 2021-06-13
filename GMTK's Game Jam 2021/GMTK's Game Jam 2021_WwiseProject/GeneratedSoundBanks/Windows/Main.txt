@@ -2,8 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	208556064	EnemyHurt			\Default Work Unit\Enemy\EnemyHurt	
 	277246121	FireUzi			\Default Work Unit\Weapons\FireUzi	
 	408495308	FireAR			\Default Work Unit\Weapons\FireAR	
-	1307992046	StopLevelMusic			\Default Work Unit\Music\StopLevelMusic	
-	1628310244	StartLevelMusic			\Default Work Unit\Music\StartLevelMusic	
 	1802703809	StopFireUzi			\Default Work Unit\Weapons\StopFireUzi	
 	1866025847	Footstep			\Default Work Unit\Player\Footstep	
 	1973898857	StopMenuMusic			\Default Work Unit\Music\StopMenuMusic	
@@ -88,6 +86,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	851608084	Connect	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\GMTK PowerSource V1_FC355903.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\PowerUp\Connect		630940
 	870135542	Loop	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\GMTK PowerSource V1_58FA1B45.wem		\Actor-Mixer Hierarchy\Default Work Unit\PowerSource\PowerSourceBus\PowerUp\Loop		671236
 	889141521	Metal footsteps-1_01	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\Metal footsteps-1_711C5136.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Metal\Metal footsteps-1_01		61716
+	889288800	120920_däns	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\120920_däns_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\StartMenu\120920_däns\120920_däns		7730980
 	899261252	Uzi Sounds GMTK_02	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\Uzi Sounds GMTK_E7158024.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\WeaponsMixer\UziSounds\Uzi Sounds GMTK_02		113736
 	1032488285	AR Sounds GMTK_01	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\AR Sounds GMTK_45890641.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\WeaponsMixer\PistolShots\AR Sounds GMTK_01		235240
 	1039773414	AR Sounds GMTK_03	D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\SFX\AR Sounds GMTK_BF1C385D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\WeaponsMixer\PistolShots\AR Sounds GMTK_03		181488

@@ -186,6 +186,90 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
+						<MusicSegment Name="120920_däns" ID="{DD41DCB5-3DFF-4ED8-8EB2-0137C66DEABB}" ShortID="190865441">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="43826.0544217687"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{074C76C7-FBD6-42AC-8B38-72FA9173CBC5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="120920_däns" ID="{84A6DE86-4029-48A4-9295-AD945A53CB1C}" ShortID="770759611">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE6D3A34-FD72-410B-826C-85D6A308DDB2}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="120920_däns" ID="{A892F623-FCA3-48CA-BB67-718AAF4ADD65}">
+											<Language>SFX</Language>
+											<AudioFile>120920_däns.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="889288800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8ED2E949-58D8-43FD-8F3A-1B0A6BC5D7D1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{98017A59-55BB-48B4-BDC1-FC1C68C7CF2D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="120920_däns" ID="{CE5C222C-6352-46E2-B033-A6562E36D159}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="43826.0544217687"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="120920_däns" ID="{A892F623-FCA3-48CA-BB67-718AAF4ADD65}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{C5FE3603-73DD-4B21-8642-98BD928B223B}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{4A3AF09E-661E-4942-9361-0AC993DA6A99}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="43826.0544217687"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{A0E5AE3F-C4C9-43AD-B9C6-0FD791FE07B3}">
@@ -208,6 +292,12 @@
 								<Property Name="PlayMode" Type="int16" Value="2"/>
 							</PropertyList>
 							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{C36B0564-AAF1-40E2-9A96-9D3EC4F59E0D}" ShortID="534028305">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="120920_däns" ID="{DD41DCB5-3DFF-4ED8-8EB2-0137C66DEABB}"/>
+								</MusicPlaylistItem>
 								<MusicPlaylistItem Name="" ID="{BA6E24C7-5BC3-4931-951D-35938999A499}" ShortID="715449578">
 									<PropertyList>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>

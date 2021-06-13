@@ -45,14 +45,6 @@
 							<ObjectRef Name="StopMenuMusic" ID="{D37579FC-60B1-49FC-A4D0-858CC85C1175}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
 							<Position X="2" Y="1"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="StartLevelMusic" ID="{989050A8-02AA-46E9-9A2C-2BD9D28C41B2}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="StopLevelMusic" ID="{8C150907-F5A8-45B2-98A3-251AABDF4DA5}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
-							<Position X="3" Y="1"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

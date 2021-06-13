@@ -30,10 +30,8 @@ namespace AK
         static const AkUniqueID LINE9 = 2054046788U;
         static const AkUniqueID POWERDOWN = 2715854868U;
         static const AkUniqueID POWERUP = 3950429679U;
-        static const AkUniqueID STARTLEVELMUSIC = 1628310244U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
         static const AkUniqueID STOPFIREUZI = 1802703809U;
-        static const AkUniqueID STOPLEVELMUSIC = 1307992046U;
         static const AkUniqueID STOPMENUMUSIC = 1973898857U;
     } // namespace EVENTS
 

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780750560222312
+    m_lastTime: -8585780620256422488
     List:
     - name: Dialouge
       guid: 572cd97638626e4d96b78725ad0aa3c7
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780750555559954
+    m_lastTime: -8585780620066171083
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780750577047747
+    m_lastTime: -8585780620271728073
     List:
     - name: Dialouge
       guid: 7e30636f6684f342845ee07fd45934c3
@@ -201,7 +201,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 63ec88cb9bd41140bab1f0284fba7518
       Path: Events\Default Work Unit\Weapons\FireAR
-      maxAttenuation: 0
+      maxAttenuation: 24
       maxDuration: 1.067931
       minDuration: 0.775096
     - name: FirePistol
@@ -221,7 +221,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 617e449767592148a2c8b4e857d4b977
       Path: Events\Default Work Unit\Weapons\FirePistol
-      maxAttenuation: 0
+      maxAttenuation: 24
       maxDuration: 1.224864
       minDuration: 0.755252
     - name: FireShotgun
@@ -241,7 +241,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2de9196f19b01e4ab8d7571ce89d2f77
       Path: Events\Default Work Unit\Weapons\FireShotgun
-      maxAttenuation: 0
+      maxAttenuation: 24
       maxDuration: 1.740225
       minDuration: 1.128861
     - name: Footstep
@@ -734,7 +734,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 05fc9389b9d9ba4b80dc61d028557457
     GuidInternal: 
-    m_lastTime: -8585780812433834721
+    m_lastTime: -8585780620271688184
     List:
     - name: Sneaking
       guid: 3316115213a1b74cbd2b4dc25f9fcb8c

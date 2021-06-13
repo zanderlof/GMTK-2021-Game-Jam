@@ -38,21 +38,21 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove && !knockedBack)
+        if (canMove)
         {
             Movement();
         }
-        if (knockedBack)
-        {
-            StartCoroutine(KnockBackRevert());
-        }
+        // if (knockedBack)
+        // {
+        //     StartCoroutine(KnockBackRevert());
+        // }
     }
 
-    IEnumerator KnockBackRevert()
-    {
-        yield return new WaitForSeconds(knockBackStunTime);
-        knockedBack = false;
-    }
+    // IEnumerator KnockBackRevert()
+    // {
+    //     yield return new WaitForSeconds(knockBackStunTime);
+    //     knockedBack = false;
+    // }
 
     void Movement()
     {

@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public TextMeshProUGUI currentHealthText;
 
     public AK.Wwise.Event stopFootsteps;
+    public GameObject beanDisplay;
 
     private void Start()
     {
@@ -43,8 +44,10 @@ public class PlayerHealth : MonoBehaviour
         {
 
             stopFootsteps.Post(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            currentHealth = startHealth;
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            beanDisplay.SetActive(true);
+            Time.timeScale = .25f;
+            // currentHealth = startHealth;
         }
     }
 }

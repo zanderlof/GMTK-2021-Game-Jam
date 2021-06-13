@@ -1531,6 +1531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab8133141271f042ab510722d5bb867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   elecIndicator: {fileID: 1269109365799640198}
   waterIndicator: {fileID: 1269109367308858345}
   fireIndicator: {fileID: 1269109366978178727}
@@ -1544,7 +1545,7 @@ MonoBehaviour:
   fireMat: {fileID: 2100000, guid: 318a548a4e392a140b68227c1101ace4, type: 2}
   waterMat: {fileID: 2100000, guid: aa0ab29a0d3e05c4c85d3b41abac6e5d, type: 2}
   drawGizmo: 1
-  powerDistance: 7
+  powerDistance: 14
   powerleft: 60
   noEnemyAlert: 0
   elemCurrent: 0

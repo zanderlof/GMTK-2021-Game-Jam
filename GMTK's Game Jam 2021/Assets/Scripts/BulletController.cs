@@ -29,7 +29,6 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.name);
         PlayerHealth pHealth;
         EnemyHealth eHealth;
 

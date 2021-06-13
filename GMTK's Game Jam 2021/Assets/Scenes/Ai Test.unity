@@ -4591,18 +4591,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6995238085465894355, guid: fa32d6e864c5fe44997d9bacc2655b52, type: 3}
-      propertyPath: elecMat
-      value: 
-      objectReference: {fileID: 2100000, guid: a764cd47967f2c54aa909060a1419542, type: 2}
-    - target: {fileID: 6995238085465894355, guid: fa32d6e864c5fe44997d9bacc2655b52, type: 3}
-      propertyPath: fireMat
-      value: 
-      objectReference: {fileID: 2100000, guid: 318a548a4e392a140b68227c1101ace4, type: 2}
-    - target: {fileID: 6995238085465894355, guid: fa32d6e864c5fe44997d9bacc2655b52, type: 3}
-      propertyPath: waterMat
-      value: 
-      objectReference: {fileID: 2100000, guid: aa0ab29a0d3e05c4c85d3b41abac6e5d, type: 2}
-    - target: {fileID: 6995238085465894355, guid: fa32d6e864c5fe44997d9bacc2655b52, type: 3}
       propertyPath: powerLine
       value: 
       objectReference: {fileID: 2064690565}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public int startHealth;
     private int currentHealth;
     public Slider healthCounter;
-    public Text currentHealthText;
+    public TextMeshProUGUI currentHealthText;
 
     private void Start()
     {

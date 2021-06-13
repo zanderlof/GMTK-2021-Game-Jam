@@ -5,7 +5,7 @@ using UnityEngine;
 public class PowerGenerator : MonoBehaviour
 {
     //References
-    EnemyManager manager;
+    public EnemyManager manager;
     public GameObject elecIndicator, waterIndicator, fireIndicator;
     public LayerMask playerMask;
     public GameObject promptText;
@@ -50,7 +50,7 @@ public class PowerGenerator : MonoBehaviour
         pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         powering = false;
         previous = false;
-        manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        // manager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         elecIndicator.SetActive(false);
         fireIndicator.SetActive(false);
         waterIndicator.SetActive(false);

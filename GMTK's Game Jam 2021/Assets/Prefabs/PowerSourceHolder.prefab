@@ -633,7 +633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269109367088536569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.25, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7394535126245182351}
@@ -1540,6 +1540,9 @@ MonoBehaviour:
   promptText: {fileID: 1269109366780098213}
   powerLine: {fileID: 0}
   powerStartPosition: {fileID: 8326504411843465008}
+  elecMat: {fileID: 2100000, guid: a764cd47967f2c54aa909060a1419542, type: 2}
+  fireMat: {fileID: 2100000, guid: 318a548a4e392a140b68227c1101ace4, type: 2}
+  waterMat: {fileID: 2100000, guid: aa0ab29a0d3e05c4c85d3b41abac6e5d, type: 2}
   drawGizmo: 1
   powerDistance: 7
   powerleft: 60

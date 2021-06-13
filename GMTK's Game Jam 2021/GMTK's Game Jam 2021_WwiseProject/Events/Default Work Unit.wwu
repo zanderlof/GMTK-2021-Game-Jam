@@ -209,6 +209,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="EnemyHurt" ID="{A47F89C8-031D-44EF-8C71-2873C6229327}">
+							<ChildrenList>
+								<Action Name="" ID="{63A25E92-4E06-4BDE-BFBF-835A62DA583F}" ShortID="503968466">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HurtSounds" ID="{6755B831-0A11-4ACD-A48A-945A77AD1856}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EnemyDeath" ID="{92F2F454-06D9-4815-B588-1D96E2C2F46E}">
+							<ChildrenList>
+								<Action Name="" ID="{370DFFEB-0015-4ABA-8529-4767FB9A1EE4}" ShortID="444840480">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DeathSounds" ID="{6CEA0A23-0E63-4047-B150-2CBC09DFA1D5}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Dialouge" ID="{6F63307E-8466-42F3-845E-E07FD45934C3}" ShortID="718305912">

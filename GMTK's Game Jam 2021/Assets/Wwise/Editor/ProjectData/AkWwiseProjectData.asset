@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780620066171083
+    m_lastTime: -8585780508010230341
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780620271728073
+    m_lastTime: -8585780520749667801
     List:
     - name: Dialouge
       guid: 7e30636f6684f342845ee07fd45934c3
@@ -164,6 +164,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: EnemyDeath
+      guid: 54f4f292d9061548b5881d96e2c2f46e
+      id: 3249137159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyDeath
+        ObjectType: 3
+        guid: 54f4f292d9061548b5881d96e2c2f46e
+      Path: Events\Default Work Unit\Enemy\EnemyDeath
+      maxAttenuation: 16
+      maxDuration: 1.576709
+      minDuration: 1.088875
     - name: EnemyFootsteps
       guid: 0bd3072906323b46a93d113c9a4dc195
       id: 2051507304
@@ -184,6 +204,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: EnemyHurt
+      guid: c8897fa41d03ef448c712873c6229327
+      id: 208556064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Enemy
+        ObjectType: 4
+        guid: 1cdf7bf5cdabec4998d873b8715c182d
+      - ElementName: EnemyHurt
+        ObjectType: 3
+        guid: c8897fa41d03ef448c712873c6229327
+      Path: Events\Default Work Unit\Enemy\EnemyHurt
+      maxAttenuation: 16
+      maxDuration: 0.593547
+      minDuration: 0.303537
     - name: FireAR
       guid: 63ec88cb9bd41140bab1f0284fba7518
       id: 408495308
@@ -908,7 +948,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585781166439414498
     List: []
-  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000080000000a0000001400000015000000
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000080000000a00000014000000150000002e0000002f000000
   ExpandedWaapiItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000e0000000f00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

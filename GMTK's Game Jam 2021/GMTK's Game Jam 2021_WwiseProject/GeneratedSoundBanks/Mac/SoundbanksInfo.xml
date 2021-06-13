@@ -16,11 +16,55 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1056898348">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1692768946">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3249137159" Name="EnemyDeath" ObjectPath="\Events\Default Work Unit\Enemy\EnemyDeath" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="1.088875" DurationMax="1.576709">
+					<IncludedMemoryFiles>
+						<File Id="50458522" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_79E4776E.wem</Path>
+						</File>
+						<File Id="82753902" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_99DA106F.wem</Path>
+						</File>
+						<File Id="555911617" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_ADF3F613.wem</Path>
+						</File>
+						<File Id="702585870" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_4E82ABE3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="208556064" Name="EnemyHurt" ObjectPath="\Events\Default Work Unit\Enemy\EnemyHurt" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="0.303537" DurationMax="0.593547">
+					<IncludedMemoryFiles>
+						<File Id="298971148" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_368F11C6.wem</Path>
+						</File>
+						<File Id="629001719" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_3CC2139D.wem</Path>
+						</File>
+						<File Id="636594812" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_D3C9C397.wem</Path>
+						</File>
+						<File Id="797972712" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_56B07003.wem</Path>
+						</File>
+						<File Id="850718116" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_64092C60.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
 					<IncludedMemoryFiles>
 						<File Id="643898" Language="SFX">

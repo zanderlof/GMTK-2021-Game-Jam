@@ -134,6 +134,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5999230235589318187, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: enemyHurt.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8be6bd0d01914924fa7fed54d80be75d, type: 2}
+    - target: {fileID: 5999230235589318187, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: enemyDeath.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 53c3ff56b56a92442a3572c3812272a3, type: 2}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -323,6 +331,14 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[3]
       value: 
       objectReference: {fileID: 261147160}
+    - target: {fileID: 2377899997574685206, guid: 6d41532d0a157c74686e848116710943, type: 3}
+      propertyPath: enemyHurt.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8be6bd0d01914924fa7fed54d80be75d, type: 2}
+    - target: {fileID: 2377899997574685206, guid: 6d41532d0a157c74686e848116710943, type: 3}
+      propertyPath: enemyDeath.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 53c3ff56b56a92442a3572c3812272a3, type: 2}
     - target: {fileID: 8340230482822184737, guid: 6d41532d0a157c74686e848116710943, type: 3}
       propertyPath: m_Name
       value: PatrollingEnemy
@@ -383,7 +399,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2377899997574685201, guid: 6d41532d0a157c74686e848116710943, type: 3}
   m_PrefabInstance: {fileID: 135161745}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1448826979}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae0b7ee6762e18c40bfd2af1fa4e0a5d, type: 3}
@@ -1216,6 +1232,35 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: ce72e2a1e4c9f5343aa22ce9df6ac5df, type: 2}
+--- !u!1 &711818008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5999230235589318178, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+  m_PrefabInstance: {fileID: 1894802317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &711818009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711818008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7ae0e77d60b604da1524e162e1b9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d403c245a2879e04bb402149a3f77500, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &712217445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1781,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8340230483255913035, guid: 6d41532d0a157c74686e848116710943, type: 3}
   m_PrefabInstance: {fileID: 135161745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1448826979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2377899997574685215, guid: 6d41532d0a157c74686e848116710943, type: 3}
+  m_PrefabInstance: {fileID: 135161745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448826987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448826979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7ae0e77d60b604da1524e162e1b9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d403c245a2879e04bb402149a3f77500, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &1894802317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1747,6 +1821,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5999230235589318187, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: enemyHurt.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8be6bd0d01914924fa7fed54d80be75d, type: 2}
+    - target: {fileID: 5999230235589318187, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
+      propertyPath: enemyDeath.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 53c3ff56b56a92442a3572c3812272a3, type: 2}
     - target: {fileID: 5999230235589318190, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1803,7 +1885,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5999230235589318188, guid: 0c74a6325898ed9418b8e7c8040341dd, type: 3}
   m_PrefabInstance: {fileID: 1894802317}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 711818008}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae0b7ee6762e18c40bfd2af1fa4e0a5d, type: 3}

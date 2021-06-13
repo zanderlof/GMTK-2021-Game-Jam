@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     public MovementController movement;
@@ -9,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     //sounds
     public AK.Wwise.Event footsteps;
+    
+    
+    
 
     //movement detection
     bool ForwardIsPressed;
@@ -106,10 +110,11 @@ public class PlayerController : MonoBehaviour
             if (CrouchIsPressed)
             {
                 movement.Crouch();
-            }
+                            }
             else
             {
                 movement.Stand();
+
             }
         }
     }

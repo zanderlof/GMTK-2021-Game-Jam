@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMYDEATH = 3249137159U;
+        static const AkUniqueID ENEMYHURT = 208556064U;
         static const AkUniqueID FIREAR = 408495308U;
         static const AkUniqueID FIREPISTOL = 3866501340U;
         static const AkUniqueID FIRESHOTGUN = 2496290125U;

@@ -162,9 +162,9 @@ MonoBehaviour:
   senseRadius: 3.5
   viewAngle: 90
   shootStoppingDist: 10
-  fireRate: 2
+  fireRate: 5
   minEngageDist: 10
-  shootingMovementSpeed: 5
+  shootingMovementSpeed: 3.5
   maxShootingDist: 15
   state: 0
 --- !u!136 &5999230235589318177

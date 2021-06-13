@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public int startHealth;
     private int currentHealth;
-    public Text healthText;
+    public Slider healthCounter;
 
     private void Start()
     {
@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        healthText.text = currentHealth.ToString();
+        healthCounter.value = currentHealth;
 
         if (currentHealth <= 0)
         {

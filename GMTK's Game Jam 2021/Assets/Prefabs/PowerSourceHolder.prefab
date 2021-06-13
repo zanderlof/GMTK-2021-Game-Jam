@@ -31,6 +31,36 @@ Transform:
   m_Father: {fileID: 1955789486928095151}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &202184459966377918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8326504411843465008}
+  m_Layer: 0
+  m_Name: PowerStartPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8326504411843465008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202184459966377918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1269109367088536568}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642708969695231101
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +638,7 @@ Transform:
   m_Children:
   - {fileID: 7394535126245182351}
   - {fileID: 1269109367339759796}
+  - {fileID: 8326504411843465008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1507,8 +1538,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   promptText: {fileID: 1269109366780098213}
+  powerLine: {fileID: 0}
+  powerStartPosition: {fileID: 8326504411843465008}
   drawGizmo: 1
-  guns: {fileID: 8853628464342859036, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
   powerDistance: 7
   powerleft: 60
   noEnemyAlert: 0

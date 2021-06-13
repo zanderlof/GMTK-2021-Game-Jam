@@ -6,6 +6,7 @@ public class EnemyGun : MonoBehaviour
 {
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shootPos;
+    [SerializeField] int damage = 5;
 
     GameObject player;
 
@@ -24,6 +25,7 @@ public class EnemyGun : MonoBehaviour
     public void Shoot()
     {
         GameObject shotBullet = Instantiate(bullet, shootPos.position, shootPos.rotation);
-        shotBullet.GetComponent<Rigidbody>().AddForce(shootPos.forward * 1000);
+        shotBullet.GetComponent<Rigidbody>().velocity = transform.forward * 100;
+        shotBullet.GetComponent<BulletController>().bulletDamage = damage;
     }
 }

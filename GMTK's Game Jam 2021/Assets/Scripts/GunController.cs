@@ -5,11 +5,13 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     //public variables
-    public PlayerController player;
+    // public PlayerController player;
     public GameObject bullet;
     public float bulletSpeed;
-    public float bulletSpawn;
+    public Transform bulletSpawn;
     public int damage = 10;
+    public bool continuousFire = false;
+    public float FireRate = 1;
     //sounds
     public AK.Wwise.Event fireBullet;
 
@@ -17,6 +19,7 @@ public class GunController : MonoBehaviour
     private bool powered;
     private bool previous;
     private PowerGenerator.Elemental type;
+    private float nextTimeToFire;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +28,10 @@ public class GunController : MonoBehaviour
         // previous = false;
     }
 
-
+    private void OnEnable()
+    {
+        // Debug.Log("HI");
+    }
 
     // Update is called once per frame
     void Update()
@@ -34,7 +40,11 @@ public class GunController : MonoBehaviour
         // transform.eulerAngles += player.lookSpeed * new Vector3(-Input.GetAxis("Mouse Y"), 0, 0);
 
         //attacking
-        if (Input.GetKeyDown(KeyCode.Mouse0) && powered)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && powered && !continuousFire)
+        {
+            Shoot();
+        }
+        else if (Input.GetKey(KeyCode.Mouse0) && powered && continuousFire)
         {
             Shoot();
         }
@@ -43,11 +53,16 @@ public class GunController : MonoBehaviour
 
     public void Shoot()
     {
-        fireBullet.Post(gameObject);
-        GameObject holder = Instantiate(bullet, transform.position + (transform.right * bulletSpawn), transform.localRotation);
-        holder.GetComponent<Rigidbody>().velocity = transform.right * bulletSpeed;
-        holder.GetComponent<BulletController>().bulletDamage = damage;
-        holder.GetComponent<BulletController>().SetType(type);
+        if (Time.time >= nextTimeToFire || !continuousFire)
+        {
+            fireBullet.Post(gameObject);
+            GameObject holder = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
+            holder.GetComponent<Rigidbody>().velocity = transform.right * bulletSpeed;
+            holder.GetComponent<BulletController>().bulletDamage = damage;
+            holder.GetComponent<BulletController>().SetType(type);
+
+            nextTimeToFire = Time.time + 1 / FireRate;
+        }
     }
 
     public void powerOn()
@@ -59,7 +74,7 @@ public class GunController : MonoBehaviour
     {
         powered = false;
     }
-    
+
     public void SetType(PowerGenerator.Elemental element)
     {
         type = element;

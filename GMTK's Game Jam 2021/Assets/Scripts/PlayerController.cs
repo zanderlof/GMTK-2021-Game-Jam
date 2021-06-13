@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public MovementController movement;
     public float lookSpeed;
+    public GameObject[] guns;
 
     //sounds
     public AK.Wwise.Event footsteps;
@@ -32,6 +33,10 @@ public class PlayerController : MonoBehaviour
     bool sizeChange;
     bool isPowered;
     int activeGun;
+
+    //Private
+    [HideInInspector] public bool powered;
+    private PowerGenerator.Elemental type;
 
     // Start is called before the first frame update
     void Start()
@@ -128,38 +133,70 @@ public class PlayerController : MonoBehaviour
     //     transform.eulerAngles += lookSpeed * new Vector3(0, Input.GetAxis("Mouse X"), 0);
     // }
 
+    int gun = 0;
     public void SwitchWeapon()
     {
-        KeyCode gun = 0;
-        
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            gun = KeyCode.Alpha1;
+            // gun = KeyCode.Alpha1;
+            gun = 0;
         }
         else if (Input.GetKey(KeyCode.Alpha2))
         {
-            gun = KeyCode.Alpha2;
+            // gun = KeyCode.Alpha2;
+            gun = 1;
         }
         else if (Input.GetKey(KeyCode.Alpha3))
         {
-            gun = KeyCode.Alpha3;
+            // gun = KeyCode.Alpha3;
+            gun = 2;
         }
         else if (Input.GetKey(KeyCode.Alpha4))
         {
-            gun = KeyCode.Alpha4;
+            // gun = KeyCode.Alpha4;
+            gun = 3;
         }
         else if (Input.GetKey(KeyCode.Alpha5))
         {
-            gun = KeyCode.Alpha5;
+            // gun = KeyCode.Alpha5;
+            gun = 4;
         }
 
-        if (gun != 0)
+        // if (gun != 0)
+        // {
+        //     transform.GetChild(0).GetChild(activeGun).gameObject.SetActive(false);
+        //     activeGun = (int)gun - 49;
+        //     transform.GetChild(0).GetChild(activeGun).gameObject.SetActive(true);
+        // }
+        if (gun < guns.Length)
         {
-            transform.GetChild(0).GetChild(activeGun).gameObject.SetActive(false);
-            activeGun = (int)gun - 49;
-            transform.GetChild(0).GetChild(activeGun).gameObject.SetActive(true);
+            for (int i = 0; i < guns.Length; i++)
+            {
+                if (gun == i)
+                {
+                    guns[i].SetActive(true);
+                    if (powered)
+                    {
+                        guns[i].GetComponent<GunController>().powerOn();
+                        guns[i].GetComponent<GunController>().SetType(type);
+                    }
+                    else
+                    {
+                        guns[gun].GetComponent<GunController>().powerOff();
+                        // guns[gun].GetComponent<GunController>().SetType(type);
+                    }
+                }
+                else
+                {
+                    guns[i].SetActive(false);
+                }
+            }
         }
-        
+    }
+
+    public void SetType(PowerGenerator.Elemental element)
+    {
+        type = element;
     }
 
     public void SetType(PowerGenerator.Elemental element)

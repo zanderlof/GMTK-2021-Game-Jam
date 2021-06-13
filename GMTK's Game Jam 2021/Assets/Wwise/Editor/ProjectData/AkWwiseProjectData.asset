@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780411255825053
+    m_lastTime: -8585780158716700939
     List:
     - name: Dialouge
       guid: 7e30636f6684f342845ee07fd45934c3
@@ -284,6 +284,26 @@ MonoBehaviour:
       maxAttenuation: 24
       maxDuration: 1.740225
       minDuration: 1.128861
+    - name: FireUzi
+      guid: 3a1f78873c22574390c760e20dfaab8b
+      id: 277246121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: FireUzi
+        ObjectType: 3
+        guid: 3a1f78873c22574390c760e20dfaab8b
+      Path: Events\Default Work Unit\Weapons\FireUzi
+      maxAttenuation: 24
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: 5de034826cc5674a8f9819daa8dae980
       id: 1866025847
@@ -705,6 +725,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopFireUzi
+      guid: 72e0f1c8050e0f40a2a3eaec428f882a
+      id: 1802703809
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e705003ca904e24eae9b6726c2c23933
+      - ElementName: Weapons
+        ObjectType: 4
+        guid: 7886572c0c693241a55ad2a39b8faa02
+      - ElementName: StopFireUzi
+        ObjectType: 3
+        guid: 72e0f1c8050e0f40a2a3eaec428f882a
+      Path: Events\Default Work Unit\Weapons\StopFireUzi
+      maxAttenuation: 24
+      maxDuration: 2.6915
+      minDuration: 2.6915
     - name: StopLevelMusic
       guid: 0709158ca8f5b24598a3251aabdf4da5
       id: 1307992046

@@ -23,16 +23,20 @@ public class PlayerController : MonoBehaviour
     bool CrouchIsPressed;
     bool SlideIsPressed;
 
+    //private variables
+    private PowerGenerator.Elemental type;
+
     //states
     bool isMoving;
     bool movementChange;
     bool sizeChange;
+    bool isPowered;
     int activeGun;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        isPowered = false;
     }
 
     // Update is called once per frame
@@ -156,5 +160,29 @@ public class PlayerController : MonoBehaviour
             transform.GetChild(0).GetChild(activeGun).gameObject.SetActive(true);
         }
         
+    }
+
+    public void SetType(PowerGenerator.Elemental element)
+    {
+        type = element;
+    }
+
+    public void PowerOn()
+    {
+        isPowered = true;
+
+        for (int i = 0; i < 1; i++)
+        {
+            transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOn();
+        }
+    }
+
+    public void PowerOff()
+    {
+        isPowered = false;
+        for (int i = 0; i < 1; i++)
+        {
+            transform.GetChild(0).GetChild(i).gameObject.GetComponent<GunController>().powerOff();
+        }
     }
 }

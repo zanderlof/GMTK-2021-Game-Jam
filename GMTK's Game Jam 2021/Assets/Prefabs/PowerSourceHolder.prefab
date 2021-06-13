@@ -1508,7 +1508,7 @@ MonoBehaviour:
     m_Bits: 64
   promptText: {fileID: 1269109366780098213}
   drawGizmo: 1
-  gun: {fileID: 0}
+  guns: {fileID: 8853628464342859036, guid: 2a071ab43dfc7c04a9f63271f87c63b4, type: 3}
   powerDistance: 7
   powerleft: 60
   noEnemyAlert: 0

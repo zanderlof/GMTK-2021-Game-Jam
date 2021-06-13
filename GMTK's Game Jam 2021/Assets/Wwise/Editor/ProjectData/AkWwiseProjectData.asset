@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 343a6dae72fd0b41826c85d6a308ddb2
     GuidInternal: 
-    m_lastTime: -8585780127745425762
+    m_lastTime: -8585780078772238683
     List:
     - name: Dialouge
       guid: 572cd97638626e4d96b78725ad0aa3c7
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 86e243cfc9b652438edc8f6bc603b4c4
     GuidInternal: 
-    m_lastTime: -8585780127739836313
+    m_lastTime: -8585780074387268148
     List:
     - name: Main
       guid: f4707b47325b8a48862ecf389bf89600
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: e705003ca904e24eae9b6726c2c23933
     GuidInternal: 
-    m_lastTime: -8585780127754004268
+    m_lastTime: -8585780075446071225
     List:
     - name: Dialouge
       guid: 7e30636f6684f342845ee07fd45934c3
@@ -665,26 +665,6 @@ MonoBehaviour:
       maxAttenuation: 16
       maxDuration: -1
       minDuration: -1
-    - name: StartLevelMusic
-      guid: a8509098aa02e9469a2c2bd9d28c41b2
-      id: 1628310244
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e705003ca904e24eae9b6726c2c23933
-      - ElementName: Music
-        ObjectType: 4
-        guid: b06121cb992c24458e6b783a61bf1202
-      - ElementName: StartLevelMusic
-        ObjectType: 3
-        guid: a8509098aa02e9469a2c2bd9d28c41b2
-      Path: Events\Default Work Unit\Music\StartLevelMusic
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: StartMenuMusic
       guid: cf36ff116db5d44590800159dd46ca6d
       id: 2440264179
@@ -765,26 +745,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: StopLevelMusic
-      guid: 0709158ca8f5b24598a3251aabdf4da5
-      id: 1307992046
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e705003ca904e24eae9b6726c2c23933
-      - ElementName: Music
-        ObjectType: 4
-        guid: b06121cb992c24458e6b783a61bf1202
-      - ElementName: StopLevelMusic
-        ObjectType: 3
-        guid: 0709158ca8f5b24598a3251aabdf4da5
-      Path: Events\Default Work Unit\Music\StopLevelMusic
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: StopMenuMusic
       guid: fc7975d3b160fc49a4d0858cc85c1175
       id: 1973898857

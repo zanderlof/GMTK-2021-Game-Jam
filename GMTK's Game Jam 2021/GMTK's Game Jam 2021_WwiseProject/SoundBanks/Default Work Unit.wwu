@@ -11,9 +11,7 @@
 						<ObjectRef Name="FireUzi" ID="{87781F3A-223C-4357-90C7-60E20DFAAB8B}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnemyHurt" ID="{A47F89C8-031D-44EF-8C71-2873C6229327}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Line8" ID="{10D5B48C-CBC6-450B-BEA3-BDD021BA30C0}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="StopLevelMusic" ID="{8C150907-F5A8-45B2-98A3-251AABDF4DA5}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartMenuMusic" ID="{11FF36CF-B56D-45D4-9080-0159DD46CA6D}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="StartLevelMusic" ID="{989050A8-02AA-46E9-9A2C-2BD9D28C41B2}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnemyDeath" ID="{92F2F454-06D9-4815-B588-1D96E2C2F46E}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FirePistol" ID="{97447E61-5967-4821-A2C8-B4E857D4B977}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopMenuMusic" ID="{D37579FC-60B1-49FC-A4D0-858CC85C1175}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}" Origin="Manual" Filter="7"/>

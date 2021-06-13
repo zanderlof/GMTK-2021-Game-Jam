@@ -148,16 +148,16 @@ public class PlayerController : MonoBehaviour
             // gun = KeyCode.Alpha3;
             gun = 2;
         }
-        else if (Input.GetKey(KeyCode.Alpha4))
-        {
-            // gun = KeyCode.Alpha4;
-            gun = 3;
-        }
-        else if (Input.GetKey(KeyCode.Alpha5))
-        {
-            // gun = KeyCode.Alpha5;
-            gun = 4;
-        }
+        // else if (Input.GetKey(KeyCode.Alpha4))
+        // {
+        //     // gun = KeyCode.Alpha4;
+        //     gun = 3;
+        // }
+        // else if (Input.GetKey(KeyCode.Alpha5))
+        // {
+        //     // gun = KeyCode.Alpha5;
+        //     gun = 4;
+        // }
 
         // if (gun != 0)
         // {

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Game And Sound Project Files\Github\GMTK-2021-Game-Jam\GMTK's Game Jam 2021\GMTK's Game Jam 2021_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3356874461">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2026451899">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3249137159" Name="EnemyDeath" ObjectPath="\Events\Default Work Unit\Enemy\EnemyDeath" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="1.088875" DurationMax="1.576709">
+					<IncludedMemoryFiles>
+						<File Id="50458522" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_79E4776E.wem</Path>
+						</File>
+						<File Id="82753902" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_99DA106F.wem</Path>
+						</File>
+						<File Id="555911617" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_ADF3F613.wem</Path>
+						</File>
+						<File Id="702585870" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_4E82ABE3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="208556064" Name="EnemyHurt" ObjectPath="\Events\Default Work Unit\Enemy\EnemyHurt" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="0.303537" DurationMax="0.593547">
+					<IncludedMemoryFiles>
+						<File Id="298971148" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_368F11C6.wem</Path>
+						</File>
+						<File Id="629001719" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_3CC2139D.wem</Path>
+						</File>
+						<File Id="636594812" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_D3C9C397.wem</Path>
+						</File>
+						<File Id="797972712" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_56B07003.wem</Path>
+						</File>
+						<File Id="850718116" Language="SFX">
+							<ShortName>Enemy Death Sounds GMTK.wav</ShortName>
+							<Path>SFX\Enemy Death Sounds GMTK_64092C60.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="408495308" Name="FireAR" ObjectPath="\Events\Default Work Unit\Weapons\FireAR" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="0.775096" DurationMax="1.067931">
+					<IncludedMemoryFiles>
+						<File Id="643898" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_24E5BBAF.wem</Path>
+						</File>
+						<File Id="153030953" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_32D9FB1C.wem</Path>
+						</File>
+						<File Id="518679608" Language="SFX">
+							<ShortName>Pistol Shots GMTK.wav</ShortName>
+							<Path>SFX\Pistol Shots GMTK_C6A4DE8C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3866501340" Name="FirePistol" ObjectPath="\Events\Default Work Unit\Weapons\FirePistol" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="0.755252" DurationMax="1.224864">
+					<IncludedMemoryFiles>
+						<File Id="466470151" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_DAD1E115.wem</Path>
+						</File>
+						<File Id="509447025" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_F282A769.wem</Path>
+						</File>
+						<File Id="1032488285" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_45890641.wem</Path>
+						</File>
+						<File Id="1039773414" Language="SFX">
+							<ShortName>AR Sounds GMTK.wav</ShortName>
+							<Path>SFX\AR Sounds GMTK_BF1C385D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2496290125" Name="FireShotgun" ObjectPath="\Events\Default Work Unit\Weapons\FireShotgun" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="1.128861" DurationMax="1.740225">
+					<IncludedMemoryFiles>
+						<File Id="449462211" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_B1B75750.wem</Path>
+						</File>
+						<File Id="836463758" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_6DF3A355.wem</Path>
+						</File>
+						<File Id="842778150" Language="SFX">
+							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
+							<Path>SFX\ShotGun Sounds GMTK_32703936.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277246121" Name="FireUzi" ObjectPath="\Events\Default Work Unit\Weapons\FireUzi" MaxAttenuation="24.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="326513137" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_DD63CCFF.wem</Path>
+						</File>
+						<File Id="506263230" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_6602290A.wem</Path>
+						</File>
+						<File Id="899261252" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_D3B9E143.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="120745981" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_BE2A7081.wem</Path>
+						</File>
+						<File Id="154598439" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_A49F0A94.wem</Path>
+						</File>
+						<File Id="221413942" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_8964884B.wem</Path>
+						</File>
+						<File Id="234352725" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_F847B441.wem</Path>
+						</File>
+						<File Id="264691709" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_39F517A8.wem</Path>
+						</File>
+						<File Id="347570575" Language="SFX">
+							<ShortName>Tile Footsteps.WAV</ShortName>
+							<Path>SFX\Tile Footsteps_09F14C38.wem</Path>
+						</File>
+						<File Id="619807268" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_036B64E3.wem</Path>
+						</File>
+						<File Id="625583277" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_809BCE3D.wem</Path>
+						</File>
+						<File Id="689818044" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_8C75F558.wem</Path>
+						</File>
+						<File Id="889141521" Language="SFX">
+							<ShortName>Metal footsteps-1.WAV</ShortName>
+							<Path>SFX\Metal footsteps-1_711C5136.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{707CE113-0104-461F-919C-7C86EF71121C}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{707CE113-0104-461F-919C-7C86EF71121C}">
+							<Media>
+								<File Id="154598439"/>
+								<File Id="221413942"/>
+								<File Id="234352725"/>
+								<File Id="264691709"/>
+								<File Id="347570575"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3AA0F9F8-D53B-4A1E-9F0C-D1F51E2944ED}">
+							<Media>
+								<File Id="120745981"/>
+								<File Id="619807268"/>
+								<File Id="625583277"/>
+								<File Id="689818044"/>
+								<File Id="889141521"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2054046796" Name="Line1" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line1" DurationType="OneShot" DurationMin="4.610152" DurationMax="4.610152">
+					<IncludedMemoryFiles>
+						<File Id="577769125" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_7921EA4B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046799" Name="Line2" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line2" DurationType="OneShot" DurationMin="7.482245" DurationMax="7.482245">
+					<IncludedMemoryFiles>
+						<File Id="584110017" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_0C781053.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046798" Name="Line3" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line3" DurationType="OneShot" DurationMin="7.662179" DurationMax="7.662179">
+					<IncludedMemoryFiles>
+						<File Id="215009283" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_3C8EE92A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046793" Name="Line4" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line4" DurationType="OneShot" DurationMin="11.293247" DurationMax="11.293247">
+					<IncludedMemoryFiles>
+						<File Id="105379253" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_30124785.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046792" Name="Line5" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line5" DurationType="OneShot" DurationMin="11.201444" DurationMax="11.201444">
+					<IncludedMemoryFiles>
+						<File Id="452681865" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_032E5AC5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046794" Name="Line7" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line7" DurationType="OneShot" DurationMin="14.318056" DurationMax="14.318056">
+					<IncludedMemoryFiles>
+						<File Id="326923306" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_29B105FD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046789" Name="Line8" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line8" DurationType="OneShot" DurationMin="13.349008" DurationMax="13.349008">
+					<IncludedMemoryFiles>
+						<File Id="832109984" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_05CC8471.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2054046788" Name="Line9" ObjectPath="\Events\Default Work Unit\Dialouge\Level1\Line9" DurationType="OneShot" DurationMin="4.332036" DurationMax="4.332036">
+					<IncludedMemoryFiles>
+						<File Id="265355656" Language="SFX">
+							<ShortName>Level 1 Dialouge.wav</ShortName>
+							<Path>SFX\Level 1 Dialouge_01328BA2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerSource\PowerDown" MaxAttenuation="16.000000" DurationType="OneShot" DurationMin="1.403440" DurationMax="1.403440">
+					<IncludedMemoryFiles>
+						<File Id="633361544" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_C8A7CDA8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerSource\PowerUp" MaxAttenuation="16.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="286418320" Language="SFX">
+							<ShortName>GMTK PowerSource VARIATION V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource VARIATION V1_F8BEABA7.wem</Path>
+						</File>
+						<File Id="851608084" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_FC355903.wem</Path>
+						</File>
+						<File Id="870135542" Language="SFX">
+							<ShortName>GMTK PowerSource V1.wav</ShortName>
+							<Path>SFX\GMTK PowerSource V1_58FA1B45.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1628310244" Name="StartLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StartLevelMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="476251438" Language="SFX">
+							<ShortName>StealthWav.wav</ShortName>
+							<Path>SFX\StealthWav_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2440264179" Name="StartMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StartMenuMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="323811426" Language="SFX">
+							<ShortName>StartMenuWav.wav</ShortName>
+							<Path>SFX\StartMenuWav_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1802703809" Name="StopFireUzi" ObjectPath="\Events\Default Work Unit\Weapons\StopFireUzi" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="2.691500" DurationMax="2.691500">
+					<IncludedMemoryFiles>
+						<File Id="313116073" Language="SFX">
+							<ShortName>Uzi Sound Tail.wav</ShortName>
+							<Path>SFX\Uzi Sound Tail_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1307992046" Name="StopLevelMusic" ObjectPath="\Events\Default Work Unit\Music\StopLevelMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1973898857" Name="StopMenuMusic" ObjectPath="\Events\Default Work Unit\Music\StopMenuMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3418139957" Name="Sneaking" ObjectPath="\Game Parameters\Default Work Unit\Sneaking"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Footsteps\Concrete"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Footsteps\Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

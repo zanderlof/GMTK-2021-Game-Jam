@@ -6,16 +6,21 @@ public class FPSCam : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] float mouseSensitivity;
+    [SerializeField] float normalFov;
+    [SerializeField] float runFov;
+
 
     float camXRot;
     Transform playerBody;
 
     //editor variables
     [SerializeField] bool lockCursor = true;
+    Camera myCam;
 
     private void Start()
     {
         playerBody = transform.parent;
+        myCam = GetComponent<Camera>();
     }
 
     void Awake()
@@ -32,6 +37,8 @@ public class FPSCam : MonoBehaviour
         {
             Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
         }
+        float currentFov = Input.GetKey(KeyCode.LeftShift) ? runFov : normalFov;
+        myCam.fieldOfView = Mathf.Lerp(myCam.fieldOfView, currentFov, Time.deltaTime * 5);
     }
 
     private void FixedUpdate()

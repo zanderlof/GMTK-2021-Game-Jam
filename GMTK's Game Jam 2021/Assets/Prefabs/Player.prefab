@@ -354,6 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   playerSpeed: 10
+  runSpeed: 15
   knockBackStunTime: 1
   jumpForce: 25
   knockedBack: 0
@@ -396,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 100
   healthCounter: {fileID: 8233010939891508223, guid: 5cdc44e3ea19bda419783c39c4508b43, type: 3}
+  currentHealthText: {fileID: 0}
 --- !u!54 &8218114909432573158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -488,7 +490,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.03
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -521,6 +523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 200
+  normalFov: 60
+  runFov: 50
   lockCursor: 1
 --- !u!114 &8853628465755215186
 MonoBehaviour:

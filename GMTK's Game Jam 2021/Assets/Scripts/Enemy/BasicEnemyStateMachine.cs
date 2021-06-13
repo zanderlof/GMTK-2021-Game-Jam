@@ -26,6 +26,7 @@ public class BasicEnemyStateMachine : MonoBehaviour
     [SerializeField] float fireRate = 2;
     [SerializeField] float minEngageDist = 10;
     [SerializeField] float shootingMovementSpeed = 5;
+    [SerializeField] float maxShootingDist = 15f;
     public enum enemyState
     {
         Roam,
@@ -75,8 +76,8 @@ public class BasicEnemyStateMachine : MonoBehaviour
         }
 
         RaycastHit hit;
-        Debug.DrawRay(gun.transform.position, gun.transform.forward * 10, Color.green);
-        if (Physics.Raycast(gun.transform.position, gun.transform.forward, out hit))
+        Debug.DrawRay(gun.transform.position, gun.transform.forward * maxShootingDist, Color.green);
+        if (Physics.Raycast(gun.transform.position, gun.transform.forward, out hit, maxShootingDist))
         {
             if (hit.collider.CompareTag("Player"))
             {
@@ -190,6 +191,8 @@ public class BasicEnemyStateMachine : MonoBehaviour
         {
             Gizmos.DrawWireSphere(transform.position, viewRadius);
             Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, maxShootingDist);
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, senseRadius);
         }
     }

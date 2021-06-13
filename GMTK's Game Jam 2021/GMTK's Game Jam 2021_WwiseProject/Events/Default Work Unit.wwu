@@ -110,6 +110,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="FireUzi" ID="{87781F3A-223C-4357-90C7-60E20DFAAB8B}">
+							<ChildrenList>
+								<Action Name="" ID="{AD6923CD-460C-4CB8-A608-88C6AC449DA7}" ShortID="771045359">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UziSounds" ID="{7E1D75F5-18C6-4236-A1F7-BD738BD31883}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopFireUzi" ID="{C8F1E072-0E05-400F-A2A3-EAEC428F882A}">
+							<ChildrenList>
+								<Action Name="" ID="{0987C16F-EA96-4F2F-B98C-EC9022D28B63}" ShortID="293255044">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UziSounds" ID="{7E1D75F5-18C6-4236-A1F7-BD738BD31883}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{35BBE532-E148-425F-9D3E-A6A245136180}" ShortID="442767384">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Uzi Sound Tail" ID="{F0C77ACD-9991-4E17-8DF7-E330632AF280}" WorkUnitID="{355EA857-1133-42BF-848A-D8AAFADB2CE6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{CB2161B0-2C99-4524-8E6B-783A61BF1202}" ShortID="550681378">

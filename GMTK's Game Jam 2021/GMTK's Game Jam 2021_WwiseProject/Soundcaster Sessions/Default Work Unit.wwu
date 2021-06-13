@@ -26,6 +26,14 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="FireUzi" ID="{87781F3A-223C-4357-90C7-60E20DFAAB8B}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopFireUzi" ID="{C8F1E072-0E05-400F-A2A3-EAEC428F882A}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="StartMenuMusic" ID="{11FF36CF-B56D-45D4-9080-0159DD46CA6D}" WorkUnitID="{3C0005E7-04A9-4EE2-AE9B-6726C2C23933}"/>
 							<Position X="2" Y="0"/>
 						</Module>

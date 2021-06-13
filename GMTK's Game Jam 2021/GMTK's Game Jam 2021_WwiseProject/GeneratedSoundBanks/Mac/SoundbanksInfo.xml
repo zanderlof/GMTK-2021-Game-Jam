@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1692768946">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2026451899">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -114,6 +114,22 @@
 						<File Id="842778150" Language="SFX">
 							<ShortName>ShotGun Sounds GMTK.wav</ShortName>
 							<Path>SFX\ShotGun Sounds GMTK_32703936.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277246121" Name="FireUzi" ObjectPath="\Events\Default Work Unit\Weapons\FireUzi" MaxAttenuation="24.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="326513137" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_DD63CCFF.wem</Path>
+						</File>
+						<File Id="506263230" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_6602290A.wem</Path>
+						</File>
+						<File Id="899261252" Language="SFX">
+							<ShortName>Uzi Sounds GMTK.wav</ShortName>
+							<Path>SFX\Uzi Sounds GMTK_D3B9E143.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -283,6 +299,14 @@
 						<File Id="323811426" Language="SFX">
 							<ShortName>StartMenuWav.wav</ShortName>
 							<Path>SFX\StartMenuWav_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1802703809" Name="StopFireUzi" ObjectPath="\Events\Default Work Unit\Weapons\StopFireUzi" MaxAttenuation="24.000000" DurationType="OneShot" DurationMin="2.691500" DurationMax="2.691500">
+					<IncludedMemoryFiles>
+						<File Id="313116073" Language="SFX">
+							<ShortName>Uzi Sound Tail.wav</ShortName>
+							<Path>SFX\Uzi Sound Tail_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{F083AFF1-CBD6-46C4-A7F3-5FC678979BF0}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Game And Sound Project Files\Ableton Live\2021\GMTK GameJam 2021\Dialouge\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\Game And Sound Project Files\Ableton Live\2021\GMTK GameJam 2021\"/>
 				<Property Name="Event Action List\{10D5B48C-CBC6-450B-BEA3-BDD021BA30C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{11FF36CF-B56D-45D4-9080-0159DD46CA6D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2647E425-D912-41AC-BA10-38BD6A4EB0A2}\x64_Expand States" Type="string" Value=""/>
@@ -17,6 +17,7 @@
 				<Property Name="Event Action List\{6F19E92D-B019-4A1E-B8D7-571CE89D2F77}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7E6CC4EB-D23B-4F80-BB7A-2C39CE698613}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8234E05D-C56C-4A67-8F98-19DAA8DAE980}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{87781F3A-223C-4357-90C7-60E20DFAAB8B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8C150907-F5A8-45B2-98A3-251AABDF4DA5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{92F2F454-06D9-4815-B588-1D96E2C2F46E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{935143DD-901F-4A98-B813-771C128F7C5C}\x64_Expand States" Type="string" Value=""/>
@@ -26,6 +27,7 @@
 				<Property Name="Event Action List\{A47F89C8-031D-44EF-8C71-2873C6229327}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B21D1FD9-8838-4DE3-A852-BA54F3DCB342}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B76A9ACF-33C2-467C-A5DD-EECB99D1DEB2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C8F1E072-0E05-400F-A2A3-EAEC428F882A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CB88EC63-D49B-4011-BAB1-F0284FBA7518}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D37579FC-60B1-49FC-A4D0-858CC85C1175}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F02AB433-D470-4AF5-AC7C-A8C7DBA100A7}\x64_Expand States" Type="string" Value=""/>

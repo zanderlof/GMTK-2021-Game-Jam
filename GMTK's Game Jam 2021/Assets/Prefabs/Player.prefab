@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canMove: 1
-  playerSpeed: 5
+  playerSpeed: 10
   knockBackStunTime: 1
   jumpForce: 25
   knockedBack: 0
